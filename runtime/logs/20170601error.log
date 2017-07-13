@@ -1,0 +1,1159 @@
+2017-06-01 21:28:08 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: G:\jeendon\views\task-hall\offer-order-pay.php' in G:\jeendon\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('G:\\jeendon\\view...', NULL, Object(app\controllers\TaskHallController))
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('offer-order-pay', NULL, Object(app\controllers\TaskHallController))
+#2 G:\jeendon\controllers\TaskHallController.php(321): yii\base\Controller->render('offer-order-pay', NULL)
+#3 [internal function]: app\controllers\TaskHallController->actionEngineerOfferNew()
+#4 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('engineer-offer-...', Array)
+#7 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/engin...', Array)
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-06-01 21:28:08 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_POST = [
+    '_csrf' => 'NGI5YkduWHcAF0EbDTo8GkwFbAN3JS8UfBN3FiBcAgB3Cm4bdgkTQw=='
+    'task_id' => '172'
+    'offer_money_eng' => '1200'
+    'offer_money' => '1714元（该费用包含平台服务费）'
+    'offer_cycle' => '12'
+    'yzm' => '4773'
+]
+
+$_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4773'
+        'time' => 1496323682
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2416'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/engineer-offer-new.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/engineer-offer-new.html'
+    'REMOTE_PORT' => '55466'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/hall-detail.html?task_id=172'
+    'CONTENT_LENGTH' => '257'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496323688.2829
+    'REQUEST_TIME' => 1496323688
+]
+2017-06-01 21:29:27 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'extract() expects parameter 1 to be array, null given' in G:\jeendon\vendor\yiisoft\yii2\base\View.php:324
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'extract() expec...', 'G:\\jeendon\\vend...', 324, Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\base\View.php(324): extract('<span class="ke...', 0)
+#2 G:\jeendon\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('G:\\jeendon\\view...', NULL)
+#3 G:\jeendon\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('G:\\jeendon\\view...', NULL, Object(app\controllers\TaskHallController))
+#4 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('offer-order-pay', NULL, Object(app\controllers\TaskHallController))
+#5 G:\jeendon\controllers\TaskHallController.php(321): yii\base\Controller->render('offer-order-pay', NULL)
+#6 [internal function]: app\controllers\TaskHallController->actionEngineerOfferNew()
+#7 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('engineer-offer-...', Array)
+#10 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/engin...', Array)
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-06-01 21:29:27 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_POST = [
+    '_csrf' => 'dllRWGM4enJCLCkhKWweHw4.BDlTcw0RPigfLAQKIAU1MQYhUl8xRg=='
+    'task_id' => '172'
+    'offer_money_eng' => '1200'
+    'offer_money' => '1714元（该费用包含平台服务费）'
+    'offer_cycle' => '13'
+    'yzm' => '6418'
+]
+
+$_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '6418'
+        'time' => 1496323761
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2416'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/engineer-offer-new.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/engineer-offer-new.html'
+    'REMOTE_PORT' => '55538'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/hall-detail.html?task_id=172'
+    'CONTENT_LENGTH' => '257'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496323767.2186
+    'REQUEST_TIME' => 1496323767
+]
+2017-06-01 21:43:15 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: task-hall/offer-order-pay-list' in G:\jeendon\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('offer-order-pay...', Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/offer...', Array)
+#2 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-06-01 21:43:15 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8533'
+        'time' => 1496324308
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/offer-order-pay-list.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/offer-order-pay-list.html'
+    'REMOTE_PORT' => '55878'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/eng-order-manage/eng-conducting-order-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496324595.5738
+    'REQUEST_TIME' => 1496324595
+]
+2017-06-01 21:43:16 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: task-hall/offer-order-pay-list' in G:\jeendon\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('offer-order-pay...', Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/offer...', Array)
+#2 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-06-01 21:43:16 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8533'
+        'time' => 1496324308
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/offer-order-pay-list.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/offer-order-pay-list.html'
+    'REMOTE_PORT' => '55878'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/offer-order-pay-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496324596.8971
+    'REQUEST_TIME' => 1496324596
+]
+2017-06-01 21:43:17 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-01 21:43:17 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8533'
+        'time' => 1496324308
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/images/dpai1.png'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/images/dpai1.png'
+    'REMOTE_PORT' => '55881'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/offer-order-pay-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496324596.993
+    'REQUEST_TIME' => 1496324596
+]
+2017-06-01 21:43:17 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-01 21:43:17 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8533'
+        'time' => 1496324308
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/images/dpai1.png'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/images/dpai1.png'
+    'REMOTE_PORT' => '55886'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/offer-order-pay-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496324597.3486
+    'REQUEST_TIME' => 1496324597
+]
+2017-06-01 21:43:19 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: task-hall/offer-order-pay-list' in G:\jeendon\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('offer-order-pay...', Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/offer...', Array)
+#2 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-06-01 21:43:19 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8533'
+        'time' => 1496324308
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/offer-order-pay-list.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/offer-order-pay-list.html'
+    'REMOTE_PORT' => '55878'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/eng-order-manage/eng-conducting-order-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496324599.2035
+    'REQUEST_TIME' => 1496324599
+]
+2017-06-01 21:43:19 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-01 21:43:19 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8533'
+        'time' => 1496324308
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/images/dpai1.png'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/images/dpai1.png'
+    'REMOTE_PORT' => '55889'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/offer-order-pay-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496324599.6034
+    'REQUEST_TIME' => 1496324599
+]
+2017-06-01 21:43:20 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: task-hall/offer-order-pay-list' in G:\jeendon\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('offer-order-pay...', Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/offer...', Array)
+#2 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-06-01 21:43:20 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8533'
+        'time' => 1496324308
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/offer-order-pay-list.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/offer-order-pay-list.html'
+    'REMOTE_PORT' => '55878'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/offer-order-pay-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496324600.5619
+    'REQUEST_TIME' => 1496324600
+]
+2017-06-01 21:55:09 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'offer_status' in 'where clause'' in G:\jeendon\vendor\yiisoft\yii2\db\Command.php:837
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(837): PDOStatement->execute()
+#1 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(389): yii\db\Command->queryScalar()
+#3 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 G:\jeendon\controllers\TaskHallController.php(452): yii\db\Query->count()
+#5 [internal function]: app\controllers\TaskHallController->actionOfferOrderPayList()
+#6 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#9 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#10 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'offer_status' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `dp_offer_order` LEFT JOIN `dp_spare_parts` ON `dp_offer_order`.offerorder_task_id = `dp_spare_parts`.task_id LEFT JOIN `dp_order` ON `dp_order`.order_id = `dp_spare_parts`.task_order_id WHERE (`offerorder_eng_id`='31') AND (`offer_status` IN (102, 101))' in G:\jeendon\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(385): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(389): yii\db\Command->queryScalar()
+#3 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(296): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 G:\jeendon\controllers\TaskHallController.php(452): yii\db\Query->count()
+#5 [internal function]: app\controllers\TaskHallController->actionOfferOrderPayList()
+#6 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#9 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#10 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'offer_status' in 'where clause'
+)
+
+2017-06-01 21:55:09 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8533'
+        'time' => 1496324308
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2316'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/offer-order-pay-list.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/offer-order-pay-list.html'
+    'REMOTE_PORT' => '55948'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/eng-order-manage/eng-conducting-order-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496325309.6239
+    'REQUEST_TIME' => 1496325309
+]
+2017-06-01 21:55:57 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: G:\jeendon\views\task-hall\offer-order-pay-list.php' in G:\jeendon\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('G:\\jeendon\\view...', Array, Object(app\controllers\TaskHallController))
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('offer-order-pay...', Array, Object(app\controllers\TaskHallController))
+#2 G:\jeendon\controllers\TaskHallController.php(464): yii\base\Controller->render('offer-order-pay...', Array)
+#3 [internal function]: app\controllers\TaskHallController->actionOfferOrderPayList()
+#4 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('offer-order-pay...', Array)
+#7 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/offer...', Array)
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-06-01 21:55:57 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8533'
+        'time' => 1496324308
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2316'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/offer-order-pay-list.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/offer-order-pay-list.html'
+    'REMOTE_PORT' => '55952'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/eng-order-manage/eng-conducting-order-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496325357.6668
+    'REQUEST_TIME' => 1496325357
+]
+2017-06-01 22:11:38 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message '缺少参数：offer_id' in G:\jeendon\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('eng-order-biddi...', Array)
+#3 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('eng-order-manag...', Array)
+#4 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#6 {main}
+2017-06-01 22:11:38 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9654'
+        'time' => 1496325930
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2140'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/eng-order-manage/eng-order-bidding-offer-detail.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/eng-order-manage/eng-order-bidding-offer-detail.html'
+    'REMOTE_PORT' => '56492'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/offer-order-pay-list.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496326298.6796
+    'REQUEST_TIME' => 1496326298
+]
+2017-06-01 22:11:40 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message '缺少参数：offer_id' in G:\jeendon\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('eng-order-biddi...', Array)
+#3 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('eng-order-manag...', Array)
+#4 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#6 {main}
+2017-06-01 22:11:40 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9654'
+        'time' => 1496325930
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2140'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/eng-order-manage/eng-order-bidding-offer-detail.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/eng-order-manage/eng-order-bidding-offer-detail.html'
+    'REMOTE_PORT' => '56497'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/eng-order-manage/eng-order-bidding-offer-detail.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496326299.9979
+    'REQUEST_TIME' => 1496326299
+]
+2017-06-01 22:11:40 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-01 22:11:40 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9654'
+        'time' => 1496325930
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2316'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/eng-order-manage/images/dpai1.png'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/eng-order-manage/images/dpai1.png'
+    'REMOTE_PORT' => '56498'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/eng-order-manage/eng-order-bidding-offer-detail.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496326300.1164
+    'REQUEST_TIME' => 1496326300
+]
+2017-06-01 22:11:40 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-01 22:11:40 [127.0.0.1][-][ut4bjochoo2a8ap93rpl4jdbk2][info][application] $_COOKIE = [
+    '__engineer_identity' => '86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"31\",null,2592000]\";}'
+    'PHPSESSID' => 'ut4bjochoo2a8ap93rpl4jdbk2'
+    '_csrf' => '939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4\";}'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '31'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9654'
+        'time' => 1496325930
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2140'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/eng-order-manage/images/dpai1.png'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/eng-order-manage/images/dpai1.png'
+    'REMOTE_PORT' => '56499'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__engineer_identity=86ce5e29522e9554c9b846be81362f41241f14632b2f9dad34b4cf724c9d3947a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2231%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=ut4bjochoo2a8ap93rpl4jdbk2; _csrf=939abeaeb00882df42866a10013d48450fb62ddd57508bb660845cdab6829dbca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224uxyJTdmxgUa0KwcHqNtg2ZwChWy1gK4%22%3B%7D; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/eng-order-manage/eng-order-bidding-offer-detail.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496326300.5828
+    'REQUEST_TIME' => 1496326300
+]

@@ -1,0 +1,16 @@
+<?php return array (
+  'sitename' => '拣豆网',
+  'sitenameabbreviat' => 'PBN',
+  'sitetitle' => '首页拣豆网—模具产业在线定制和价值链资源整合的全方位平台',
+  'siteurl' => 'http://106.14.37.151',
+  'sitehost' => 'www.jeendon.com',
+  'keywords' => '拣豆网-您身边的模具设计专家',
+  'description' => '拣豆网-您身边的模具设计专家',
+  'icon' => '/attachement/image/admin/2016/10/28/5812c972c214a.png',
+  'logo' => '/attachement/image/admin/2016/09/26/57e8c6c6b9adc.jpg',
+  'person' => '李红星',
+  'phone' => '400-801-8535',
+  'qq' => '798161229',
+  'email' => '798161229@qq.com',
+  'address' => '上海市松江区荣乐中路12弄136号',
+);?>

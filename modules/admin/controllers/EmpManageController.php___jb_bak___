@@ -1,0 +1,207 @@
+<?php
+namespace app\modules\admin\controllers;
+
+use app\modules\message\components\SmsHelper;
+use app\common\base\AdminbaseController;
+use app\models\Employer;
+use app\models\Engineer;
+use yii\data\Pagination;
+use yii;
+
+class EmpManageController extends AdminbaseController
+{
+    public $layout='main';//设置默认的布局文件
+    
+    public function actions()
+    {
+        return [
+            'error' => [
+                'mes_class' => 'yii\web\ErrorAction',
+            ]
+        ];
+    }
+    /**
+     * 前台雇主管理列表
+     * @return 跳转到视图文件
+     */
+    public function actionEmpList()
+    {
+        $Employer = new Employer();
+        $Employerquery = $Employer->find();
+        $GET = yii::$app->request->get();
+        $GET['emp_examine_status'] = $GET['emp_examine_status'] != '' ? $GET['emp_examine_status'] : 104;
+        if(!empty($GET['emp_examine_status'])){
+            if($GET['emp_examine_status'] != 104){
+                $Employerquery = $Employerquery
+                    ->where(['emp_examine_status' => $GET['emp_examine_status']]);
+            }
+        }
+        if(!empty($GET['keyword'])){
+            $Employerquery = $Employerquery->where(['or',
+                ['like', 'username', $GET['keyword']],
+                ['like', 'emp_phone', $GET['keyword']],
+                ['like', 'emp_email', $GET['keyword']],
+            ]);
+        };
+        if(!empty($GET['id'])){
+            $Employerquery = $Employerquery->andWhere(['emp_id'  => $GET['id']]);
+        }
+        $pages = new Pagination(['totalCount' => $Employerquery->count(), 'pageSize' => 10]);
+        $emplists = $Employerquery
+            ->offset($pages->offset)
+            ->limit($pages->limit)
+            ->asArray()
+            ->all();
+        return $this->render('employerlist', array(
+            'emplists' => $emplists,
+            'pages' => $pages,
+            'GET' => $GET
+        ));
+    }
+
+    /**
+     * 前台雇主添加，修改
+     * @return 跳转到视图文件
+     */
+    public function actionEmpManageForm()
+    {
+        $Employer = new Employer();
+        if(yii::$app->request->isPost){
+            $post = yii::$app->request->post();
+            if(!empty($post['id'])){
+                $attributes = $post['Employer'];
+                if(in_array($post['Employer']['emp_examine_status'], [102,103])){
+                    $attributes['emp_examine_time'] = time();
+                }
+                $attributes['emp_examine_status'] = $post['Employer']['emp_examine_status'];
+                if($post['Employer']['emp_examine_status'] == 100){
+                    $attributes['emp_examine_type'] = 0;
+                }
+                $condition = 'id=:id';
+                $params = [
+                    ':id' => $post['id']
+                ];
+
+                $count = $Employer->updateAll($attributes, $condition, $params);
+                if($count > 0){
+                    if($post['Employer']['emp_examine_status'] == 103){
+                        $Employerinfo = $Employer->find()
+                            ->where(['id' =>  $post['id']])
+                            ->one();
+                        SmsHelper::$not_mode = 'shortmessage';
+                        $name = $Employerinfo['username'];
+                        $mobile = $Employerinfo['emp_phone'];
+                        $param = "{\"name\":\"$name\"}";
+                        $data = [
+                            'smstype' => 'normal',
+                            'smstemplatecode' => yii::$app->params['smsconf']['smstemplate']['examinesucc']['templatecode'],
+                            'signname' => yii::$app->params['smsconf']['signname'],
+                            'param' => $param,
+                            'phone' => $mobile
+                        ];
+                        SmsHelper::sendNotice($data,  yii::$app->params['smsconf']['smstemplate']['examinesucc']['templateeffect']);
+                    }
+                    return $this->success('雇主信息修改成功');
+                }else{
+                    return $this->render('employerform', [
+                        'Employer' => $Employer,
+                    ]);
+                }
+            }else{
+            }
+        }else{
+            $id = yii::$app->request->get('emp_id');
+            $employerinfo = $Employer->find()
+                ->where(array('id' => $id))
+                ->asArray()
+                ->one();
+            return $this->render('employerform', [
+                'Employer' => $employerinfo,
+            ]);
+        }
+    }
+
+    /**
+     * 雇主删除方法
+     * @type POST
+     * @param Int emp_id：需要删除的雇主菜单id Int type：删除的类型1代表单个删除，2代表批量删除，3代表全部删除
+     * @return Int status：删除的状态 100代表删除成功，101|103|102代表删除失败
+     */
+    public function actionEmpManageDelete()
+    {
+        $type = yii::$app->request->post('type');
+        $Employer = new Employer();
+        switch($type){
+            case 1:
+                $emp_id = yii::$app->request->post('emp_id');
+                $emp_ids = [$emp_id];
+                if(!empty($emp_ids)){
+                    $Employer = $Employer->find()
+                        ->where(['id' => $emp_id])
+                        ->one();
+                    $count = $Employer->delete();
+                    if($count > 0){
+                        $message['status'] = 100;
+                    }else {
+                        $message['status'] = 102;
+                    }
+                }else{
+                    $message['status'] = 101;
+                }
+                break;
+            case 2:
+                $emp_ids = yii::$app->request->post('emp_ids');
+                if(!empty($emp_ids)){
+                    $count = $Employer->deleteAll(['in', 'id', $emp_ids]);
+                    if($count > 0){
+                        $message['status'] = 100;
+                    }else {
+                        $message['status'] = 101;
+                    }
+                }else{
+                    $message['status'] = 102;
+                }
+                break;
+            case 3:
+                $count = $Employer->deleteAll();
+                if($count > 0 ){
+                    $message['status'] = 100;
+                }else{
+                    $message['status'] = 101;
+                }
+                break;
+        }
+        return $this->ajaxReturn(json_encode($message));
+    }
+
+    /**
+     * 验证雇主，工程师信息是否存在
+     */
+    public function actionCheckEmp()
+    {
+        $post = yii::$app->request->post();
+        $Employer = $post['Employer'];
+        if(empty($Employer)){
+            echo 'false';
+        }
+        $Employermodel = new Employer();
+        $Engineermodel = new Engineer();
+        $keys = array_keys($Employer);
+        $count1 = $Employermodel->find()
+            ->where([
+                $keys[0] => $Employer[$keys[0]],
+            ])
+            ->andWhere(['<>','id',$post['empid']])
+            ->count();
+        $count2 = $Engineermodel->find()
+            ->where([
+                str_replace("emp_","eng_",$keys[0]) => $Employer[$keys[0]],
+            ])
+            ->count();
+        if(($count1 + $count2) > 0){
+            echo 'false';
+        }else{
+            echo 'true';
+        }
+    }
+}

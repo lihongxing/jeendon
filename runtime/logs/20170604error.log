@@ -1,0 +1,2771 @@
+2017-06-04 21:04:39 [110.75.248.1][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:637
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:04:39 [110.75.248.1][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060420551020
+    [payment_type] => 1
+    [subject] => O2017060420551020
+    [trade_no] => 2017060421001004600291102309
+    [buyer_email] => 15221382805
+    [gmt_create] => 2017-06-04 21:04:32
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604205958
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:04:39
+    [body] => 订单编号为O2017060420551020报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 0.01
+    [gmt_payment] => 2017-06-04 21:04:39
+    [seller_email] => pay@jeendon.com
+    [price] => 0.01
+    [buyer_id] => 2088702254418605
+    [notify_id] => 38e95e3648a2ce8945701c789f9025dkmq
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => b2d589eff182c5134f9cb52b3b8ed081
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:639
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:04:40 [110.75.248.1][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:641
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:04:40 [110.75.248.1][-][-][error][application] 2017060421001004600291102309
+    in /home/wwwroot/jeendon/models/Pay.php:644
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:04:40 [110.75.248.1][-][-][error][application] O2017060420551020
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:04:40 [110.75.248.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'app\models\Offer has no attribute named "offer_order_pay_money".' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/db/BaseActiveRecord.php:450
+Stack trace:
+#0 /home/wwwroot/jeendon/models/Pay.php(754): yii\db\BaseActiveRecord->setAttribute('offer_order_pay...', 1200)
+#1 /home/wwwroot/jeendon/models/Pay.php(659): app\models\Pay::offerorderpay('alipay', Array, '201706042100100...')
+#2 /home/wwwroot/jeendon/controllers/PayController.php(263): app\models\Pay::offerorderalipaynotify(Array)
+#3 [internal function]: app\controllers\PayController->actionOfferorderAlipayNotify()
+#4 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('offerorder-alip...', Array)
+#7 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('pay/offerorder-...', Array)
+#8 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-06-04 21:04:39 [110.75.248.1][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060420551020'
+    'payment_type' => '1'
+    'subject' => 'O2017060420551020'
+    'trade_no' => '2017060421001004600291102309'
+    'buyer_email' => '15221382805'
+    'gmt_create' => '2017-06-04 21:04:32'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604205958'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:04:39'
+    'body' => '订单编号为O2017060420551020报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '0.01'
+    'gmt_payment' => '2017-06-04 21:04:39'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '0.01'
+    'buyer_id' => '2088702254418605'
+    'notify_id' => '38e95e3648a2ce8945701c789f9025dkmq'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => 'b2d589eff182c5134f9cb52b3b8ed081'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'www.jeendon.com'
+    'CONTENT_LENGTH' => '693'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.248.1'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '26551'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496581479.931
+    'REQUEST_TIME' => 1496581479
+]
+2017-06-04 21:06:31 [110.75.248.243][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:637
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:06:31 [110.75.248.243][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060420551020
+    [payment_type] => 1
+    [subject] => O2017060420551020
+    [trade_no] => 2017060421001004600291072107
+    [buyer_email] => 15221382805
+    [gmt_create] => 2017-06-04 20:57:14
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604205617
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:06:31
+    [body] => 订单编号为O2017060420551020报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 0.01
+    [gmt_payment] => 2017-06-04 20:57:22
+    [seller_email] => pay@jeendon.com
+    [price] => 0.01
+    [buyer_id] => 2088702254418605
+    [notify_id] => 725c44286694be4b8df0bd305d8dd9dkmq
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => 48e3f0f310e96b716bfece966438f6ad
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:639
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:06:31 [110.75.248.243][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:641
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:06:31 [110.75.248.243][-][-][error][application] 2017060421001004600291072107
+    in /home/wwwroot/jeendon/models/Pay.php:644
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:06:31 [110.75.248.243][-][-][error][application] O2017060420551020
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:06:31 [110.75.248.243][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'app\models\Offer has no attribute named "offer_order_pay_money".' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/db/BaseActiveRecord.php:450
+Stack trace:
+#0 /home/wwwroot/jeendon/models/Pay.php(754): yii\db\BaseActiveRecord->setAttribute('offer_order_pay...', 1200)
+#1 /home/wwwroot/jeendon/models/Pay.php(659): app\models\Pay::offerorderpay('alipay', Array, '201706042100100...')
+#2 /home/wwwroot/jeendon/controllers/PayController.php(263): app\models\Pay::offerorderalipaynotify(Array)
+#3 [internal function]: app\controllers\PayController->actionOfferorderAlipayNotify()
+#4 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('offerorder-alip...', Array)
+#7 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('pay/offerorder-...', Array)
+#8 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-06-04 21:06:31 [110.75.248.243][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060420551020'
+    'payment_type' => '1'
+    'subject' => 'O2017060420551020'
+    'trade_no' => '2017060421001004600291072107'
+    'buyer_email' => '15221382805'
+    'gmt_create' => '2017-06-04 20:57:14'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604205617'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:06:31'
+    'body' => '订单编号为O2017060420551020报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '0.01'
+    'gmt_payment' => '2017-06-04 20:57:22'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '0.01'
+    'buyer_id' => '2088702254418605'
+    'notify_id' => '725c44286694be4b8df0bd305d8dd9dkmq'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => '48e3f0f310e96b716bfece966438f6ad'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'www.jeendon.com'
+    'CONTENT_LENGTH' => '693'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.248.243'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '22070'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496581591.853
+    'REQUEST_TIME' => 1496581591
+]
+2017-06-04 21:09:17 [110.75.242.86][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:637
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:09:17 [110.75.242.86][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060420450627
+    [payment_type] => 1
+    [subject] => O2017060420450627
+    [trade_no] => 2017060421001004450229843173
+    [buyer_email] => sunwen521@126.com
+    [gmt_create] => 2017-06-04 20:45:34
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604204515
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:09:17
+    [body] => 订单编号为O2017060420450627报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 0.01
+    [gmt_payment] => 2017-06-04 20:45:42
+    [seller_email] => pay@jeendon.com
+    [price] => 0.01
+    [buyer_id] => 2088002231436450
+    [notify_id] => 3bdcc8e7d4d6b2f15595bf8bcb7dbe7jh2
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => f635efe92c49d1b8f632137f879f4c9e
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:639
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:09:17 [110.75.242.86][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:641
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:09:17 [110.75.242.86][-][-][error][application] 2017060421001004450229843173
+    in /home/wwwroot/jeendon/models/Pay.php:644
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:09:17 [110.75.242.86][-][-][error][application] O2017060420450627
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:09:17 [110.75.242.86][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'app\models\Offer has no attribute named "offer_order_pay_money".' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/db/BaseActiveRecord.php:450
+Stack trace:
+#0 /home/wwwroot/jeendon/models/Pay.php(754): yii\db\BaseActiveRecord->setAttribute('offer_order_pay...', 1)
+#1 /home/wwwroot/jeendon/models/Pay.php(659): app\models\Pay::offerorderpay('alipay', Array, '201706042100100...')
+#2 /home/wwwroot/jeendon/controllers/PayController.php(263): app\models\Pay::offerorderalipaynotify(Array)
+#3 [internal function]: app\controllers\PayController->actionOfferorderAlipayNotify()
+#4 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('offerorder-alip...', Array)
+#7 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('pay/offerorder-...', Array)
+#8 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-06-04 21:09:17 [110.75.242.86][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060420450627'
+    'payment_type' => '1'
+    'subject' => 'O2017060420450627'
+    'trade_no' => '2017060421001004450229843173'
+    'buyer_email' => 'sunwen521@126.com'
+    'gmt_create' => '2017-06-04 20:45:34'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604204515'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:09:17'
+    'body' => '订单编号为O2017060420450627报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '0.01'
+    'gmt_payment' => '2017-06-04 20:45:42'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '0.01'
+    'buyer_id' => '2088002231436450'
+    'notify_id' => '3bdcc8e7d4d6b2f15595bf8bcb7dbe7jh2'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => 'f635efe92c49d1b8f632137f879f4c9e'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'jeendon.com'
+    'CONTENT_LENGTH' => '701'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.242.86'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '30094'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496581757.446
+    'REQUEST_TIME' => 1496581757
+]
+2017-06-04 21:11:13 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:11:13 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r6r7ot81qedsh0j5s4m0r0ltr3'
+    '_csrf' => 'c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"62ZJTmFlr7w8VOEPEqPUItMPkUeipyui\";}'
+    '__user_identity' => '0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a:2:{i:0;s:15:\"__user_identity\";i:1;s:46:\"[1,\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    '__engineer_identity' => '56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"47\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '47'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4249'
+        'time' => 1496580958
+    ]
+    '__user' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.jeendon.com/frontend/css/signin.css'
+    'HTTP_COOKIE' => 'PHPSESSID=r6r7ot81qedsh0j5s4m0r0ltr3; _csrf=c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2262ZJTmFlr7w8VOEPEqPUItMPkUeipyui%22%3B%7D; __user_identity=0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; __engineer_identity=56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2247%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '42.196.27.14'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '57910'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496581873.948
+    'REQUEST_TIME' => 1496581873
+]
+2017-06-04 21:11:52 [110.75.248.228][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:637
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:11:52 [110.75.248.228][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060420551020
+    [payment_type] => 1
+    [subject] => O2017060420551020
+    [trade_no] => 2017060421001004600291107473
+    [buyer_email] => 15221382805
+    [gmt_create] => 2017-06-04 21:11:42
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604211138
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:11:52
+    [body] => 订单编号为O2017060420551020报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 0.01
+    [gmt_payment] => 2017-06-04 21:11:52
+    [seller_email] => pay@jeendon.com
+    [price] => 0.01
+    [buyer_id] => 2088702254418605
+    [notify_id] => 8c842c54d2d685e5f657e3f99fe9ccckmq
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => e4c0edbb84f7223d2c1d63ece4dae861
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:639
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:11:52 [110.75.248.228][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:641
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:11:52 [110.75.248.228][-][-][error][application] 2017060421001004600291107473
+    in /home/wwwroot/jeendon/models/Pay.php:644
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:11:52 [110.75.248.228][-][-][error][application] O2017060420551020
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:11:52 [110.75.248.228][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑invoicealipay Notify End↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:774
+    in /home/wwwroot/jeendon/models/Pay.php:659
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:11:52 [110.75.248.228][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060420551020'
+    'payment_type' => '1'
+    'subject' => 'O2017060420551020'
+    'trade_no' => '2017060421001004600291107473'
+    'buyer_email' => '15221382805'
+    'gmt_create' => '2017-06-04 21:11:42'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604211138'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:11:52'
+    'body' => '订单编号为O2017060420551020报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '0.01'
+    'gmt_payment' => '2017-06-04 21:11:52'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '0.01'
+    'buyer_id' => '2088702254418605'
+    'notify_id' => '8c842c54d2d685e5f657e3f99fe9ccckmq'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => 'e4c0edbb84f7223d2c1d63ece4dae861'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'www.jeendon.com'
+    'CONTENT_LENGTH' => '693'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.248.228'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '15294'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496581912.516
+    'REQUEST_TIME' => 1496581912
+]
+2017-06-04 21:12:28 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:12:28 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r6r7ot81qedsh0j5s4m0r0ltr3'
+    '_csrf' => 'c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"62ZJTmFlr7w8VOEPEqPUItMPkUeipyui\";}'
+    '__user_identity' => '0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a:2:{i:0;s:15:\"__user_identity\";i:1;s:46:\"[1,\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    '__engineer_identity' => '56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"47\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '47'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4249'
+        'time' => 1496580958
+    ]
+    '__user' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.jeendon.com/frontend/css/signin.css'
+    'HTTP_COOKIE' => 'PHPSESSID=r6r7ot81qedsh0j5s4m0r0ltr3; _csrf=c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2262ZJTmFlr7w8VOEPEqPUItMPkUeipyui%22%3B%7D; __user_identity=0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; __engineer_identity=56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2247%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '42.196.27.14'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '57983'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496581948.67
+    'REQUEST_TIME' => 1496581948
+]
+2017-06-04 21:13:05 [110.75.248.221][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:637
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:05 [110.75.248.221][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060420551020
+    [payment_type] => 1
+    [subject] => O2017060420551020
+    [trade_no] => 2017060421001004600291072107
+    [buyer_email] => 15221382805
+    [gmt_create] => 2017-06-04 20:57:14
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604205617
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:13:05
+    [body] => 订单编号为O2017060420551020报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 0.01
+    [gmt_payment] => 2017-06-04 20:57:22
+    [seller_email] => pay@jeendon.com
+    [price] => 0.01
+    [buyer_id] => 2088702254418605
+    [notify_id] => 725c44286694be4b8df0bd305d8dd9dkmq
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => c5ac512a57ba29e02dd9ebbe7cf2a335
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:639
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:05 [110.75.248.221][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:641
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:05 [110.75.248.221][-][-][error][application] 2017060421001004600291072107
+    in /home/wwwroot/jeendon/models/Pay.php:644
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:05 [110.75.248.221][-][-][error][application] O2017060420551020
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:05 [110.75.248.221][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑invoicealipay Notify End↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:774
+    in /home/wwwroot/jeendon/models/Pay.php:659
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:05 [110.75.248.221][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060420551020'
+    'payment_type' => '1'
+    'subject' => 'O2017060420551020'
+    'trade_no' => '2017060421001004600291072107'
+    'buyer_email' => '15221382805'
+    'gmt_create' => '2017-06-04 20:57:14'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604205617'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:13:05'
+    'body' => '订单编号为O2017060420551020报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '0.01'
+    'gmt_payment' => '2017-06-04 20:57:22'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '0.01'
+    'buyer_id' => '2088702254418605'
+    'notify_id' => '725c44286694be4b8df0bd305d8dd9dkmq'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => 'c5ac512a57ba29e02dd9ebbe7cf2a335'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'www.jeendon.com'
+    'CONTENT_LENGTH' => '693'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.248.221'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '17661'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496581985.696
+    'REQUEST_TIME' => 1496581985
+]
+2017-06-04 21:13:18 [110.75.248.202][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:637
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:18 [110.75.248.202][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060420551020
+    [payment_type] => 1
+    [subject] => O2017060420551020
+    [trade_no] => 2017060421001004600291102309
+    [buyer_email] => 15221382805
+    [gmt_create] => 2017-06-04 21:04:32
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604205958
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:13:18
+    [body] => 订单编号为O2017060420551020报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 0.01
+    [gmt_payment] => 2017-06-04 21:04:39
+    [seller_email] => pay@jeendon.com
+    [price] => 0.01
+    [buyer_id] => 2088702254418605
+    [notify_id] => 38e95e3648a2ce8945701c789f9025dkmq
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => 5bcce018c2875570e0105bfd8d6af68d
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:639
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:18 [110.75.248.202][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:641
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:18 [110.75.248.202][-][-][error][application] 2017060421001004600291102309
+    in /home/wwwroot/jeendon/models/Pay.php:644
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:18 [110.75.248.202][-][-][error][application] O2017060420551020
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:18 [110.75.248.202][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑invoicealipay Notify End↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:774
+    in /home/wwwroot/jeendon/models/Pay.php:659
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:13:18 [110.75.248.202][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060420551020'
+    'payment_type' => '1'
+    'subject' => 'O2017060420551020'
+    'trade_no' => '2017060421001004600291102309'
+    'buyer_email' => '15221382805'
+    'gmt_create' => '2017-06-04 21:04:32'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604205958'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:13:18'
+    'body' => '订单编号为O2017060420551020报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '0.01'
+    'gmt_payment' => '2017-06-04 21:04:39'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '0.01'
+    'buyer_id' => '2088702254418605'
+    'notify_id' => '38e95e3648a2ce8945701c789f9025dkmq'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => '5bcce018c2875570e0105bfd8d6af68d'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'www.jeendon.com'
+    'CONTENT_LENGTH' => '693'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.248.202'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '22844'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496581998.263
+    'REQUEST_TIME' => 1496581998
+]
+2017-06-04 21:16:29 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:16:29 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r6r7ot81qedsh0j5s4m0r0ltr3'
+    '_csrf' => 'c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"62ZJTmFlr7w8VOEPEqPUItMPkUeipyui\";}'
+    '__user_identity' => '0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a:2:{i:0;s:15:\"__user_identity\";i:1;s:46:\"[1,\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    '__engineer_identity' => '56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"47\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '47'
+    'sid.captcha.ylans.cn' => [
+        'code' => '5882'
+        'time' => 1496582178
+    ]
+    '__user' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.jeendon.com/frontend/css/signin.css'
+    'HTTP_COOKIE' => 'PHPSESSID=r6r7ot81qedsh0j5s4m0r0ltr3; _csrf=c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2262ZJTmFlr7w8VOEPEqPUItMPkUeipyui%22%3B%7D; __user_identity=0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; __engineer_identity=56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2247%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '42.196.27.14'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '62290'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496582189.529
+    'REQUEST_TIME' => 1496582189
+]
+2017-06-04 21:16:31 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:16:31 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r6r7ot81qedsh0j5s4m0r0ltr3'
+    '_csrf' => 'c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"62ZJTmFlr7w8VOEPEqPUItMPkUeipyui\";}'
+    '__user_identity' => '0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a:2:{i:0;s:15:\"__user_identity\";i:1;s:46:\"[1,\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    '__engineer_identity' => '56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"47\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '47'
+    'sid.captcha.ylans.cn' => [
+        'code' => '5882'
+        'time' => 1496582178
+    ]
+    '__user' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.jeendon.com/frontend/css/signin.css'
+    'HTTP_COOKIE' => 'PHPSESSID=r6r7ot81qedsh0j5s4m0r0ltr3; _csrf=c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2262ZJTmFlr7w8VOEPEqPUItMPkUeipyui%22%3B%7D; __user_identity=0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; __engineer_identity=56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2247%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '42.196.27.14'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '62292'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496582191.091
+    'REQUEST_TIME' => 1496582191
+]
+2017-06-04 21:21:18 [110.75.248.247][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:637
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:21:18 [110.75.248.247][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060421144438
+    [payment_type] => 1
+    [subject] => O2017060421144438
+    [trade_no] => 2017060421001004600291125690
+    [buyer_email] => 15221382805
+    [gmt_create] => 2017-06-04 21:21:11
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604211955
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:21:18
+    [body] => 订单编号为O2017060421144438报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 0.01
+    [gmt_payment] => 2017-06-04 21:21:17
+    [seller_email] => pay@jeendon.com
+    [price] => 0.01
+    [buyer_id] => 2088702254418605
+    [notify_id] => 8a677c2cbd1bf82ea413c78e14520e6kmq
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => b627949fe8a506cc38033bdadcde8fd0
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:639
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:21:18 [110.75.248.247][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:641
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:21:18 [110.75.248.247][-][-][error][application] 2017060421001004600291125690
+    in /home/wwwroot/jeendon/models/Pay.php:644
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:21:18 [110.75.248.247][-][-][error][application] O2017060421144438
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:21:18 [110.75.248.247][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑invoicealipay Notify End↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:774
+    in /home/wwwroot/jeendon/models/Pay.php:659
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:21:18 [110.75.248.247][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060421144438'
+    'payment_type' => '1'
+    'subject' => 'O2017060421144438'
+    'trade_no' => '2017060421001004600291125690'
+    'buyer_email' => '15221382805'
+    'gmt_create' => '2017-06-04 21:21:11'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604211955'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:21:18'
+    'body' => '订单编号为O2017060421144438报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '0.01'
+    'gmt_payment' => '2017-06-04 21:21:17'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '0.01'
+    'buyer_id' => '2088702254418605'
+    'notify_id' => '8a677c2cbd1bf82ea413c78e14520e6kmq'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => 'b627949fe8a506cc38033bdadcde8fd0'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'www.jeendon.com'
+    'CONTENT_LENGTH' => '693'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.248.247'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '48899'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496582478.131
+    'REQUEST_TIME' => 1496582478
+]
+2017-06-04 21:30:36 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:30:36 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r6r7ot81qedsh0j5s4m0r0ltr3'
+    '_csrf' => 'c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"62ZJTmFlr7w8VOEPEqPUItMPkUeipyui\";}'
+    '__user_identity' => '0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a:2:{i:0;s:15:\"__user_identity\";i:1;s:46:\"[1,\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    '__engineer_identity' => '56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"47\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '47'
+    'sid.captcha.ylans.cn' => [
+        'code' => '7247'
+        'time' => 1496583016
+    ]
+    '__user' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.jeendon.com/frontend/css/signin.css'
+    'HTTP_COOKIE' => 'PHPSESSID=r6r7ot81qedsh0j5s4m0r0ltr3; _csrf=c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2262ZJTmFlr7w8VOEPEqPUItMPkUeipyui%22%3B%7D; __user_identity=0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; __engineer_identity=56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2247%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '42.196.27.14'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '54792'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496583036.655
+    'REQUEST_TIME' => 1496583036
+]
+2017-06-04 21:31:46 [110.75.242.168][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:637
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:31:46 [110.75.242.168][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060420450627
+    [payment_type] => 1
+    [subject] => O2017060420450627
+    [trade_no] => 2017060421001004450229897369
+    [buyer_email] => sunwen521@126.com
+    [gmt_create] => 2017-06-04 21:31:33
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604213112
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:31:46
+    [body] => 订单编号为O2017060420450627报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 0.01
+    [gmt_payment] => 2017-06-04 21:31:46
+    [seller_email] => pay@jeendon.com
+    [price] => 0.01
+    [buyer_id] => 2088002231436450
+    [notify_id] => b18af3ac4166d733bd2b34553370b23jh2
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => 230069e4112a39a9d38e17c78f3f91a1
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:639
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:31:46 [110.75.242.168][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:641
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:31:46 [110.75.242.168][-][-][error][application] 2017060421001004450229897369
+    in /home/wwwroot/jeendon/models/Pay.php:644
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:31:46 [110.75.242.168][-][-][error][application] O2017060420450627
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:31:46 [110.75.242.168][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑invoicealipay Notify End↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:774
+    in /home/wwwroot/jeendon/models/Pay.php:659
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:31:46 [110.75.242.168][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060420450627'
+    'payment_type' => '1'
+    'subject' => 'O2017060420450627'
+    'trade_no' => '2017060421001004450229897369'
+    'buyer_email' => 'sunwen521@126.com'
+    'gmt_create' => '2017-06-04 21:31:33'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604213112'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:31:46'
+    'body' => '订单编号为O2017060420450627报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '0.01'
+    'gmt_payment' => '2017-06-04 21:31:46'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '0.01'
+    'buyer_id' => '2088002231436450'
+    'notify_id' => 'b18af3ac4166d733bd2b34553370b23jh2'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => '230069e4112a39a9d38e17c78f3f91a1'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'jeendon.com'
+    'CONTENT_LENGTH' => '701'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.242.168'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '14247'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496583106.61
+    'REQUEST_TIME' => 1496583106
+]
+2017-06-04 21:31:57 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:31:57 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r6r7ot81qedsh0j5s4m0r0ltr3'
+    '_csrf' => 'c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"62ZJTmFlr7w8VOEPEqPUItMPkUeipyui\";}'
+    '__user_identity' => '0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a:2:{i:0;s:15:\"__user_identity\";i:1;s:46:\"[1,\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    '__engineer_identity' => '56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"47\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '47'
+    'sid.captcha.ylans.cn' => [
+        'code' => '3484'
+        'time' => 1496583109
+    ]
+    '__user' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.jeendon.com/frontend/css/signin.css'
+    'HTTP_COOKIE' => 'PHPSESSID=r6r7ot81qedsh0j5s4m0r0ltr3; _csrf=c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2262ZJTmFlr7w8VOEPEqPUItMPkUeipyui%22%3B%7D; __user_identity=0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; __engineer_identity=56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2247%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '42.196.27.14'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '54847'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496583117.555
+    'REQUEST_TIME' => 1496583117
+]
+2017-06-04 21:32:15 [218.78.197.124][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑invoicealipay Notify End↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:774
+    in /home/wwwroot/jeendon/models/Pay.php:804
+    in /home/wwwroot/jeendon/controllers/PayController.php:249
+2017-06-04 21:32:15 [218.78.197.124][-][-][info][application] $_POST = [
+    'price' => '1'
+    'PayType' => 'balance'
+    '_csrf' => 'dXdnVVdMM1kkQQh4ICEKLxYBMAQCJnsyDD4zYw0OdS8TKDMmBHxhEA=='
+    'offer_order_id' => '28'
+    'charge' => '确认支付'
+]
+
+$_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'v54i53viuf1gcj5hefu6g5jqe4'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8722'
+        'time' => 1496580869
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '594'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://jeendon.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryWAzV7t2jN6wgSNh6'
+    'HTTP_REFERER' => 'http://jeendon.com/task-hall/offer-order-pay.html?offer_order_id=28'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=v54i53viuf1gcj5hefu6g5jqe4; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '54055'
+    'REDIRECT_URL' => '/pay/eng-offer-pay.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/eng-offer-pay.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496583135.859
+    'REQUEST_TIME' => 1496583135
+]
+2017-06-04 21:33:58 [218.78.197.124][-][ct6lg11j152r5p6rn7g8bp5d25][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:33:58 [218.78.197.124][-][ct6lg11j152r5p6rn7g8bp5d25][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'ct6lg11j152r5p6rn7g8bp5d25'
+    '__employer_identity' => '0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"87\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__employer' => '87'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=ct6lg11j152r5p6rn7g8bp5d25; __employer_identity=0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2287%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '54126'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496583238.511
+    'REQUEST_TIME' => 1496583238
+]
+2017-06-04 21:40:04 [218.78.197.124][-][8n1k0vvv7t1kd1092rcgo2l161][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:40:04 [218.78.197.124][-][8n1k0vvv7t1kd1092rcgo2l161][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => '8n1k0vvv7t1kd1092rcgo2l161'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=8n1k0vvv7t1kd1092rcgo2l161; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '54511'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496583604.261
+    'REQUEST_TIME' => 1496583604
+]
+2017-06-04 21:45:48 [218.78.197.124][-][-][error][application] {"service":"create_direct_pay_by_user","partner":"2088521112706878","_input_charset":"utf-8","notify_url":"http:\/\/jeendon.com\/pay\/alipay-notify.html","account_name":"\u4e0a\u6d77\u7b80\u8c46\u7f51\u7edc\u79d1\u6280\u6709\u9650\u516c\u53f8","sign":"","out_trade_no":"20170604214548","subject":"D2017060420430882","payment_type":1,"total_fee":"10","seller_id":"2088521112706878","body":"D2017060420430882-01\u94f8\u9020\u6a21 - \u7b49\u4efb\u52a1","extra_common_param":"D2017060420430882","return_url":"http:\/\/jeendon.com\/pay\/alipay-return.html"}
+    in /home/wwwroot/jeendon/models/Pay.php:65
+    in /home/wwwroot/jeendon/controllers/PayController.php:57
+2017-06-04 21:45:48 [218.78.197.124][-][-][info][application] $_POST = [
+    'price' => '10'
+    'PayType' => 'alipay'
+    '_csrf' => 'aDNETVg4QTg5BStgL1V4TgtFExwNUglTEXoQewJ6B04ObBA.CwgTcQ=='
+    'order_id' => '310'
+    'charge' => '确认充值'
+]
+
+$_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => '5s818d63e25be17kdgbb10ik16'
+    '__employer_identity' => '0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"87\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__employer' => '87'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '589'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://jeendon.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryQFuTTSarLBLVgufo'
+    'HTTP_REFERER' => 'http://jeendon.com/emp-order-manage/emp-order-pay.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=5s818d63e25be17kdgbb10ik16; __employer_identity=0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2287%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '54906'
+    'REDIRECT_URL' => '/pay/emp-pay.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/emp-pay.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496583948.261
+    'REQUEST_TIME' => 1496583948
+]
+2017-06-04 21:46:06 [110.75.242.160][-][-][error][application] 1111111111111111111111111111111
+    in /home/wwwroot/jeendon/controllers/PayController.php:71
+2017-06-04 21:46:06 [110.75.242.160][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑alipay Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:97
+    in /home/wwwroot/jeendon/controllers/PayController.php:75
+2017-06-04 21:46:06 [110.75.242.160][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => D2017060420430882
+    [payment_type] => 1
+    [subject] => D2017060420430882
+    [trade_no] => 2017060421001004450229902885
+    [buyer_email] => sunwen521@126.com
+    [gmt_create] => 2017-06-04 21:45:59
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604214548
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:46:06
+    [body] => D2017060420430882-01铸造模 - 等任务
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 10.00
+    [gmt_payment] => 2017-06-04 21:46:06
+    [seller_email] => pay@jeendon.com
+    [price] => 10.00
+    [buyer_id] => 2088002231436450
+    [notify_id] => 44262008b52f6a2c9c62ba95c19c103jh2
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => 66cec907434dd6d23c4ccb46e14303bd
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:99
+    in /home/wwwroot/jeendon/controllers/PayController.php:75
+2017-06-04 21:46:07 [110.75.242.160][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:101
+    in /home/wwwroot/jeendon/controllers/PayController.php:75
+2017-06-04 21:46:07 [110.75.242.160][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑alipay Notify End↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:321
+    in /home/wwwroot/jeendon/models/Pay.php:117
+    in /home/wwwroot/jeendon/controllers/PayController.php:75
+2017-06-04 21:46:07 [110.75.242.160][-][-][error][application] [{"name":"\u5de5\u7a0b\u5e08\u6d4b\u8bd5\u7528","renwuhao":"D2017060420430882-01","eng_phone":"13661601804"}]
+    in /home/wwwroot/jeendon/models/Pay.php:350
+    in /home/wwwroot/jeendon/models/Pay.php:117
+    in /home/wwwroot/jeendon/controllers/PayController.php:75
+2017-06-04 21:46:06 [110.75.242.160][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'D2017060420430882'
+    'payment_type' => '1'
+    'subject' => 'D2017060420430882'
+    'trade_no' => '2017060421001004450229902885'
+    'buyer_email' => 'sunwen521@126.com'
+    'gmt_create' => '2017-06-04 21:45:59'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604214548'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:46:06'
+    'body' => 'D2017060420430882-01铸造模 - 等任务'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '10.00'
+    'gmt_payment' => '2017-06-04 21:46:06'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '10.00'
+    'buyer_id' => '2088002231436450'
+    'notify_id' => '44262008b52f6a2c9c62ba95c19c103jh2'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => '66cec907434dd6d23c4ccb46e14303bd'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'jeendon.com'
+    'CONTENT_LENGTH' => '691'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.242.160'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '27221'
+    'REDIRECT_URL' => '/pay/alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496583966.741
+    'REQUEST_TIME' => 1496583966
+]
+2017-06-04 21:50:27 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:50:27 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r6r7ot81qedsh0j5s4m0r0ltr3'
+    '_csrf' => 'c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"62ZJTmFlr7w8VOEPEqPUItMPkUeipyui\";}'
+    '__user_identity' => '0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a:2:{i:0;s:15:\"__user_identity\";i:1;s:46:\"[1,\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    '__engineer_identity' => '56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"47\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '47'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9244'
+        'time' => 1496584042
+    ]
+    '__user' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.jeendon.com/frontend/css/signin.css'
+    'HTTP_COOKIE' => 'PHPSESSID=r6r7ot81qedsh0j5s4m0r0ltr3; _csrf=c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2262ZJTmFlr7w8VOEPEqPUItMPkUeipyui%22%3B%7D; __user_identity=0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; __engineer_identity=56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2247%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '42.196.27.14'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '59099'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496584227.71
+    'REQUEST_TIME' => 1496584227
+]
+2017-06-04 21:50:57 [218.78.197.124][-][fh20n0g45kklcupkvh3t7av1u0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:50:57 [218.78.197.124][-][fh20n0g45kklcupkvh3t7av1u0][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'fh20n0g45kklcupkvh3t7av1u0'
+    '__employer_identity' => '0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"87\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__employer' => '87'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/emp-demand-release/demand-describe.html?order_type=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=fh20n0g45kklcupkvh3t7av1u0; __employer_identity=0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2287%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '55102'
+    'REDIRECT_URL' => '/emp-demand-release/images/dpai1.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/emp-demand-release/images/dpai1.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496584257.917
+    'REQUEST_TIME' => 1496584257
+]
+2017-06-04 21:54:17 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:54:17 [42.196.27.14][-][r6r7ot81qedsh0j5s4m0r0ltr3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'r6r7ot81qedsh0j5s4m0r0ltr3'
+    '_csrf' => 'c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"62ZJTmFlr7w8VOEPEqPUItMPkUeipyui\";}'
+    '__user_identity' => '0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a:2:{i:0;s:15:\"__user_identity\";i:1;s:46:\"[1,\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    '__engineer_identity' => '56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"47\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '47'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9244'
+        'time' => 1496584042
+    ]
+    '__user' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.jeendon.com/frontend/css/signin.css'
+    'HTTP_COOKIE' => 'PHPSESSID=r6r7ot81qedsh0j5s4m0r0ltr3; _csrf=c08e6f42e28be1ad79db06d076658cedbeccd8f190845982aa0d9de496b32dd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2262ZJTmFlr7w8VOEPEqPUItMPkUeipyui%22%3B%7D; __user_identity=0e0bed69ea52b7196774f1a8c101667c8954008900457c0ccc00640ac8a3fce9a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; __engineer_identity=56c2cc745fc21cd09b10c1705a705f1887b7eefe8cf5394a2d163ee624767faea%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2247%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '42.196.27.14'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '59228'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496584457.264
+    'REQUEST_TIME' => 1496584457
+]
+2017-06-04 21:54:59 [218.78.197.124][-][acs182ijpiiunk8nhn5apl61d1][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:54:59 [218.78.197.124][-][acs182ijpiiunk8nhn5apl61d1][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'acs182ijpiiunk8nhn5apl61d1'
+    '__employer_identity' => '0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"87\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__employer' => '87'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=acs182ijpiiunk8nhn5apl61d1; __employer_identity=0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2287%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '55230'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496584499.079
+    'REQUEST_TIME' => 1496584499
+]
+2017-06-04 21:56:03 [110.75.242.30][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:638
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:56:03 [110.75.242.30][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060421554211
+    [payment_type] => 1
+    [subject] => O2017060421554211
+    [trade_no] => 2017060421001004450229967885
+    [buyer_email] => sunwen521@126.com
+    [gmt_create] => 2017-06-04 21:55:57
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604215544
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 21:56:03
+    [body] => 订单编号为O2017060421554211报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 2.00
+    [gmt_payment] => 2017-06-04 21:56:03
+    [seller_email] => pay@jeendon.com
+    [price] => 2.00
+    [buyer_id] => 2088002231436450
+    [notify_id] => cf6d1d4ac67e1148a299b010367035bjh2
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => 3ce61bf8e3962134d8261829b32400ae
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:640
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:56:03 [110.75.242.30][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:642
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:56:03 [110.75.242.30][-][-][error][application] 2017060421001004450229967885
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:56:03 [110.75.242.30][-][-][error][application] O2017060421554211
+    in /home/wwwroot/jeendon/models/Pay.php:646
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:56:03 [110.75.242.30][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑invoicealipay Notify End↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:775
+    in /home/wwwroot/jeendon/models/Pay.php:660
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 21:56:03 [110.75.242.30][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060421554211'
+    'payment_type' => '1'
+    'subject' => 'O2017060421554211'
+    'trade_no' => '2017060421001004450229967885'
+    'buyer_email' => 'sunwen521@126.com'
+    'gmt_create' => '2017-06-04 21:55:57'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604215544'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 21:56:03'
+    'body' => '订单编号为O2017060421554211报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '2.00'
+    'gmt_payment' => '2017-06-04 21:56:03'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '2.00'
+    'buyer_id' => '2088002231436450'
+    'notify_id' => 'cf6d1d4ac67e1148a299b010367035bjh2'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => '3ce61bf8e3962134d8261829b32400ae'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'jeendon.com'
+    'CONTENT_LENGTH' => '701'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.242.30'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '19101'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496584563.715
+    'REQUEST_TIME' => 1496584563
+]
+2017-06-04 21:57:49 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:57:49 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'ppvrn542b0np2i8stv1ifvdfn0'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9848'
+        'time' => 1496584527
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=ppvrn542b0np2i8stv1ifvdfn0; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '55429'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496584669.029
+    'REQUEST_TIME' => 1496584669
+]
+2017-06-04 21:57:50 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:57:50 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'ppvrn542b0np2i8stv1ifvdfn0'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9848'
+        'time' => 1496584527
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=ppvrn542b0np2i8stv1ifvdfn0; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '55432'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496584670.54
+    'REQUEST_TIME' => 1496584670
+]
+2017-06-04 21:58:30 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:58:30 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'ppvrn542b0np2i8stv1ifvdfn0'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9848'
+        'time' => 1496584527
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=ppvrn542b0np2i8stv1ifvdfn0; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '1793'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496584710.011
+    'REQUEST_TIME' => 1496584710
+]
+2017-06-04 21:58:31 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 21:58:31 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'ppvrn542b0np2i8stv1ifvdfn0'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+    'sid.captcha.ylans.cn' => [
+        'code' => '9848'
+        'time' => 1496584527
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=ppvrn542b0np2i8stv1ifvdfn0; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '55483'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496584711.537
+    'REQUEST_TIME' => 1496584711
+]
+2017-06-04 22:03:56 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 22:03:56 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'ppvrn542b0np2i8stv1ifvdfn0'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4296'
+        'time' => 1496585035
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/eng-account-manage/eng-info.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=ppvrn542b0np2i8stv1ifvdfn0; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '55775'
+    'REDIRECT_URL' => '/Public/Home/img/Htsd.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Public/Home/img/Htsd.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496585036.593
+    'REQUEST_TIME' => 1496585036
+]
+2017-06-04 22:04:11 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 22:04:11 [218.78.197.124][-][ppvrn542b0np2i8stv1ifvdfn0][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'ppvrn542b0np2i8stv1ifvdfn0'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+    'sid.captcha.ylans.cn' => [
+        'code' => '3836'
+        'time' => 1496585050
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/eng-account-manage/eng-info.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=ppvrn542b0np2i8stv1ifvdfn0; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '55845'
+    'REDIRECT_URL' => '/Public/Home/img/Htsd.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Public/Home/img/Htsd.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496585051.462
+    'REQUEST_TIME' => 1496585051
+]
+2017-06-04 22:09:04 [110.75.242.100][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑offerorder Notify Start↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:638
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 22:09:04 [110.75.242.100][-][-][error][application] Array
+(
+    [discount] => 0.00
+    [extra_common_param] => O2017060420450627
+    [payment_type] => 1
+    [subject] => O2017060420450627
+    [trade_no] => 2017060421001004450229843173
+    [buyer_email] => sunwen521@126.com
+    [gmt_create] => 2017-06-04 20:45:34
+    [notify_type] => trade_status_sync
+    [quantity] => 1
+    [out_trade_no] => 20170604204515
+    [seller_id] => 2088521112706878
+    [notify_time] => 2017-06-04 22:09:03
+    [body] => 订单编号为O2017060420450627报价！
+    [trade_status] => TRADE_SUCCESS
+    [is_total_fee_adjust] => N
+    [total_fee] => 0.01
+    [gmt_payment] => 2017-06-04 20:45:42
+    [seller_email] => pay@jeendon.com
+    [price] => 0.01
+    [buyer_id] => 2088002231436450
+    [notify_id] => 3bdcc8e7d4d6b2f15595bf8bcb7dbe7jh2
+    [use_coupon] => N
+    [sign_type] => MD5
+    [sign] => a583ca4855ac50edd2380b351307817c
+)
+
+    in /home/wwwroot/jeendon/models/Pay.php:640
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 22:09:14 [110.75.242.100][-][-][error][application] verify Notify success
+    in /home/wwwroot/jeendon/models/Pay.php:642
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 22:09:14 [110.75.242.100][-][-][error][application] 2017060421001004450229843173
+    in /home/wwwroot/jeendon/models/Pay.php:645
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 22:09:14 [110.75.242.100][-][-][error][application] O2017060420450627
+    in /home/wwwroot/jeendon/models/Pay.php:646
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 22:09:14 [110.75.242.100][-][-][error][application] ↑↑↑↑↑↑↑↑↑↑invoicealipay Notify End↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    in /home/wwwroot/jeendon/models/Pay.php:775
+    in /home/wwwroot/jeendon/models/Pay.php:660
+    in /home/wwwroot/jeendon/controllers/PayController.php:263
+2017-06-04 22:09:04 [110.75.242.100][-][-][info][application] $_POST = [
+    'discount' => '0.00'
+    'extra_common_param' => 'O2017060420450627'
+    'payment_type' => '1'
+    'subject' => 'O2017060420450627'
+    'trade_no' => '2017060421001004450229843173'
+    'buyer_email' => 'sunwen521@126.com'
+    'gmt_create' => '2017-06-04 20:45:34'
+    'notify_type' => 'trade_status_sync'
+    'quantity' => '1'
+    'out_trade_no' => '20170604204515'
+    'seller_id' => '2088521112706878'
+    'notify_time' => '2017-06-04 22:09:03'
+    'body' => '订单编号为O2017060420450627报价！'
+    'trade_status' => 'TRADE_SUCCESS'
+    'is_total_fee_adjust' => 'N'
+    'total_fee' => '0.01'
+    'gmt_payment' => '2017-06-04 20:45:42'
+    'seller_email' => 'pay@jeendon.com'
+    'price' => '0.01'
+    'buyer_id' => '2088002231436450'
+    'notify_id' => '3bdcc8e7d4d6b2f15595bf8bcb7dbe7jh2'
+    'use_coupon' => 'N'
+    'sign_type' => 'MD5'
+    'sign' => 'a583ca4855ac50edd2380b351307817c'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=utf-8'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0'
+    'HTTP_HOST' => 'jeendon.com'
+    'CONTENT_LENGTH' => '701'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '110.75.242.100'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '55020'
+    'REDIRECT_URL' => '/pay/offerorder-alipay-notify.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pay/offerorder-alipay-notify.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496585344.272
+    'REQUEST_TIME' => 1496585344
+]
+2017-06-04 22:17:17 [218.78.197.124][-][2j1reeu9i9ht7al5rjc8cok572][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 22:17:17 [218.78.197.124][-][2j1reeu9i9ht7al5rjc8cok572][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => '2j1reeu9i9ht7al5rjc8cok572'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+    'sid.captcha.ylans.cn' => [
+        'code' => '3483'
+        'time' => 1496585834
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=2j1reeu9i9ht7al5rjc8cok572; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '56491'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496585837.546
+    'REQUEST_TIME' => 1496585837
+]
+2017-06-04 22:17:18 [218.78.197.124][-][2j1reeu9i9ht7al5rjc8cok572][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 22:17:18 [218.78.197.124][-][2j1reeu9i9ht7al5rjc8cok572][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => '2j1reeu9i9ht7al5rjc8cok572'
+    '__engineer_identity' => '2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"52\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '52'
+    'sid.captcha.ylans.cn' => [
+        'code' => '3483'
+        'time' => 1496585834
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=2j1reeu9i9ht7al5rjc8cok572; __engineer_identity=2d2235d753da6f60f44d9c334d57632c8cda2ad978ba564d4cdde04c840e13fda%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2252%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '56493'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496585838.479
+    'REQUEST_TIME' => 1496585838
+]
+2017-06-04 22:24:03 [218.78.197.124][-][arb8fo64gfjdb73cs9k435fn72][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Request.php:190
+Stack trace:
+#0 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#1 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-04 22:24:03 [218.78.197.124][-][arb8fo64gfjdb73cs9k435fn72][info][application] $_COOKIE = [
+    '_csrf' => '9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI\";}'
+    'PHPSESSID' => 'arb8fo64gfjdb73cs9k435fn72'
+    '__employer_identity' => '0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"87\",null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__employer' => '87'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://jeendon.com/frontend/css/signin.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9adb6e00c2c7073df61419e4a956e31dec29ae32bb842b2aa7d4dea3365c15c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q6o-wm9vcvWQUjHkyIT6ZBFvf_TsS0RI%22%3B%7D; PHPSESSID=arb8fo64gfjdb73cs9k435fn72; __employer_identity=0c4f97e47c508414105956b8c3ff22a65585b21c4059183e31c03824167ebfa8a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2287%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '218.78.197.124'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '56706'
+    'REDIRECT_URL' => '/frontend/images/Haop.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/images/Haop.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496586243.408
+    'REQUEST_TIME' => 1496586243
+]
+2017-06-04 22:50:33 [220.181.108.119][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /home/wwwroot/jeendon/models/Task.php:178
+Stack trace:
+#0 /home/wwwroot/jeendon/models/Task.php(178): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/home/wwwroot/j...', 178, Array)
+#1 /home/wwwroot/jeendon/controllers/TaskHallController.php(132): app\models\Task->TaskConversionChinese(false, 2, 1)
+#2 [internal function]: app\controllers\TaskHallController->actionHallDetail('312')
+#3 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('hall-detail', Array)
+#6 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('task-hall/hall-...', Array)
+#7 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#9 {main}
+2017-06-04 22:50:33 [220.181.108.119][-][-][info][application] $_GET = [
+    'task_id' => '312'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'jeendon.com'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh-tw'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_ACCEPT' => '*/*'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '220.181.108.119'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '27914'
+    'REDIRECT_URL' => '/task-hall/hall-detail.html'
+    'REDIRECT_QUERY_STRING' => 'task_id=312'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'task_id=312'
+    'REQUEST_URI' => '/task-hall/hall-detail.html?task_id=312'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496587833.134
+    'REQUEST_TIME' => 1496587833
+]
+2017-06-04 23:13:50 [123.126.113.83][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /home/wwwroot/jeendon/models/Task.php:178
+Stack trace:
+#0 /home/wwwroot/jeendon/models/Task.php(178): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/home/wwwroot/j...', 178, Array)
+#1 /home/wwwroot/jeendon/controllers/TaskHallController.php(132): app\models\Task->TaskConversionChinese(false, 2, 1)
+#2 [internal function]: app\controllers\TaskHallController->actionHallDetail('162')
+#3 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('hall-detail', Array)
+#6 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('task-hall/hall-...', Array)
+#7 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#9 {main}
+2017-06-04 23:13:50 [123.126.113.83][-][-][info][application] $_GET = [
+    'task_id' => '162'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_USER_AGENT' => 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '123.126.113.83'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '46323'
+    'REDIRECT_URL' => '/task-hall/hall-detail.html'
+    'REDIRECT_QUERY_STRING' => 'task_id=162'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'task_id=162'
+    'REQUEST_URI' => '/task-hall/hall-detail.html?task_id=162'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496589230.187
+    'REQUEST_TIME' => 1496589230
+]
+2017-06-04 23:14:00 [123.126.113.83][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /home/wwwroot/jeendon/models/Task.php:178
+Stack trace:
+#0 /home/wwwroot/jeendon/models/Task.php(178): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/home/wwwroot/j...', 178, Array)
+#1 /home/wwwroot/jeendon/controllers/TaskHallController.php(132): app\models\Task->TaskConversionChinese(false, 2, 1)
+#2 [internal function]: app\controllers\TaskHallController->actionHallDetail('155')
+#3 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('hall-detail', Array)
+#6 /home/wwwroot/jeendon/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('task-hall/hall-...', Array)
+#7 /home/wwwroot/jeendon/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/wwwroot/jeendon/wwwroot/index.php(12): yii\base\Application->run()
+#9 {main}
+2017-06-04 23:14:00 [123.126.113.83][-][-][info][application] $_GET = [
+    'task_id' => '155'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'HTTP_AUTHORIZATION' => ''
+    'HTTP_HOST' => 'www.jeendon.com'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_USER_AGENT' => 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)'
+    'HTTP_CONNECTION' => 'close'
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => '<address>Apache Server at www.jeendon.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'www.jeendon.com'
+    'SERVER_ADDR' => '106.14.37.151'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '123.126.113.83'
+    'DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/wwwroot/jeendon/wwwroot'
+    'SERVER_ADMIN' => 'webmaster@example.com'
+    'SCRIPT_FILENAME' => '/home/wwwroot/jeendon/wwwroot/index.php'
+    'REMOTE_PORT' => '49785'
+    'REDIRECT_URL' => '/task-hall/hall-detail.html'
+    'REDIRECT_QUERY_STRING' => 'task_id=155'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'task_id=155'
+    'REQUEST_URI' => '/task-hall/hall-detail.html?task_id=155'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1496589240.185
+    'REQUEST_TIME' => 1496589240
+]

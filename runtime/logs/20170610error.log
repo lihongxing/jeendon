@@ -1,0 +1,380 @@
+2017-06-10 12:07:26 [127.0.0.1][1][-][error][error] {"status":false,"message":"function create sql error"}
+    in G:\jeendon\modules\admin\controllers\BdbbackuprestoreController.php:278
+2017-06-10 12:07:25 [127.0.0.1][1][-][info][application] $_POST = [
+    'tables' => 'all'
+    'db_name' => '全部备份'
+    '_csrf' => 'ei00LVh6Q1YjbHVZbkk6GzV6f24MDyBvDkJTVxULcAIZalgVGTAbFA=='
+]
+
+$_COOKIE = [
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    '_csrf' => '56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YAAt63yMOWKCTuc9togzMq3TcGl8AJXB\";}'
+    'PHPSESSID' => 'e4eriehlmtvkp5gn2nap73tbg1'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    'ref' => null
+    '__flash' => []
+    'sid.captcha.ylans.cn' => [
+        'code' => '8145'
+        'time' => 1497017153
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2280'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/admin/bdbbackuprestore/form.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/admin/bdbbackuprestore/form.html'
+    'REMOTE_PORT' => '58380'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '__engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; _csrf=56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YAAt63yMOWKCTuc9togzMq3TcGl8AJXB%22%3B%7D; PHPSESSID=e4eriehlmtvkp5gn2nap73tbg1; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/admin/bdbbackuprestore/form.html'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_CSRF_TOKEN' => 'ei00LVh6Q1YjbHVZbkk6GzV6f24MDyBvDkJTVxULcAIZalgVGTAbFA=='
+    'HTTP_ORIGIN' => 'http://127.0.0.9'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '122'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497067645.9525
+    'REQUEST_TIME' => 1497067645
+]
+2017-06-10 12:08:00 [127.0.0.1][1][-][error][error] {"status":false,"message":"function create sql error"}
+    in G:\jeendon\modules\admin\controllers\BdbbackuprestoreController.php:278
+2017-06-10 12:08:00 [127.0.0.1][1][-][info][application] $_POST = [
+    'tables' => 'all'
+    'db_name' => '全部备份'
+    '_csrf' => 'QXJfVWZTUUMYMx4hUGAoDg4lFBYyJjJ6NR04LysiYhciNTNtJxkJAQ=='
+]
+
+$_COOKIE = [
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    '_csrf' => '56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YAAt63yMOWKCTuc9togzMq3TcGl8AJXB\";}'
+    'PHPSESSID' => 'e4eriehlmtvkp5gn2nap73tbg1'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    'ref' => null
+    '__flash' => []
+    'sid.captcha.ylans.cn' => [
+        'code' => '8145'
+        'time' => 1497017153
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2280'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/admin/bdbbackuprestore/form.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/admin/bdbbackuprestore/form.html'
+    'REMOTE_PORT' => '58456'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '__engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; _csrf=56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YAAt63yMOWKCTuc9togzMq3TcGl8AJXB%22%3B%7D; PHPSESSID=e4eriehlmtvkp5gn2nap73tbg1; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/admin/bdbbackuprestore/form.html'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_CSRF_TOKEN' => 'QXJfVWZTUUMYMx4hUGAoDg4lFBYyJjJ6NR04LysiYhciNTNtJxkJAQ=='
+    'HTTP_ORIGIN' => 'http://127.0.0.9'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '122'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497067680.1854
+    'REQUEST_TIME' => 1497067680
+]
+2017-06-10 12:08:47 [127.0.0.1][1][-][error][error] {"status":false,"message":"function create sql error"}
+    in G:\jeendon\modules\admin\controllers\BdbbackuprestoreController.php:278
+2017-06-10 12:08:47 [127.0.0.1][1][-][info][application] $_POST = [
+    'tables' => 'all'
+    'db_name' => '全部备份'
+    '_csrf' => 'amN6THdENUIzIjs4QXdMDyU0MQ8jMVZ7HgwdNjo1BhYJJBZ0Ng5tAA=='
+]
+
+$_COOKIE = [
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    '_csrf' => '56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YAAt63yMOWKCTuc9togzMq3TcGl8AJXB\";}'
+    'PHPSESSID' => 'e4eriehlmtvkp5gn2nap73tbg1'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    'ref' => null
+    '__flash' => []
+    'sid.captcha.ylans.cn' => [
+        'code' => '8145'
+        'time' => 1497017153
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2280'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/admin/bdbbackuprestore/form.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/admin/bdbbackuprestore/form.html'
+    'REMOTE_PORT' => '58569'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '__engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; _csrf=56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YAAt63yMOWKCTuc9togzMq3TcGl8AJXB%22%3B%7D; PHPSESSID=e4eriehlmtvkp5gn2nap73tbg1; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/admin/bdbbackuprestore/form.html'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_CSRF_TOKEN' => 'amN6THdENUIzIjs4QXdMDyU0MQ8jMVZ7HgwdNjo1BhYJJBZ0Ng5tAA=='
+    'HTTP_ORIGIN' => 'http://127.0.0.9'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '122'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497067727.6406
+    'REQUEST_TIME' => 1497067727
+]
+2017-06-10 12:11:49 [127.0.0.1][1][-][error][error] {"status":false,"message":"function create sql error"}
+    in G:\jeendon\modules\admin\controllers\BdbbackuprestoreController.php:278
+2017-06-10 12:11:49 [127.0.0.1][1][-][info][application] $_POST = [
+    'tables' => 'all'
+    'db_name' => '全部备份'
+    '_csrf' => 'OU5WZjlySVJgDxcSD0EwH3YZHSVtByprTSExHHQDegZaCTpeeDgREA=='
+]
+
+$_COOKIE = [
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    '_csrf' => '56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YAAt63yMOWKCTuc9togzMq3TcGl8AJXB\";}'
+    'PHPSESSID' => 'e4eriehlmtvkp5gn2nap73tbg1'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    'ref' => null
+    '__flash' => []
+    'sid.captcha.ylans.cn' => [
+        'code' => '8145'
+        'time' => 1497017153
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2280'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/admin/bdbbackuprestore/form.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/admin/bdbbackuprestore/form.html'
+    'REMOTE_PORT' => '59082'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '__engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; _csrf=56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YAAt63yMOWKCTuc9togzMq3TcGl8AJXB%22%3B%7D; PHPSESSID=e4eriehlmtvkp5gn2nap73tbg1; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/admin/bdbbackuprestore/form.html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'OU5WZjlySVJgDxcSD0EwH3YZHSVtByprTSExHHQDegZaCTpeeDgREA=='
+    'HTTP_ORIGIN' => 'http://127.0.0.9'
+    'CONTENT_LENGTH' => '122'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497067909.1612
+    'REQUEST_TIME' => 1497067909
+]
+2017-06-10 12:15:28 [127.0.0.1][1][-][error][error] {"status":false,"message":"function create sql error"}
+    in G:\jeendon\modules\admin\controllers\BdbbackuprestoreController.php:278
+2017-06-10 12:15:27 [127.0.0.1][1][-][info][application] $_POST = [
+    'tables' => 'all'
+    'db_name' => '全部备份'
+    '_csrf' => 'LlhoalhvVUd3GSkeblwsCmEPIykMGjZ.WjcPEBUeZhNNHwRSGSUNBQ=='
+]
+
+$_COOKIE = [
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    '_csrf' => '56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YAAt63yMOWKCTuc9togzMq3TcGl8AJXB\";}'
+    'PHPSESSID' => 'e4eriehlmtvkp5gn2nap73tbg1'
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    'ref' => null
+    '__flash' => []
+    'sid.captcha.ylans.cn' => [
+        'code' => '8145'
+        'time' => 1497017153
+    ]
+    '__user' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2124'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/admin/bdbbackuprestore/form.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/admin/bdbbackuprestore/form.html'
+    'REMOTE_PORT' => '59516'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '__engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; _csrf=56ad96c2b9d194edbbf0a95692d91210d3eb75ef5951a1e5948fa6e0298f0ca9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YAAt63yMOWKCTuc9togzMq3TcGl8AJXB%22%3B%7D; PHPSESSID=e4eriehlmtvkp5gn2nap73tbg1; __user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/admin/bdbbackuprestore/form.html'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_X_CSRF_TOKEN' => 'LlhoalhvVUd3GSkeblwsCmEPIykMGjZ.WjcPEBUeZhNNHwRSGSUNBQ=='
+    'HTTP_ORIGIN' => 'http://127.0.0.9'
+    'CONTENT_LENGTH' => '122'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497068127.7415
+    'REQUEST_TIME' => 1497068127
+]

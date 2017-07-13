@@ -1,0 +1,515 @@
+2017-07-05 20:51:19 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: G:\jeendon\views\task-hall\hall-detail-new.php' in G:\jeendon\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('G:\\jeendon\\view...', Array, Object(app\controllers\TaskHallController))
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('hall-detail-new', Array, Object(app\controllers\TaskHallController))
+#2 G:\jeendon\controllers\TaskHallController.php(205): yii\base\Controller->render('hall-detail-new', Array)
+#3 [internal function]: app\controllers\TaskHallController->actionHallDetail('211')
+#4 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('hall-detail', Array)
+#7 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/hall-...', Array)
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-07-05 20:51:19 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][info][application] $_GET = [
+    'task_id' => '211'
+]
+
+$_COOKIE = [
+    '_csrf' => '6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JZnISR4083JJpN4OwE4jooOIlivd32-G\";}'
+    'PHPSESSID' => 'i15ti3qd1f331th0qavb276qh0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '45'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8514'
+        'time' => 1499177509
+    ]
+    '__user' => '1'
+    '__employer' => '85'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2872'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/hall-detail.html?task_id=211'
+    'QUERY_STRING' => 'task_id=211'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/hall-detail.html'
+    'REDIRECT_QUERY_STRING' => 'task_id=211'
+    'REMOTE_PORT' => '62600'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf=6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JZnISR4083JJpN4OwE4jooOIlivd32-G%22%3B%7D; PHPSESSID=i15ti3qd1f331th0qavb276qh0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/hall-index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499259079.4127
+    'REQUEST_TIME' => 1499259079
+]
+2017-07-05 20:52:16 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Operator 'LIKE' requires two operands.' in G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php:1206
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(924): yii\db\QueryBuilder->buildLikeCondition('LIKE', Array, '<span class="st...')
+#1 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(743): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(96): yii\db\QueryBuilder->buildWhere(Array, '<span class="st...')
+#3 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(122): yii\db\QueryBuilder->build(Object(yii\db\Query))
+#4 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Query->createCommand(NULL)
+#5 G:\jeendon\widgets\SimilarNeedsWidget.php(28): yii\db\Query->all()
+#6 G:\jeendon\vendor\yiisoft\yii2\base\Widget.php(98): app\widgets\SimilarNeedsWidget->run()
+#7 G:\jeendon\views\task-hall\hall-detail-new.php(311): yii\base\Widget::widget(Array)
+#8 G:\jeendon\vendor\yiisoft\yii2\base\View.php(325): require('G:\\jeendon\\view...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('G:\\jeendon\\view...', Array)
+#10 G:\jeendon\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('G:\\jeendon\\view...', Array, Object(app\controllers\TaskHallController))
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('hall-detail-new', Array, Object(app\controllers\TaskHallController))
+#12 G:\jeendon\controllers\TaskHallController.php(205): yii\base\Controller->render('hall-detail-new', Array)
+#13 [internal function]: app\controllers\TaskHallController->actionHallDetail('211')
+#14 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('hall-detail', Array)
+#17 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/hall-...', Array)
+#18 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-07-05 20:52:16 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][info][application] $_GET = [
+    'task_id' => '211'
+]
+
+$_COOKIE = [
+    '_csrf' => '6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JZnISR4083JJpN4OwE4jooOIlivd32-G\";}'
+    'PHPSESSID' => 'i15ti3qd1f331th0qavb276qh0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '45'
+    'sid.captcha.ylans.cn' => [
+        'code' => '8514'
+        'time' => 1499177509
+    ]
+    '__user' => '1'
+    '__employer' => '85'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2872'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/hall-detail.html?task_id=211'
+    'QUERY_STRING' => 'task_id=211'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/hall-detail.html'
+    'REDIRECT_QUERY_STRING' => 'task_id=211'
+    'REMOTE_PORT' => '62698'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf=6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JZnISR4083JJpN4OwE4jooOIlivd32-G%22%3B%7D; PHPSESSID=i15ti3qd1f331th0qavb276qh0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/hall-index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499259136.1242
+    'REQUEST_TIME' => 1499259136
+]
+2017-07-05 20:56:18 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-07-05 20:56:18 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][info][application] $_COOKIE = [
+    '_csrf' => '6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JZnISR4083JJpN4OwE4jooOIlivd32-G\";}'
+    'PHPSESSID' => 'i15ti3qd1f331th0qavb276qh0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '45'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4181'
+        'time' => 1499259165
+    ]
+    '__user' => '1'
+    '__employer' => '85'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2872'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/frontend/images/Ubtrc.png'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/frontend/images/Ubtrc.png'
+    'REMOTE_PORT' => '63234'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf=6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JZnISR4083JJpN4OwE4jooOIlivd32-G%22%3B%7D; PHPSESSID=i15ti3qd1f331th0qavb276qh0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/frontend/css/selecttype.css'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499259378.1067
+    'REQUEST_TIME' => 1499259378
+]
+2017-07-05 20:58:26 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Operator 'LIKE' requires two operands.' in G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php:1206
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(924): yii\db\QueryBuilder->buildLikeCondition('LIKE', Array, '<span class="st...')
+#1 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(743): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(96): yii\db\QueryBuilder->buildWhere(Array, '<span class="st...')
+#3 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(122): yii\db\QueryBuilder->build(Object(yii\db\Query))
+#4 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Query->createCommand(NULL)
+#5 G:\jeendon\widgets\SimilarNeedsWidget.php(29): yii\db\Query->all()
+#6 G:\jeendon\vendor\yiisoft\yii2\base\Widget.php(98): app\widgets\SimilarNeedsWidget->run()
+#7 G:\jeendon\views\task-hall\hall-detail-new.php(311): yii\base\Widget::widget(Array)
+#8 G:\jeendon\vendor\yiisoft\yii2\base\View.php(325): require('G:\\jeendon\\view...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('G:\\jeendon\\view...', Array)
+#10 G:\jeendon\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('G:\\jeendon\\view...', Array, Object(app\controllers\TaskHallController))
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('hall-detail-new', Array, Object(app\controllers\TaskHallController))
+#12 G:\jeendon\controllers\TaskHallController.php(205): yii\base\Controller->render('hall-detail-new', Array)
+#13 [internal function]: app\controllers\TaskHallController->actionHallDetail('211')
+#14 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('hall-detail', Array)
+#17 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/hall-...', Array)
+#18 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-07-05 20:58:25 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][info][application] $_GET = [
+    'task_id' => '211'
+]
+
+$_COOKIE = [
+    '_csrf' => '6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JZnISR4083JJpN4OwE4jooOIlivd32-G\";}'
+    'PHPSESSID' => 'i15ti3qd1f331th0qavb276qh0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '45'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4181'
+        'time' => 1499259165
+    ]
+    '__user' => '1'
+    '__employer' => '85'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '3052'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/hall-detail.html?task_id=211'
+    'QUERY_STRING' => 'task_id=211'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/hall-detail.html'
+    'REDIRECT_QUERY_STRING' => 'task_id=211'
+    'REMOTE_PORT' => '63471'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf=6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JZnISR4083JJpN4OwE4jooOIlivd32-G%22%3B%7D; PHPSESSID=i15ti3qd1f331th0qavb276qh0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/hall-index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499259505.8569
+    'REQUEST_TIME' => 1499259505
+]
+2017-07-05 20:59:21 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Operator 'LIKE' requires two operands.' in G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php:1206
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(924): yii\db\QueryBuilder->buildLikeCondition('LIKE', Array, '<span class="st...')
+#1 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(743): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(96): yii\db\QueryBuilder->buildWhere(Array, '<span class="st...')
+#3 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(122): yii\db\QueryBuilder->build(Object(yii\db\Query))
+#4 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Query->createCommand(NULL)
+#5 G:\jeendon\widgets\SimilarNeedsWidget.php(30): yii\db\Query->all()
+#6 G:\jeendon\vendor\yiisoft\yii2\base\Widget.php(98): app\widgets\SimilarNeedsWidget->run()
+#7 G:\jeendon\views\task-hall\hall-detail-new.php(311): yii\base\Widget::widget(Array)
+#8 G:\jeendon\vendor\yiisoft\yii2\base\View.php(325): require('G:\\jeendon\\view...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('G:\\jeendon\\view...', Array)
+#10 G:\jeendon\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('G:\\jeendon\\view...', Array, Object(app\controllers\TaskHallController))
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('hall-detail-new', Array, Object(app\controllers\TaskHallController))
+#12 G:\jeendon\controllers\TaskHallController.php(205): yii\base\Controller->render('hall-detail-new', Array)
+#13 [internal function]: app\controllers\TaskHallController->actionHallDetail('211')
+#14 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('hall-detail', Array)
+#17 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/hall-...', Array)
+#18 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-07-05 20:59:21 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][info][application] $_GET = [
+    'task_id' => '211'
+]
+
+$_COOKIE = [
+    '_csrf' => '6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JZnISR4083JJpN4OwE4jooOIlivd32-G\";}'
+    'PHPSESSID' => 'i15ti3qd1f331th0qavb276qh0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '45'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4181'
+        'time' => 1499259165
+    ]
+    '__user' => '1'
+    '__employer' => '85'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '3052'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/hall-detail.html?task_id=211'
+    'QUERY_STRING' => 'task_id=211'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/hall-detail.html'
+    'REDIRECT_QUERY_STRING' => 'task_id=211'
+    'REMOTE_PORT' => '63571'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf=6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JZnISR4083JJpN4OwE4jooOIlivd32-G%22%3B%7D; PHPSESSID=i15ti3qd1f331th0qavb276qh0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/hall-index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499259561.5471
+    'REQUEST_TIME' => 1499259561
+]
+2017-07-05 21:00:38 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Operator 'LIKE' requires two operands.' in G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php:1206
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(924): yii\db\QueryBuilder->buildLikeCondition('LIKE', Array, '<span class="st...')
+#1 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(743): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(96): yii\db\QueryBuilder->buildWhere(Array, '<span class="st...')
+#3 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(122): yii\db\QueryBuilder->build(Object(yii\db\Query))
+#4 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Query->createCommand(NULL)
+#5 G:\jeendon\widgets\SimilarNeedsWidget.php(33): yii\db\Query->all()
+#6 G:\jeendon\vendor\yiisoft\yii2\base\Widget.php(98): app\widgets\SimilarNeedsWidget->run()
+#7 G:\jeendon\views\task-hall\hall-detail-new.php(311): yii\base\Widget::widget(Array)
+#8 G:\jeendon\vendor\yiisoft\yii2\base\View.php(325): require('G:\\jeendon\\view...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('G:\\jeendon\\view...', Array)
+#10 G:\jeendon\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('G:\\jeendon\\view...', Array, Object(app\controllers\TaskHallController))
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('hall-detail-new', Array, Object(app\controllers\TaskHallController))
+#12 G:\jeendon\controllers\TaskHallController.php(205): yii\base\Controller->render('hall-detail-new', Array)
+#13 [internal function]: app\controllers\TaskHallController->actionHallDetail('211')
+#14 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('hall-detail', Array)
+#17 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task-hall/hall-...', Array)
+#18 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-07-05 21:00:38 [127.0.0.1][-][i15ti3qd1f331th0qavb276qh0][info][application] $_GET = [
+    'task_id' => '211'
+]
+
+$_COOKIE = [
+    '_csrf' => '6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JZnISR4083JJpN4OwE4jooOIlivd32-G\";}'
+    'PHPSESSID' => 'i15ti3qd1f331th0qavb276qh0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__engineer' => '45'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4181'
+        'time' => 1499259165
+    ]
+    '__user' => '1'
+    '__employer' => '85'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '3052'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/task-hall/hall-detail.html?task_id=211'
+    'QUERY_STRING' => 'task_id=211'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/task-hall/hall-detail.html'
+    'REDIRECT_QUERY_STRING' => 'task_id=211'
+    'REMOTE_PORT' => '63710'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf=6b5d675b64155c330917e5016e17966ee377b84c734d48ed4f9619fdae942040a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JZnISR4083JJpN4OwE4jooOIlivd32-G%22%3B%7D; PHPSESSID=i15ti3qd1f331th0qavb276qh0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/task-hall/hall-index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499259638.5007
+    'REQUEST_TIME' => 1499259638
+]

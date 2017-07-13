@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="a44c8628-1e9e-4448-8ad2-03644f3dc824" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-twitter" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-yellow/tip-yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Hubrw_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-violet" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Lubrw_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/eng-my-wallet/eng-my-wallet-withdrawal11.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-skyblue/tip-skyblue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-twitter/tip-twitter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layouts/header1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/eng-order-manage/eng-order-conducting-offer-detail-new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-darkgray/tip-darkgray.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/eng-my-wallet/eng-my-wallet-withdrawal123.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Hubrw_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/jquery.poshytip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/water.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-detail-new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-violet/tip-violet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/jquery-1.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-darkgray/tip-darkgray.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-yellowsimple/tip-yellowsimple_arrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-yellow" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Hubrw_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-skyblue/tip-skyblue_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/qqlink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/emp-order-manage/emp-paying-order-detail-new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-yellowsimple/tip-yellowsimple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/tgvcc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-detail-new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Hubrw_6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/admin/views/voucher-center/voucher-center-engineer-list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/pay/offerorderstatus.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-twitter/tip-twitter_arrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/successful-case/successful-case-detail1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/jquery.poshytip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-yellow/tip-yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Lubrw_4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/message/components/SmsHelper1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-yellowsimple" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-skyblue/tip-skyblue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-yellow/tip-yellow_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-green/tip-green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-green/tip-green_arrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/task-hall/hall-detail-new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/task-hall/offer-order-pay-list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-skyblue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-violet/tip-violet_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Lubrw_6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Lubrw_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/eng-account-manage/confirm-eng.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Speed_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/admin/views/voucher-center/voucher-center-engineer-form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-violet/tip-violet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/task-hall/offer-order-pay.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/emp-demand-release/demand-describe-new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Hubrw_4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/admin/views/order-manage/task_cancellation_requestdetail22.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/js/relreq-new.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/js/jquery-1.7.2-备份.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/bg08.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Hubrw_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/OpinionExaminationFile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Lubrw_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/Lubrw_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/eng-order-manage/eng-order-bidding-offer-detail-new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-green" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-darkgray/tip-darkgray_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/admin/views/order-manage/offer-order-list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/images/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/api/tooltip/src/tip-darkgray" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/frontend/js/search.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/designer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins/dahong" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/umeditor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/need/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/mabody.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/share.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/skin/default" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/accman.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/handsome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/VoucherCenter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/mabody.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/skin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins/default" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/Validform_v5.3.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/cropbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/area.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/t_head.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/need" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/relreq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins/molv/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/layer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins/dahong/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/relreq.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css/signin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/signin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/designer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/Supplier.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/laydate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/accman.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins/molv/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/skin/layer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/relreq-1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins/default/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/jquery-1.7.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/mold_j.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/scroll.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins/default/laydate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins/molv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/manager.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/laydate/skins/dahong/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21/skin/default/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/js-2016-12-21" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/frontend/css-2016-12-21/demo.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/cache/my/myappe6f281bec37b97f79dd1e0fe6c5d9183.bin" afterPath="$PROJECT_DIR$/runtime/cache/my/myappe6f281bec37b97f79dd1e0fe6c5d9183.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/EmpOrderManageController.php" afterPath="$PROJECT_DIR$/controllers/EmpOrderManageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-home/eng-home-detail.php" afterPath="$PROJECT_DIR$/views/eng-home/eng-home-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-home/eng-home-evaluate-record.php" afterPath="$PROJECT_DIR$/views/eng-home/eng-home-evaluate-record.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-my-wallet/eng-my-wallet-index.php" afterPath="$PROJECT_DIR$/views/eng-my-wallet/eng-my-wallet-index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/eng-work-manage/eng-work-manage-form.php" afterPath="$PROJECT_DIR$/modules/admin/views/eng-work-manage/eng-work-manage-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/EmpDemandReleaseController.php" afterPath="$PROJECT_DIR$/controllers/EmpDemandReleaseController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/emp-order-manage/emp-successing-order-detail.php" afterPath="$PROJECT_DIR$/views/emp-order-manage/emp-successing-order-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/site/welcome.php" afterPath="$PROJECT_DIR$/modules/admin/views/site/welcome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/cache/my/myapp88b964751922dfed3c100d233252d6ae.bin" afterPath="$PROJECT_DIR$/runtime/cache/my/myapp88b964751922dfed3c100d233252d6ae.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-detail.php" afterPath="$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widgets/UcenterleftWidget.php" afterPath="$PROJECT_DIR$/widgets/UcenterleftWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/register.php" afterPath="$PROJECT_DIR$/views/site/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/SuccessfulCase.php" afterPath="$PROJECT_DIR$/models/SuccessfulCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/EmpManageController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/EmpManageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/AppliyPaymentMoney.php" afterPath="$PROJECT_DIR$/models/AppliyPaymentMoney.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/SiteController.php" afterPath="$PROJECT_DIR$/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-home/eng-home-index-search.php" afterPath="$PROJECT_DIR$/views/eng-home/eng-home-index-search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/frontend/js/jquery-1.7.2.min.js" afterPath="$PROJECT_DIR$/wwwroot/frontend/js/jquery-1.7.2.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/frontend/js/relreq.js" afterPath="$PROJECT_DIR$/wwwroot/frontend/js/relreq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/EmpMyWalletController.php" afterPath="$PROJECT_DIR$/controllers/EmpMyWalletController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/emp-demand-release/demand-select-type.php" afterPath="$PROJECT_DIR$/views/emp-demand-release/demand-select-type.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/crontab/views/crontab-manage/crontab-manage-run-list.php" afterPath="$PROJECT_DIR$/modules/crontab/views/crontab-manage/crontab-manage-run-list1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/task-hall/similar-needs.php" afterPath="$PROJECT_DIR$/views/task-hall/similar-needs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/OrderManageController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/OrderManageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/cache/my/myappef9116cc6cb2c1d2ca7d4116d86048e5.bin" afterPath="$PROJECT_DIR$/runtime/cache/my/myappef9116cc6cb2c1d2ca7d4116d86048e5.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/emp-debitrefund/emp-debitrefund-list.php" afterPath="$PROJECT_DIR$/modules/admin/views/emp-debitrefund/emp-debitrefund-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/configure.php" afterPath="$PROJECT_DIR$/config/configure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Offer.php" afterPath="$PROJECT_DIR$/models/Offer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-home/eng-home-manage-work-detail.php" afterPath="$PROJECT_DIR$/views/eng-home/eng-home-manage-work-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-home/eng-home-transaction-record.php" afterPath="$PROJECT_DIR$/views/eng-home/eng-home-transaction-record.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/TaskCancellationRequest.php" afterPath="$PROJECT_DIR$/models/TaskCancellationRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/core/GlobalHelper.php" afterPath="$PROJECT_DIR$/common/core/GlobalHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Sqlbackstore.php" afterPath="$PROJECT_DIR$/models/Sqlbackstore.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/TaskHallController.php" afterPath="$PROJECT_DIR$/controllers/TaskHallController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/emp-my-wallet/emp-my-financial-flow-list.php" afterPath="$PROJECT_DIR$/views/emp-my-wallet/emp-my-financial-flow-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/UploadController.php" afterPath="$PROJECT_DIR$/controllers/UploadController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-order-manage/eng-order-bidding-offer-detail.php" afterPath="$PROJECT_DIR$/views/eng-order-manage/eng-order-bidding-offer-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-home-manage/eng-home-manage-work-detail.php" afterPath="$PROJECT_DIR$/views/eng-home-manage/eng-home-manage-work-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Task.php" afterPath="$PROJECT_DIR$/models/Task.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/messages/zh/admin.php" afterPath="$PROJECT_DIR$/modules/admin/messages/zh/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/debug/index.data" afterPath="$PROJECT_DIR$/runtime/debug/index.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/message/components/SmsHelper.php" afterPath="$PROJECT_DIR$/modules/message/components/SmsHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/task-hall/hall-index.php" afterPath="$PROJECT_DIR$/views/task-hall/hall-index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-detail.php" afterPath="$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/cache/my/myapp963454f612a8b5fb4a63ba1e97f028a1.bin" afterPath="$PROJECT_DIR$/runtime/cache/my/myapp963454f612a8b5fb4a63ba1e97f028a1.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/message/views/message/index.php" afterPath="$PROJECT_DIR$/modules/message/views/message/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Pay.php" afterPath="$PROJECT_DIR$/models/Pay.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/smsconf.php" afterPath="$PROJECT_DIR$/config/smsconf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/EngHomeController.php" afterPath="$PROJECT_DIR$/controllers/EngHomeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/index.php" afterPath="$PROJECT_DIR$/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/order-manage/task-detail.php" afterPath="$PROJECT_DIR$/modules/admin/views/order-manage/task-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/SuccessfulCaseController.php" afterPath="$PROJECT_DIR$/controllers/SuccessfulCaseController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/frontend/css/mabody.css" afterPath="$PROJECT_DIR$/wwwroot/frontend/css/mabody.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/core/UploadHelper.php" afterPath="$PROJECT_DIR$/common/core/UploadHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands/PlanningTaskMessageController.php" afterPath="$PROJECT_DIR$/commands/PlanningTaskMessageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/SuccessfulCaseManageController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/SuccessfulCaseManageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/uleft.php" afterPath="$PROJECT_DIR$/views/layouts/uleft.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/base/FrontendbaseController.php" afterPath="$PROJECT_DIR$/common/base/FrontendbaseController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/core/ConstantHelper.php" afterPath="$PROJECT_DIR$/common/core/ConstantHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/EngAccountManageController.php" afterPath="$PROJECT_DIR$/controllers/EngAccountManageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/EmpAccountManageController.php" afterPath="$PROJECT_DIR$/controllers/EmpAccountManageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-order-manage/apply-fee.php" afterPath="$PROJECT_DIR$/views/eng-order-manage/apply-fee.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/rulescenterleft.php" afterPath="$PROJECT_DIR$/views/layouts/rulescenterleft.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/footer.php" afterPath="$PROJECT_DIR$/views/site/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widgets/SimilarNeedsWidget.php" afterPath="$PROJECT_DIR$/widgets/SimilarNeedsWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/order-manage/task_cancellation_requestdetail.php" afterPath="$PROJECT_DIR$/modules/admin/views/order-manage/task_cancellation_requestdetail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/PayController.php" afterPath="$PROJECT_DIR$/controllers/PayController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/emp-debitrefund/emp-debitrefund-requestdetail.php" afterPath="$PROJECT_DIR$/modules/admin/views/emp-debitrefund/emp-debitrefund-requestdetail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-order-manage/eng-order-successing-offer-detail.php" afterPath="$PROJECT_DIR$/views/eng-order-manage/eng-order-successing-offer-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-order-manage/eng-order-conducting-offer-detail.php" afterPath="$PROJECT_DIR$/views/eng-order-manage/eng-order-conducting-offer-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Order.php" afterPath="$PROJECT_DIR$/models/Order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-account-manage/eng-info.php" afterPath="$PROJECT_DIR$/views/eng-account-manage/eng-info.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/admin/views/voucher-center/voucher-center-form.php" afterPath="$PROJECT_DIR$/modules/admin/views/voucher-center/voucher-center-employer-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/successful-case/successful-case-detail.php" afterPath="$PROJECT_DIR$/views/successful-case/successful-case-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/layouts/content.php" afterPath="$PROJECT_DIR$/modules/admin/views/layouts/content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/VoucherCenterController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/VoucherCenterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/frontend/js/accman.js" afterPath="$PROJECT_DIR$/wwwroot/frontend/js/accman.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/recommendengineer.php" afterPath="$PROJECT_DIR$/views/site/recommendengineer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/eng-manage/engineerlist.php" afterPath="$PROJECT_DIR$/modules/admin/views/eng-manage/engineerlist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/order-manage/task_cancellation_requestlist.php" afterPath="$PROJECT_DIR$/modules/admin/views/order-manage/task_cancellation_requestlist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/emp-demand-release/demand-describe.php" afterPath="$PROJECT_DIR$/views/emp-demand-release/demand-describe.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/task-hall/hall-detail.php" afterPath="$PROJECT_DIR$/views/task-hall/hall-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages/zh/message.php" afterPath="$PROJECT_DIR$/messages/zh/message.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/eng-applyfee-manage/eng-applyfee-list.php" afterPath="$PROJECT_DIR$/modules/admin/views/eng-applyfee-manage/eng-applyfee-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/main.php" afterPath="$PROJECT_DIR$/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/EngOrderManageController.php" afterPath="$PROJECT_DIR$/controllers/EngOrderManageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/EngMyWalletController.php" afterPath="$PROJECT_DIR$/controllers/EngMyWalletController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/cache/my/myappf4872cbb10eb9c13030e6018a4f1ddb1.bin" afterPath="$PROJECT_DIR$/runtime/cache/my/myappf4872cbb10eb9c13030e6018a4f1ddb1.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/news/new-detail.php" afterPath="$PROJECT_DIR$/views/news/new-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/resource/components/jqueryvalidation/dist/jquery.validate-methods.js" afterPath="$PROJECT_DIR$/wwwroot/resource/components/jqueryvalidation/dist/jquery.validate-methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/frontend/css/t_head.css" afterPath="$PROJECT_DIR$/wwwroot/frontend/css/t_head.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/TestController.php" afterPath="$PROJECT_DIR$/controllers/TestController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/eng-manage/engineerform.php" afterPath="$PROJECT_DIR$/modules/admin/views/eng-manage/engineerform.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/EngManageController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/EngManageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/emp-account-manage/emp-info.php" afterPath="$PROJECT_DIR$/views/emp-account-manage/emp-info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/cache/my/myappfafb1360f6d54e45ef94c257260b5a21.bin" afterPath="$PROJECT_DIR$/runtime/cache/my/myappfafb1360f6d54e45ef94c257260b5a21.bin" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/admin/views/news/newsform.php" afterPath="$PROJECT_DIR$/modules/admin/views/news/newsform1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-list.php" afterPath="$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/NewsController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/NewsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/emp-my-wallet/emp-my-wallet-withdrawal.php" afterPath="$PROJECT_DIR$/views/emp-my-wallet/emp-my-wallet-withdrawal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-order-manage/eng-successing-order-list.php" afterPath="$PROJECT_DIR$/views/eng-order-manage/eng-successing-order-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/site/configure.php" afterPath="$PROJECT_DIR$/modules/admin/views/site/configure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-my-wallet/eng-my-wallet-withdrawal.php" afterPath="$PROJECT_DIR$/views/eng-my-wallet/eng-my-wallet-withdrawal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-order-manage/eng-bidding-order-list.php" afterPath="$PROJECT_DIR$/views/eng-order-manage/eng-bidding-order-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/header.php" afterPath="$PROJECT_DIR$/views/layouts/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/EmpDebitrefundController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/EmpDebitrefundController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/route.php" afterPath="$PROJECT_DIR$/config/route.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/params.php" afterPath="$PROJECT_DIR$/config/params.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/cache/my/myapp6bb61e3b7bce0931da574d19d1d82c88.bin" afterPath="$PROJECT_DIR$/runtime/cache/my/myapp6bb61e3b7bce0931da574d19d1d82c88.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widgets/DynamicBiddingWidget.php" afterPath="$PROJECT_DIR$/widgets/DynamicBiddingWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/layouts/header.php" afterPath="$PROJECT_DIR$/modules/admin/views/layouts/header.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/admin/views/voucher-center/voucher-center-list.php" afterPath="$PROJECT_DIR$/modules/admin/views/voucher-center/voucher-center-employer-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-my-wallet/eng-my-wallet-withdrawal-list.php" afterPath="$PROJECT_DIR$/views/eng-my-wallet/eng-my-wallet-withdrawal-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/successful-case-manage/successful-case-list.php" afterPath="$PROJECT_DIR$/modules/admin/views/successful-case-manage/successful-case-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/SiteController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/xiaohei/captcha/Captcha.php" afterPath="$PROJECT_DIR$/vendor/xiaohei/captcha/Captcha.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/footer.php" afterPath="$PROJECT_DIR$/views/layouts/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Evaluate.php" afterPath="$PROJECT_DIR$/models/Evaluate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/withdrawal-manage/withdrawal-list.php" afterPath="$PROJECT_DIR$/modules/admin/views/withdrawal-manage/withdrawal-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-order-manage/eng-conducting-order-list.php" afterPath="$PROJECT_DIR$/views/eng-order-manage/eng-conducting-order-list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/eng-home/eng-home-index.php" afterPath="$PROJECT_DIR$/views/eng-home/eng-home-index.php" />
+    </list>
+    <ignored path="jeendon.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="jeendon" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="demand-describe-new.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/emp-demand-release/demand-describe-new.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2296">
+              <caret line="88" column="12" lean-forward="false" selection-start-line="85" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emp-bidding-order-detail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-detail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emp-bidding-order-detail-new.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-detail-new.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="35" column="74" lean-forward="false" selection-start-line="35" selection-start-column="74" selection-end-line="35" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emp-conducting-order-detail-new.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-detail-new.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1176">
+              <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+              <folding>
+                <marker date="1499931050000" expanded="true" signature="22002:22017" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eng-order-conducting-offer-detail-new.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/eng-order-manage/eng-order-conducting-offer-detail-new.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="715" column="75" lean-forward="false" selection-start-line="715" selection-start-column="75" selection-end-line="715" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emp-paying-order-detail-new.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-paying-order-detail-new.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="34" column="74" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8680">
+              <caret line="315" column="54" lean-forward="false" selection-start-line="315" selection-start-column="54" selection-end-line="315" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demand-select-type.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/emp-demand-release/demand-select-type.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1176">
+              <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demand-describe.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/emp-demand-release/demand-describe.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2016">
+              <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hall-index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/task-hall/hall-index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3416">
+              <caret line="123" column="57" lean-forward="false" selection-start-line="123" selection-start-column="57" selection-end-line="123" selection-end-column="57" />
+              <folding>
+                <element signature="e#6#26#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>order_total_period</find>
+      <find>checks</find>
+      <find>print_r($post);</find>
+      <find>task_parts_id</find>
+      <find>order_bidding_period</find>
+      <find>area</find>
+      <find>$part_total_duration</find>
+      <find>str</find>
+      <find>需求类型</find>
+      <find>工艺图纸设计</find>
+      <find>^\n</find>
+      <find>版权与免责声明</find>
+      <find>order_design_software_version</find>
+      <find>提示</find>
+      <find>task_</find>
+      <find>detail</find>
+      <find>fileou</find>
+      <find>Frontend</find>
+      <find>Sutr_T</find>
+      <find>Tjum</find>
+      <find>actionEmpBiddingOrderList</find>
+      <find>finalfiledownload</find>
+      <find>task_emp_download_time</find>
+      <find>delop</find>
+      <find>order_total_money</find>
+      <find>debitrefund</find>
+      <find>pardell</find>
+      <find>Wvujp</find>
+      <find>bi</find>
+      <find>#068ce2</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>确定</replace>
+      <replace>id=&quot;submiteng</replace>
+      <replace>#submiteng</replace>
+      <replace>带参</replace>
+      <replace>eng_</replace>
+      <replace>#F86D0D</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/config/configure.php" />
+        <option value="$PROJECT_DIR$/common/core/GlobalHelper.php" />
+        <option value="$PROJECT_DIR$/views/emp-demand-release/demand-describe.php" />
+        <option value="$PROJECT_DIR$/views/task-hall/similar-needs.php" />
+        <option value="$PROJECT_DIR$/widgets/SimilarNeedsWidget.php" />
+        <option value="$PROJECT_DIR$/views/site/recommendengineer.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/news/newsform1.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/news/voucher-center-employer-list.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/news/newsform.php" />
+        <option value="$PROJECT_DIR$/modules/admin/controllers/NewsController.php" />
+        <option value="$PROJECT_DIR$/views/news/new-detail.php" />
+        <option value="$PROJECT_DIR$/views/task-hall/hall-detail.php" />
+        <option value="$PROJECT_DIR$/models/Task.php" />
+        <option value="$PROJECT_DIR$/views/task-hall/hall-detail-new.php" />
+        <option value="$PROJECT_DIR$/models/Pay.php" />
+        <option value="$PROJECT_DIR$/controllers/EngOrderManageController.php" />
+        <option value="$PROJECT_DIR$/views/eng-order-manage/eng-order-bidding-offer-detail-new.php" />
+        <option value="$PROJECT_DIR$/models/OpinionExaminationFile.php" />
+        <option value="$PROJECT_DIR$/controllers/UploadController.php" />
+        <option value="$PROJECT_DIR$/wwwroot/frontend/js/relreq.js" />
+        <option value="$PROJECT_DIR$/views/emp-order-manage/emp-releaseing-order-list.php" />
+        <option value="$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-list.php" />
+        <option value="$PROJECT_DIR$/views/emp-order-manage/emp-paying-order-list.php" />
+        <option value="$PROJECT_DIR$/views/emp-order-manage/emp-canceling-order-list.php" />
+        <option value="$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-list.php" />
+        <option value="$PROJECT_DIR$/views/emp-order-manage/emp-successing-order-list.php" />
+        <option value="$PROJECT_DIR$/controllers/EmpOrderManageController.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/order-manage/order-detail.php" />
+        <option value="$PROJECT_DIR$/modules/admin/controllers/OrderManageController.php" />
+        <option value="$PROJECT_DIR$/modules/admin/controllers/EmpDebitrefundController.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/order-manage/task-detail.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/order-manage/task-detail-new.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/order-manage/order-detail-new.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/emp-debitrefund/emp-debitrefund-requestdetail-new.php" />
+        <option value="$PROJECT_DIR$/commands/PlanningTaskMessageController.php" />
+        <option value="$PROJECT_DIR$/wwwroot/frontend/js/relreq-new.js" />
+        <option value="$PROJECT_DIR$/views/site/index.php" />
+        <option value="$PROJECT_DIR$/common/core/ConstantHelper.php" />
+        <option value="$PROJECT_DIR$/controllers/EmpDemandReleaseController.php" />
+        <option value="$PROJECT_DIR$/models/Order.php" />
+        <option value="$PROJECT_DIR$/wwwroot/frontend/js/search.js" />
+        <option value="$PROJECT_DIR$/views/task-hall/hall-index-search.php" />
+        <option value="$PROJECT_DIR$/views/eng-home/eng-home-index-search.php" />
+        <option value="$PROJECT_DIR$/controllers/TaskHallController.php" />
+        <option value="$PROJECT_DIR$/views/task-hall/hall-index.php" />
+        <option value="$PROJECT_DIR$/views/emp-demand-release/demand-select-type.php" />
+        <option value="$PROJECT_DIR$/views/emp-demand-release/demand-describe-new.php" />
+        <option value="$PROJECT_DIR$/views/emp-order-manage/emp-paying-order-detail-new.php" />
+        <option value="$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-detail-new.php" />
+        <option value="$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-detail-new.php" />
+        <option value="$PROJECT_DIR$/views/eng-order-manage/eng-order-conducting-offer-detail-new.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wwwroot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eng-order-manage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emp-order-manage" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emp-demand-release" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jeendon" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="D:\nodejs\anzhuang\node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="D:/nodejs/anzhuang/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\jeendon\views\task-hall" />
+      <recent name="F:\jeendon\modules\admin\views\emp-debitrefund" />
+      <recent name="F:\jeendon\modules\admin\views\order-manage" />
+      <recent name="G:\jeendon\models" />
+      <recent name="G:\jeendon\views\emp-order-manage" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHPUnit.images">
+    <configuration default="false" name="api" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/wwwroot/api" />
+      <method />
+    </configuration>
+    <configuration default="false" name="images" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/wwwroot/frontend/images" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.api" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.images" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.images" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.api" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\lihx\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a44c8628-1e9e-4448-8ad2-03644f3dc824" name="Default" comment="" />
+      <created>1490195101223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1490195101223</updated>
+      <workItem from="1494250266690" duration="358000" />
+      <workItem from="1494250742418" duration="312000" />
+      <workItem from="1494337309651" duration="57092000" />
+      <workItem from="1495373990370" duration="16177000" />
+      <workItem from="1496232143603" duration="91134000" />
+      <workItem from="1497095457144" duration="27483000" />
+      <workItem from="1497875796737" duration="55137000" />
+      <workItem from="1498381038542" duration="11056000" />
+      <workItem from="1498873799543" duration="81720000" />
+      <workItem from="1499836642017" duration="15918000" />
+      <workItem from="1499910122425" duration="17937000" />
+      <workItem from="1499934353036" duration="598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="374922000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30416667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12776025" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/task-hall/hall-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3347">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="141" column="111" lean-forward="false" selection-start-line="141" selection-start-column="111" selection-end-line="141" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Pay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="146" column="5" lean-forward="false" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/tables.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/task-hall/hall-detail-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="367" column="56" lean-forward="false" selection-start-line="367" selection-start-column="38" selection-end-line="367" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/EngAccountManageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20243">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1498393784000" expanded="true" signature="22186:22363" ph="..." />
+            <marker date="1498393784000" expanded="true" signature="23348:23533" ph="..." />
+            <marker date="1498393784000" expanded="true" signature="25251:25439" ph="..." />
+            <marker date="1498393784000" expanded="true" signature="26486:26672" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/EngOrderManageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="428" column="71" lean-forward="false" selection-start-line="428" selection-start-column="71" selection-end-line="428" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/eng-order-manage/eng-order-bidding-offer-detail-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="266" column="29" lean-forward="false" selection-start-line="264" selection-start-column="22" selection-end-line="266" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/OpinionExaminationFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/SpareParts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/DemandReleaseFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/message/components/SmsHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11396">
+          <caret line="410" column="68" lean-forward="false" selection-start-line="410" selection-start-column="62" selection-end-line="410" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/UploadController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="545" column="45" lean-forward="false" selection-start-line="545" selection-start-column="45" selection-end-line="545" selection-end-column="45" />
+          <folding>
+            <marker date="1499838154000" expanded="true" signature="2851:3212" ph="..." />
+            <marker date="1499838154000" expanded="true" signature="5657:5931" ph="..." />
+            <marker date="1499838154000" expanded="true" signature="9327:9593" ph="..." />
+            <marker date="1499838154000" expanded="true" signature="9800:10456" ph="..." />
+            <marker date="1499838154000" expanded="true" signature="11265:11531" ph="..." />
+            <marker date="1499838154000" expanded="true" signature="12282:12470" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-releaseing-order-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="33" column="87" lean-forward="false" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="36" column="25" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-paying-order-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-canceling-order-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-successing-order-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/EmpOrderManageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3631">
+          <caret line="924" column="47" lean-forward="false" selection-start-line="924" selection-start-column="25" selection-end-line="924" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/order-manage/order-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="273" column="135" lean-forward="false" selection-start-line="273" selection-start-column="135" selection-end-line="273" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/EmpDebitrefundController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="53" column="67" lean-forward="false" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/OrderManageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="128" column="27" lean-forward="false" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/order-manage/task-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="114" column="59" lean-forward="false" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/order-manage/order-detail-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1261">
+          <caret line="95" column="79" lean-forward="false" selection-start-line="95" selection-start-column="79" selection-end-line="95" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/order-manage/task-detail-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="129" column="57" lean-forward="false" selection-start-line="127" selection-start-column="52" selection-end-line="129" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/emp-debitrefund/emp-debitrefund-requestdetail-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="148" column="26" lean-forward="false" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/PlanningTaskMessageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="327" column="43" lean-forward="false" selection-start-line="327" selection-start-column="43" selection-end-line="327" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/frontend/js/relreq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11088">
+          <caret line="396" column="0" lean-forward="false" selection-start-line="396" selection-start-column="0" selection-end-line="399" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/frontend/js/relreq-new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1235">
+          <caret line="415" column="14" lean-forward="false" selection-start-line="415" selection-start-column="14" selection-end-line="415" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5796">
+          <caret line="366" column="45" lean-forward="false" selection-start-line="366" selection-start-column="45" selection-end-line="366" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/EmpDemandReleaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/frontend/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/EngHomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="127" column="39" lean-forward="false" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/eng-home/eng-home-index-search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1382">
+          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/core/ConstantHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="699" column="37" lean-forward="false" selection-start-line="699" selection-start-column="18" selection-end-line="699" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/EngHomeManageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/TaskHallController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="56" column="50" lean-forward="false" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/eng-home/eng-home-index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="244" column="7" lean-forward="false" selection-start-line="241" selection-start-column="3" selection-end-line="244" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/task-hall/hall-index-search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1932">
+          <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/task-hall/hall-index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3416">
+          <caret line="123" column="57" lean-forward="false" selection-start-line="123" selection-start-column="57" selection-end-line="123" selection-end-column="57" />
+          <folding>
+            <element signature="e#6#26#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8680">
+          <caret line="315" column="54" lean-forward="false" selection-start-line="315" selection-start-column="54" selection-end-line="315" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-demand-release/demand-select-type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-demand-release/demand-describe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-demand-release/demand-describe-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2296">
+          <caret line="88" column="12" lean-forward="false" selection-start-line="85" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-bidding-order-detail-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="35" column="74" lean-forward="false" selection-start-line="35" selection-start-column="74" selection-end-line="35" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-paying-order-detail-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="34" column="74" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emp-order-manage/emp-conducting-order-detail-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+          <folding>
+            <marker date="1499931050000" expanded="true" signature="22002:22017" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/eng-order-manage/eng-order-conducting-offer-detail-new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="715" column="75" lean-forward="false" selection-start-line="715" selection-start-column="75" selection-end-line="715" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

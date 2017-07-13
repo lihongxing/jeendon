@@ -1,0 +1,491 @@
+2017-06-10 10:48:22 [-][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 2 for app\modules\message\components\SmsHelper::send(), called in G:\jeendon\modules\message\components\SmsHelper.php on line 246 and defined' in G:\jeendon\modules\message\components\SmsHelper.php:279
+Stack trace:
+#0 G:\jeendon\modules\message\components\SmsHelper.php(279): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'G:\\jeendon\\modu...', 279, Array)
+#1 G:\jeendon\modules\message\components\SmsHelper.php(246): app\modules\message\components\SmsHelper::send(Array)
+#2 G:\jeendon\commands\PlanningTaskMessageController.php(83): app\modules\message\components\SmsHelper::batchSendShortMessage(Array, '\xE6\x96\xB0\xE4\xBB\xBB\xE5\x8A\xA1\xE5\x8F\x91\xE5\xB8\x83')
+#3 [internal function]: app\commands\PlanningTaskMessageController->actionNewDemandRelease()
+#4 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 G:\jeendon\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('new-demand-rele...', Array)
+#7 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('new-demand-rele...', Array)
+#8 G:\jeendon\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('planning-task-m...', Array)
+#9 G:\jeendon\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('planning-task-m...', Array)
+#10 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 G:\jeendon\yii(19): yii\base\Application->run()
+#12 {main}
+2017-06-10 10:48:22 [-][-][-][info][application] $_SERVER = [
+    '#envKKPRbc_Cmdilne' => ''
+    '#envTSLOGRBCShellExt6256' => '125029984'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\79816\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-VEVD6G8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ERLANG_HOME' => 'D:\\Erlang\\erl8.1'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\79816'
+    'LOCALAPPDATA' => 'C:\\Users\\79816\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-VEVD6G8'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'ShellLaunch{A81BA54B-CCFE-4204-8E79-A68C0FDFA5CF}' => 'ShellExt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-VEVD6G8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-VEVD6G8'
+    'USERNAME' => 'lihongxing'
+    'USERPROFILE' => 'C:\\Users\\79816'
+    'VISUALSVN_SERVER' => 'D:\\svn\\svnserveranzhuang\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497062902.4554
+    'REQUEST_TIME' => 1497062902
+    'argv' => [
+        0 => 'yii'
+        1 => 'planning-task-message/new-demand-release'
+    ]
+    'argc' => 2
+]
+2017-06-10 11:04:05 [-][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Operator '<' requires two operands.' in G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php:1279
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(924): yii\db\QueryBuilder->buildSimpleCondition('<', Array, Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(743): yii\db\QueryBuilder->buildCondition(Array, Array)
+#2 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(96): yii\db\QueryBuilder->buildWhere(Array, Array)
+#3 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(324): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#4 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\ActiveQuery->createCommand(NULL)
+#5 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all(NULL)
+#6 G:\jeendon\commands\PlanningTaskMessageController.php(284): yii\db\ActiveQuery->all()
+#7 [internal function]: app\commands\PlanningTaskMessageController->actionOfferOrder()
+#8 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 G:\jeendon\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('offer-order', Array)
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('offer-order', Array)
+#12 G:\jeendon\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('planning-task-m...', Array)
+#13 G:\jeendon\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('planning-task-m...', Array)
+#14 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 G:\jeendon\yii(19): yii\base\Application->run()
+#16 {main}
+2017-06-10 11:04:05 [-][-][-][info][application] $_SERVER = [
+    '#envKKPRbc_Cmdilne' => ''
+    '#envTSLOGRBCShellExt6256' => '125029984'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\79816\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-VEVD6G8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ERLANG_HOME' => 'D:\\Erlang\\erl8.1'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\79816'
+    'LOCALAPPDATA' => 'C:\\Users\\79816\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-VEVD6G8'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'ShellLaunch{A81BA54B-CCFE-4204-8E79-A68C0FDFA5CF}' => 'ShellExt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-VEVD6G8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-VEVD6G8'
+    'USERNAME' => 'lihongxing'
+    'USERPROFILE' => 'C:\\Users\\79816'
+    'VISUALSVN_SERVER' => 'D:\\svn\\svnserveranzhuang\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497063845.7686
+    'REQUEST_TIME' => 1497063845
+    'argv' => [
+        0 => 'yii'
+        1 => 'planning-task-message/offer-order'
+    ]
+    'argc' => 2
+]
+2017-06-10 11:04:55 [-][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Operator '<' requires two operands.' in G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php:1279
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(924): yii\db\QueryBuilder->buildSimpleCondition('<', Array, Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(743): yii\db\QueryBuilder->buildCondition(Array, Array)
+#2 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(96): yii\db\QueryBuilder->buildWhere(Array, Array)
+#3 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(324): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#4 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\ActiveQuery->createCommand(NULL)
+#5 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all(NULL)
+#6 G:\jeendon\commands\PlanningTaskMessageController.php(284): yii\db\ActiveQuery->all()
+#7 [internal function]: app\commands\PlanningTaskMessageController->actionOfferOrder()
+#8 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 G:\jeendon\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('offer-order', Array)
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('offer-order', Array)
+#12 G:\jeendon\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('planning-task-m...', Array)
+#13 G:\jeendon\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('planning-task-m...', Array)
+#14 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 G:\jeendon\yii(19): yii\base\Application->run()
+#16 {main}
+2017-06-10 11:04:55 [-][-][-][info][application] $_SERVER = [
+    '#envKKPRbc_Cmdilne' => ''
+    '#envTSLOGRBCShellExt6256' => '125029984'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\79816\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-VEVD6G8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ERLANG_HOME' => 'D:\\Erlang\\erl8.1'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\79816'
+    'LOCALAPPDATA' => 'C:\\Users\\79816\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-VEVD6G8'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'ShellLaunch{A81BA54B-CCFE-4204-8E79-A68C0FDFA5CF}' => 'ShellExt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-VEVD6G8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-VEVD6G8'
+    'USERNAME' => 'lihongxing'
+    'USERPROFILE' => 'C:\\Users\\79816'
+    'VISUALSVN_SERVER' => 'D:\\svn\\svnserveranzhuang\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497063895.2206
+    'REQUEST_TIME' => 1497063895
+    'argv' => [
+        0 => 'yii'
+        1 => 'planning-task-message/offer-order'
+    ]
+    'argc' => 2
+]
+2017-06-10 11:06:35 [-][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'strtoupper() expects parameter 1 to be string, array given' in G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php:917
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'strtoupper() ex...', 'G:\\jeendon\\vend...', 917, Array)
+#1 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(917): strtoupper(Array)
+#2 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(743): yii\db\QueryBuilder->buildCondition(Array, Array)
+#3 G:\jeendon\vendor\yiisoft\yii2\db\QueryBuilder.php(96): yii\db\QueryBuilder->buildWhere(Array, Array)
+#4 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(324): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\ActiveQuery->createCommand(NULL)
+#6 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all(NULL)
+#7 G:\jeendon\commands\PlanningTaskMessageController.php(283): yii\db\ActiveQuery->all()
+#8 [internal function]: app\commands\PlanningTaskMessageController->actionOfferOrder()
+#9 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 G:\jeendon\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('offer-order', Array)
+#12 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('offer-order', Array)
+#13 G:\jeendon\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('planning-task-m...', Array)
+#14 G:\jeendon\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('planning-task-m...', Array)
+#15 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 G:\jeendon\yii(19): yii\base\Application->run()
+#17 {main}
+2017-06-10 11:06:35 [-][-][-][info][application] $_SERVER = [
+    '#envKKPRbc_Cmdilne' => ''
+    '#envTSLOGRBCShellExt6256' => '125029984'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\79816\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-VEVD6G8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ERLANG_HOME' => 'D:\\Erlang\\erl8.1'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\79816'
+    'LOCALAPPDATA' => 'C:\\Users\\79816\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-VEVD6G8'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'ShellLaunch{A81BA54B-CCFE-4204-8E79-A68C0FDFA5CF}' => 'ShellExt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-VEVD6G8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-VEVD6G8'
+    'USERNAME' => 'lihongxing'
+    'USERPROFILE' => 'C:\\Users\\79816'
+    'VISUALSVN_SERVER' => 'D:\\svn\\svnserveranzhuang\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497063995.7898
+    'REQUEST_TIME' => 1497063995
+    'argv' => [
+        0 => 'yii'
+        1 => 'planning-task-message/offer-order'
+    ]
+    'argc' => 2
+]
+2017-06-10 11:41:28 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in G:\jeendon\commands\PlanningTaskMessageController.php:375
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-10 11:41:28 [-][-][-][info][application] $_SERVER = [
+    '#envKKPRbc_Cmdilne' => ''
+    '#envTSLOGRBCShellExt6256' => '125029984'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\79816\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-VEVD6G8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ERLANG_HOME' => 'D:\\Erlang\\erl8.1'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\79816'
+    'LOCALAPPDATA' => 'C:\\Users\\79816\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-VEVD6G8'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'ShellLaunch{A81BA54B-CCFE-4204-8E79-A68C0FDFA5CF}' => 'ShellExt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-VEVD6G8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-VEVD6G8'
+    'USERNAME' => 'lihongxing'
+    'USERPROFILE' => 'C:\\Users\\79816'
+    'VISUALSVN_SERVER' => 'D:\\svn\\svnserveranzhuang\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497066088.0412
+    'REQUEST_TIME' => 1497066088
+    'argv' => [
+        0 => 'yii'
+        1 => 'planning-task-message/order-over'
+    ]
+    'argc' => 2
+]
+2017-06-10 11:48:38 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected end of file, expecting function (T_FUNCTION)' in G:\jeendon\commands\PlanningTaskMessageController.php:372
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-10 11:48:38 [-][-][-][info][application] $_SERVER = [
+    '#envKKPRbc_Cmdilne' => ''
+    '#envTSLOGRBCShellExt6256' => '125029984'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\79816\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-VEVD6G8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ERLANG_HOME' => 'D:\\Erlang\\erl8.1'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\79816'
+    'LOCALAPPDATA' => 'C:\\Users\\79816\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-VEVD6G8'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'ShellLaunch{A81BA54B-CCFE-4204-8E79-A68C0FDFA5CF}' => 'ShellExt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-VEVD6G8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-VEVD6G8'
+    'USERNAME' => 'lihongxing'
+    'USERPROFILE' => 'C:\\Users\\79816'
+    'VISUALSVN_SERVER' => 'D:\\svn\\svnserveranzhuang\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497066518.4741
+    'REQUEST_TIME' => 1497066518
+    'argv' => [
+        0 => 'yii'
+        1 => 'planning-task-message/order-over'
+    ]
+    'argc' => 2
+]
+2017-06-12 19:34:22 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in G:\jeendon\commands\PlanningTaskMessageController.php:61
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-12 19:34:22 [-][-][-][info][application] $_SERVER = [
+    '#envKKPRbc_Cmdilne' => ''
+    '#envTSLOGRBCShellExt6256' => '125029984'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\79816\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-VEVD6G8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ERLANG_HOME' => 'D:\\Erlang\\erl8.1'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\79816'
+    'LOCALAPPDATA' => 'C:\\Users\\79816\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-VEVD6G8'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'ShellLaunch{A81BA54B-CCFE-4204-8E79-A68C0FDFA5CF}' => 'ShellExt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\79816\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-VEVD6G8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-VEVD6G8'
+    'USERNAME' => 'lihongxing'
+    'USERPROFILE' => 'C:\\Users\\79816'
+    'VISUALSVN_SERVER' => 'D:\\svn\\svnserveranzhuang\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497267262.7644
+    'REQUEST_TIME' => 1497267262
+    'argv' => [
+        0 => 'yii'
+        1 => 'planning-task-message/new-demand-release'
+    ]
+    'argc' => 2
+]

@@ -1,0 +1,9 @@
+body .layer-ext-yourskin .layui-layer-title{}
+body .layui-ext-yourskin .layui-layer-btn{}
+body .layui-ext-yourskin .layui-layer-btn a{}
+
+body .layui-layer-dialog{min-width: 380px;}
+body .layui-layer-btn{text-align: center;}
+body .layui-layer-title{padding-left:20px;padding-right: 0;text-align: left;}
+body .layui-layer-dialog .layui-layer-padding{color: #505050;font-size: 16px;padding: 40px 20px 35px 75px;}
+body .layui-layer-dialog .layui-layer-content .layui-layer-ico{position: absolute;top: 35px;left: 35px;}

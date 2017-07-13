@@ -1,0 +1,366 @@
+2017-07-09 11:48:53 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dp_spare_parts.task_number' in 'field list'' in G:\jeendon\vendor\yiisoft\yii2\db\Command.php:837
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(837): PDOStatement->execute()
+#1 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all('<span class="ke...')
+#4 G:\jeendon\models\Order.php(1237): yii\db\ActiveQuery->all()
+#5 G:\jeendon\controllers\UploadController.php(269): app\models\Order->conductingSms('<span class="st...')
+#6 [internal function]: app\controllers\UploadController->actionUploadFrontend('<span class="st...')
+#7 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dp_spare_parts.task_number' in 'field list'
+The SQL being executed was: SELECT `dp_spare_parts`.task_number, `dp_engineer`.username, `dp_engineer`.eng_phone FROM `dp_spare_parts` LEFT JOIN `dp_offer` ON `dp_spare_parts`.task_offer_id = `dp_offer`.offer_id LEFT JOIN `dp_engineer` ON `dp_engineer`.id = `dp_offer`.offer_eng_id WHERE `task_order_id`='323'' in G:\jeendon\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT `dp_spar...')
+#1 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all('<span class="ke...')
+#4 G:\jeendon\models\Order.php(1237): yii\db\ActiveQuery->all()
+#5 G:\jeendon\controllers\UploadController.php(269): app\models\Order->conductingSms('<span class="st...')
+#6 [internal function]: app\controllers\UploadController->actionUploadFrontend('<span class="st...')
+#7 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'dp_spare_parts.task_number' in 'field list'
+)
+
+2017-07-09 11:48:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'type' => 'doc'
+]
+
+$_POST = [
+    'flag' => 'opinionexamine'
+    'picContainer' => 'opinionexamineadd'
+    'order_number' => 'CL2017070222032512'
+    'uploadPicDiv' => 'fileou'
+]
+
+$_FILES = [
+    'pic1' => [
+        'name' => 'test.zip'
+        'type' => 'application/octet-stream'
+        'tmp_name' => 'C:\\Windows\\php7885.tmp'
+        'error' => 0
+        'size' => 22
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '6d938b8be93443494e5b36c5c3ff36ac91fad3b69a83c7eec42800650c7cca64a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"34O8lvTkAKziStVSGLPvvfuViuwtdacz\";}'
+    '__user_identity' => '72e0bb97c748a65e2dfb05d2d630165fdceb6d9b2b090386bcdaec7bdb93727aa:2:{i:0;s:15:\"__user_identity\";i:1;s:48:\"[\"1\",\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    'PHPSESSID' => '3alfvf83gb8n1lubnd82n7p9b3'
+    '__employer_identity' => '1d24dd7aef00e31957f9de0dd62daa21a4d77a572549ba1d5c012e8e1faf8be7a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"85\",null,2592000]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2140'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/upload/upload-frontend.html?type=doc'
+    'QUERY_STRING' => 'type=doc'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/upload/upload-frontend.html'
+    'REDIRECT_QUERY_STRING' => 'type=doc'
+    'REMOTE_PORT' => '51184'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf=6d938b8be93443494e5b36c5c3ff36ac91fad3b69a83c7eec42800650c7cca64a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2234O8lvTkAKziStVSGLPvvfuViuwtdacz%22%3B%7D; __user_identity=72e0bb97c748a65e2dfb05d2d630165fdceb6d9b2b090386bcdaec7bdb93727aa%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; PHPSESSID=3alfvf83gb8n1lubnd82n7p9b3; __employer_identity=1d24dd7aef00e31957f9de0dd62daa21a4d77a572549ba1d5c012e8e1faf8be7a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2285%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/emp-order-manage/emp-conducting-order-detail.html?order_id=323'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryFw9ENsTXpqJPmwHm'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://127.0.0.9'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_LENGTH' => '661'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499572133.1711
+    'REQUEST_TIME' => 1499572133
+]
+2017-07-09 11:49:04 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dp_spare_parts.task_number' in 'field list'' in G:\jeendon\vendor\yiisoft\yii2\db\Command.php:837
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(837): PDOStatement->execute()
+#1 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all('<span class="ke...')
+#4 G:\jeendon\models\Order.php(1237): yii\db\ActiveQuery->all()
+#5 G:\jeendon\controllers\UploadController.php(269): app\models\Order->conductingSms('<span class="st...')
+#6 [internal function]: app\controllers\UploadController->actionUploadFrontend('<span class="st...')
+#7 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dp_spare_parts.task_number' in 'field list'
+The SQL being executed was: SELECT `dp_spare_parts`.task_number, `dp_engineer`.username, `dp_engineer`.eng_phone FROM `dp_spare_parts` LEFT JOIN `dp_offer` ON `dp_spare_parts`.task_offer_id = `dp_offer`.offer_id LEFT JOIN `dp_engineer` ON `dp_engineer`.id = `dp_offer`.offer_eng_id WHERE `task_order_id`='323'' in G:\jeendon\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT `dp_spar...')
+#1 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all('<span class="ke...')
+#4 G:\jeendon\models\Order.php(1237): yii\db\ActiveQuery->all()
+#5 G:\jeendon\controllers\UploadController.php(269): app\models\Order->conductingSms('<span class="st...')
+#6 [internal function]: app\controllers\UploadController->actionUploadFrontend('<span class="st...')
+#7 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'dp_spare_parts.task_number' in 'field list'
+)
+
+2017-07-09 11:49:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'type' => 'doc'
+]
+
+$_POST = [
+    'flag' => 'opinionexamine'
+    'picContainer' => 'opinionexamineadd'
+    'order_number' => 'CL2017070222032512'
+    'uploadPicDiv' => 'fileou'
+]
+
+$_FILES = [
+    'pic1' => [
+        'name' => 'test.zip'
+        'type' => 'application/octet-stream'
+        'tmp_name' => 'C:\\Windows\\phpA591.tmp'
+        'error' => 0
+        'size' => 22
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '6d938b8be93443494e5b36c5c3ff36ac91fad3b69a83c7eec42800650c7cca64a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"34O8lvTkAKziStVSGLPvvfuViuwtdacz\";}'
+    '__user_identity' => '72e0bb97c748a65e2dfb05d2d630165fdceb6d9b2b090386bcdaec7bdb93727aa:2:{i:0;s:15:\"__user_identity\";i:1;s:48:\"[\"1\",\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    'PHPSESSID' => '3alfvf83gb8n1lubnd82n7p9b3'
+    '__employer_identity' => '1d24dd7aef00e31957f9de0dd62daa21a4d77a572549ba1d5c012e8e1faf8be7a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"85\",null,2592000]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2140'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/upload/upload-frontend.html?type=doc'
+    'QUERY_STRING' => 'type=doc'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/upload/upload-frontend.html'
+    'REDIRECT_QUERY_STRING' => 'type=doc'
+    'REMOTE_PORT' => '51197'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf=6d938b8be93443494e5b36c5c3ff36ac91fad3b69a83c7eec42800650c7cca64a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2234O8lvTkAKziStVSGLPvvfuViuwtdacz%22%3B%7D; __user_identity=72e0bb97c748a65e2dfb05d2d630165fdceb6d9b2b090386bcdaec7bdb93727aa%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; PHPSESSID=3alfvf83gb8n1lubnd82n7p9b3; __employer_identity=1d24dd7aef00e31957f9de0dd62daa21a4d77a572549ba1d5c012e8e1faf8be7a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2285%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/emp-order-manage/emp-conducting-order-detail.html?order_id=323'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary1Pdfdc8PW7gwvCAR'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://127.0.0.9'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_LENGTH' => '661'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499572144.7134
+    'REQUEST_TIME' => 1499572144
+]
+2017-07-09 11:50:05 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dp_spare_parts.task_parts_number' in 'field list'' in G:\jeendon\vendor\yiisoft\yii2\db\Command.php:837
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(837): PDOStatement->execute()
+#1 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all('<span class="ke...')
+#4 G:\jeendon\models\Order.php(1237): yii\db\ActiveQuery->all()
+#5 G:\jeendon\controllers\UploadController.php(269): app\models\Order->conductingSms('<span class="st...')
+#6 [internal function]: app\controllers\UploadController->actionUploadFrontend('<span class="st...')
+#7 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dp_spare_parts.task_parts_number' in 'field list'
+The SQL being executed was: SELECT `dp_spare_parts`.task_parts_number, `dp_engineer`.username, `dp_engineer`.eng_phone FROM `dp_spare_parts` LEFT JOIN `dp_offer` ON `dp_spare_parts`.task_offer_id = `dp_offer`.offer_id LEFT JOIN `dp_engineer` ON `dp_engineer`.id = `dp_offer`.offer_eng_id WHERE `task_order_id`='323'' in G:\jeendon\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT `dp_spar...')
+#1 G:\jeendon\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 G:\jeendon\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 G:\jeendon\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all('<span class="ke...')
+#4 G:\jeendon\models\Order.php(1237): yii\db\ActiveQuery->all()
+#5 G:\jeendon\controllers\UploadController.php(269): app\models\Order->conductingSms('<span class="st...')
+#6 [internal function]: app\controllers\UploadController->actionUploadFrontend('<span class="st...')
+#7 G:\jeendon\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#8 G:\jeendon\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 G:\jeendon\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'dp_spare_parts.task_parts_number' in 'field list'
+)
+
+2017-07-09 11:50:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'type' => 'doc'
+]
+
+$_POST = [
+    'flag' => 'opinionexamine'
+    'picContainer' => 'opinionexamineadd'
+    'order_number' => 'CL2017070222032512'
+    'uploadPicDiv' => 'fileou'
+]
+
+$_FILES = [
+    'pic1' => [
+        'name' => 'test.zip'
+        'type' => 'application/octet-stream'
+        'tmp_name' => 'C:\\Windows\\php92EF.tmp'
+        'error' => 0
+        'size' => 22
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '6d938b8be93443494e5b36c5c3ff36ac91fad3b69a83c7eec42800650c7cca64a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"34O8lvTkAKziStVSGLPvvfuViuwtdacz\";}'
+    '__user_identity' => '72e0bb97c748a65e2dfb05d2d630165fdceb6d9b2b090386bcdaec7bdb93727aa:2:{i:0;s:15:\"__user_identity\";i:1;s:48:\"[\"1\",\"OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom\",2592000]\";}'
+    'PHPSESSID' => '3alfvf83gb8n1lubnd82n7p9b3'
+    '__employer_identity' => '1d24dd7aef00e31957f9de0dd62daa21a4d77a572549ba1d5c012e8e1faf8be7a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"85\",null,2592000]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2140'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/upload/upload-frontend.html?type=doc'
+    'QUERY_STRING' => 'type=doc'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/upload/upload-frontend.html'
+    'REDIRECT_QUERY_STRING' => 'type=doc'
+    'REMOTE_PORT' => '51288'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf=6d938b8be93443494e5b36c5c3ff36ac91fad3b69a83c7eec42800650c7cca64a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2234O8lvTkAKziStVSGLPvvfuViuwtdacz%22%3B%7D; __user_identity=72e0bb97c748a65e2dfb05d2d630165fdceb6d9b2b090386bcdaec7bdb93727aa%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22OAkYXDSK62ISFbp0L2x7W-LcL7fpUoom%22%2C2592000%5D%22%3B%7D; PHPSESSID=3alfvf83gb8n1lubnd82n7p9b3; __employer_identity=1d24dd7aef00e31957f9de0dd62daa21a4d77a572549ba1d5c012e8e1faf8be7a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2285%22%2Cnull%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://127.0.0.9/emp-order-manage/emp-conducting-order-detail.html?order_id=323'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryQ2roGRhaMzMuDDHB'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://127.0.0.9'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_LENGTH' => '661'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499572205.4913
+    'REQUEST_TIME' => 1499572205
+]

@@ -1,0 +1,1119 @@
+2017-06-18 18:34:45 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:34:45 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2200'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Home/img/Yyhau.jpg'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Home/img/Yyhau.jpg'
+    'REMOTE_PORT' => '59346'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782085.3943
+    'REQUEST_TIME' => 1497782085
+]
+2017-06-18 18:34:46 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:34:46 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2200'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Home/img/Yyhau.jpg'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Home/img/Yyhau.jpg'
+    'REMOTE_PORT' => '59349'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782086.0457
+    'REQUEST_TIME' => 1497782086
+]
+2017-06-18 18:34:46 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:34:46 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2200'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'REMOTE_PORT' => '59348'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782086.409
+    'REQUEST_TIME' => 1497782086
+]
+2017-06-18 18:34:46 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:34:46 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2404'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'REMOTE_PORT' => '59350'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782086.5106
+    'REQUEST_TIME' => 1497782086
+]
+2017-06-18 18:35:06 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:35:06 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2200'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'REMOTE_PORT' => '59371'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782106.0176
+    'REQUEST_TIME' => 1497782106
+]
+2017-06-18 18:35:06 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:35:06 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2404'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'REMOTE_PORT' => '59369'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782106.0163
+    'REQUEST_TIME' => 1497782106
+]
+2017-06-18 18:39:29 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:39:29 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2404'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'REMOTE_PORT' => '59443'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782369.3702
+    'REQUEST_TIME' => 1497782369
+]
+2017-06-18 18:39:29 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:39:29 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2200'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'REMOTE_PORT' => '59441'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782369.3682
+    'REQUEST_TIME' => 1497782369
+]
+2017-06-18 18:39:30 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:39:30 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2200'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'REMOTE_PORT' => '59453'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782370.1151
+    'REQUEST_TIME' => 1497782370
+]
+2017-06-18 18:39:32 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:39:32 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2200'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'REMOTE_PORT' => '59452'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782372.8209
+    'REQUEST_TIME' => 1497782372
+]
+2017-06-18 18:39:32 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:39:32 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2404'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'REMOTE_PORT' => '59444'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782372.8245
+    'REQUEST_TIME' => 1497782372
+]
+2017-06-18 18:40:06 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:40:06 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2404'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'REMOTE_PORT' => '59484'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782406.1365
+    'REQUEST_TIME' => 1497782406
+]
+2017-06-18 18:40:06 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:40:06 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2200'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'REMOTE_PORT' => '59488'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782406.1375
+    'REQUEST_TIME' => 1497782406
+]
+2017-06-18 18:40:51 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:40:51 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2200'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'REMOTE_PORT' => '59515'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782451.5805
+    'REQUEST_TIME' => 1497782451
+]
+2017-06-18 18:40:51 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:40:51 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2404'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847a7489f971.gif'
+    'REMOTE_PORT' => '59517'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_REFERER' => 'http://127.0.0.9/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782451.5831
+    'REQUEST_TIME' => 1497782451
+]
+2017-06-18 18:42:26 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in G:\jeendon\vendor\yiisoft\yii2\web\Request.php:190
+Stack trace:
+#0 G:\jeendon\vendor\yiisoft\yii2\web\Application.php(75): yii\web\Request->resolve()
+#1 G:\jeendon\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\jeendon\wwwroot\index.php(12): yii\base\Application->run()
+#3 {main}
+2017-06-18 18:42:26 [127.0.0.1][-][455fnrkne7a17l48afhd8rt8l7][info][application] $_COOKIE = [
+    '__user_identity' => '1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a:2:{i:0;s:15:\"__user_identity\";i:1;s:16:\"[\"1\",\"\",2592000]\";}'
+    '__employer_identity' => '4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a:2:{i:0;s:19:\"__employer_identity\";i:1;s:19:\"[\"68\",null,2592000]\";}'
+    '__engineer_identity' => '49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba:2:{i:0;s:19:\"__engineer_identity\";i:1;s:19:\"[\"32\",null,2592000]\";}'
+    'PHPSESSID' => '455fnrkne7a17l48afhd8rt8l7'
+    '_csrf' => '0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__user' => '1'
+    'sid.captcha.ylans.cn' => [
+        'code' => '4727'
+        'time' => 1497780323
+    ]
+    '__engineer' => '32'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\anzhuang\\;D:\\phpStudy\\php55n\\;D:\\svn\\svnserveranzhuang\\bin;D:\\svn\\Tortoisesvnanzhuang\\bin;C:\\Users\\79816\\AppData\\Roaming\\npm;C:\\Users\\79816\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpStudy\\php55n\\'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2500'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/Public/Uploads/Links/2016-12-07/5847c532ab2cf.gif'
+    'REMOTE_PORT' => '59572'
+    'SCRIPT_FILENAME' => 'G:/jeendon/wwwroot/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/jeendon/wwwroot'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.9'
+    'SERVER_NAME' => '127.0.0.9'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '__user_identity=1ef6796baa2d0be517468dc633616033c5df5a1e59ef1b6cbe455c2690eb0873a%3A2%3A%7Bi%3A0%3Bs%3A15%3A%22__user_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B%221%22%2C%22%22%2C2592000%5D%22%3B%7D; __employer_identity=4accb992eef9336ec6ef2c71a844fe8e6dda5eda774d763a8f4df88a8ef004d3a%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__employer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2268%22%2Cnull%2C2592000%5D%22%3B%7D; __engineer_identity=49556ddbcc9e392d641c328ab9756b38814bbcc351da2ed2ed2ccb9130b7a05ba%3A2%3A%7Bi%3A0%3Bs%3A19%3A%22__engineer_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B%2232%22%2Cnull%2C2592000%5D%22%3B%7D; PHPSESSID=455fnrkne7a17l48afhd8rt8l7; _csrf=0213e50c8f7b400314f5d4535cd5abdfd7274a6e8149f659e011ca5293d3b42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HdtaSM1rj7fkP7ZgsB6RGxSIGABv8BuK%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_HOST' => '127.0.0.9'
+    'HTTP_AUTHORIZATION' => ''
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_HTTP_AUTHORIZATION' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497782546.8501
+    'REQUEST_TIME' => 1497782546
+]
