@@ -1210,10 +1210,17 @@ class EmpOrderManageController extends FrontendbaseController{
         }
         $results = $Ordermodel->getOrderSuccessingDetailFrontend($order_id);
         //判断订单类型跳转不同的页面
-        return $this->render('emp-successing-order-detail',[
-            'order_type' => $results['order_type'],
-            'results' => $results,
-        ]);
+        if($results['order_type'] > 2){
+            return $this->render('emp-successing-order-detail-new',[
+                'order_type' => $results['order_type'],
+                'results' => $results,
+            ]);
+        }else{
+            return $this->render('emp-successing-order-detail',[
+                'order_type' => $results['order_type'],
+                'results' => $results,
+            ]);
+        }
     }
     /**
      * 雇主评价

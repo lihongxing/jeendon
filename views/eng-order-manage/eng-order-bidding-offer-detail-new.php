@@ -50,10 +50,8 @@ $this->registerMetaTag(array(
                 </li>
                 <li class="card3">需求编号:<?=$offer['task_parts_id']?>
                 </li>
-                <li class="card_g"><?=$offer['task_part_type']?>
-                    ,<?php if($offer['order_type'] == 2){?>
-                        <?=$offer['task_process_name']?>
-                        ,<?php }?>
+                <li class="card_g">
+                    <?=$offer['order_part_number']?>,
                     <?=$offer['order_type']?>
                 </li>
                 <li class="card4">
@@ -105,7 +103,7 @@ $this->registerMetaTag(array(
     <div class="plan Hbvd" name="A1" style="border:0" id="A1">
         <div class="pion">
             <p class="renwxx">
-                技术要求或审图意见
+
             </p>
             <table>
                 <tbody>

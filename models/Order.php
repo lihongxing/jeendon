@@ -1199,8 +1199,16 @@ class Order extends \yii\db\ActiveRecord
             ->where(['drf_order_number' => $results['order_number']])
             ->asArray()
             ->all();
-        $results['tasks'] = $tasks;
         $results['DemandReleaseFiles'] = $DemandReleaseFiles;
+
+        //获取雇主上传接口上传文件信息
+        $OpinionExaminationFilemodel = new OpinionExaminationFile();
+        $OpinionExaminationFiles = $OpinionExaminationFilemodel->find()
+            ->where(['drf_order_number' => $results['order_number']])
+            ->asArray()
+            ->all();
+        $results['tasks'] = $tasks;
+        $results['OpinionExaminationFiles'] = $OpinionExaminationFiles;
         return $results;
     }
 

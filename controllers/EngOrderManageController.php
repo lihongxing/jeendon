@@ -15,6 +15,7 @@ use app\models\Engineer;
 use app\models\Evaluate;
 use app\models\FinalFileUpload;
 use app\models\Offer;
+use app\models\OpinionExaminationFile;
 use app\models\Order;
 use app\models\Procedure;
 use app\models\SpareParts;
@@ -426,6 +427,14 @@ class EngOrderManageController extends FrontendbaseController{
         $offer['procedure'] = $procedureemp;
 
         if($offer['task_type'] > 2){
+            //获取雇主上传接口上传文件信息
+            $OpinionExaminationFilemodel = new OpinionExaminationFile();
+            $OpinionExaminationFiles = $OpinionExaminationFilemodel->find()
+                ->where(['drf_order_number' => $offer['order_number']])
+                ->asArray()
+                ->all();
+            $results['OpinionExaminationFiles'] = $OpinionExaminationFiles;
+
             return $this->render('eng-order-conducting-offer-detail-new',[
                 'offer' => $offer,
                 'finanfiles' => $finanfiles,
@@ -564,15 +573,27 @@ class EngOrderManageController extends FrontendbaseController{
             ->asArray()
             ->one();
         $offer['evaluate'] = $evaluate;
-        return $this->render('eng-order-successing-offer-detail',[
-            'offer' => $offer,
-            'finanfiles' => $finanfiles,
-            'whetherbindbankcard' => $whetherbindbankcard,
-            'appliypaymentmoney80' => $appliypaymentmoney80,
-            'appliypaymentmoney20' => $appliypaymentmoney20,
-            'debitrefund' => $debitrefund,
-            'results' => $results,
-        ]);
+        if($offer['task_type'] > 2){
+            return $this->render('eng-order-successing-offer-detail-new',[
+                'offer' => $offer,
+                'finanfiles' => $finanfiles,
+                'whetherbindbankcard' => $whetherbindbankcard,
+                'appliypaymentmoney80' => $appliypaymentmoney80,
+                'appliypaymentmoney20' => $appliypaymentmoney20,
+                'debitrefund' => $debitrefund,
+                'results' => $results,
+            ]);
+        }else{
+            return $this->render('eng-order-successing-offer-detail',[
+                'offer' => $offer,
+                'finanfiles' => $finanfiles,
+                'whetherbindbankcard' => $whetherbindbankcard,
+                'appliypaymentmoney80' => $appliypaymentmoney80,
+                'appliypaymentmoney20' => $appliypaymentmoney20,
+                'debitrefund' => $debitrefund,
+                'results' => $results,
+            ]);
+        }
     }
     /**
      * 评价详情

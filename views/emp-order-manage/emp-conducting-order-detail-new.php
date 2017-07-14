@@ -146,9 +146,7 @@ $this->registerMetaTag(array(
                                                 <td>最终报告</td>
                                                 <td colspan="3">退款扣款申请</td>
                                             </tr>
-
                                             <tr>
-
                                                 <td rowspan="<?=count($item['procedures'])?>">
                                                     <?php
                                                     switch($item['task_status']) {

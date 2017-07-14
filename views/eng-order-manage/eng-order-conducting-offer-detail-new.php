@@ -44,10 +44,12 @@ $this->registerMetaTag(array(
                             <b class="bcsx2"><?=$offer['emp_province']?></b>
                         </span>
                     </div>
-
                 </li>
                 <li class="card3">需求编号:<?=$offer['task_parts_id']?></li>
-                <li class="card_g"><?=$offer['task_part_type']?>,<?php if($offer['order_type'] == 2){?><?=$offer['task_process_name']?>,<?php }?><?=$offer['order_type']?></li>
+                <li class="card_g">
+                    <?=$offer['order_part_number']?>,
+                    <?=$offer['order_type']?>
+                </li>
                 <li class="card4">
                     <?php if ($offer['order_bidding_period'] * 3600 * 24 + $offer['order_add_time'] - time() > 0 && $offer['status'] == 100) { ?>
                         <script type="text/javascript">
@@ -440,6 +442,41 @@ $this->registerMetaTag(array(
             </div>
         <?php }?>
     </div>
+    <div class="plan Hbvd" name="A1" style="border:0" id="A1">
+        <div class="pion">
+            <p class="renwxx">审图意见</p>
+            <table>
+                <tbody>
+                <tr class="biaot opt" id="demandreleaseadd">
+                    <td>文件名称</td>
+                    <td>上传时间</td>
+                    <td>文件详情</td>
+                    <td>操作</td>
+                </tr>
+                <?php if (!empty($results['OpinionExaminationFiles'])) { ?>
+                    <?php foreach ($results['OpinionExaminationFiles'] as $key => $OpinionExaminationFile) { ?>
+                        <tr>
+                            <td><?= $OpinionExaminationFile['drf_name'] ?></td>
+                            <td><?= date("Y-m-d h:i:sa", $OpinionExaminationFile['drf_add_time']) ?></td>
+                            <td><?= $OpinionExaminationFile['drf_url'] ?></td>
+                            <td class="delop">
+                                <a class="btn btn-success btn-xs"
+                                   onclick="window.location.href = '<?= $OpinionExaminationFile['drf_url'] ?>'">
+                                    <i class="fa fa-fw fa-download"></i>
+                                    下载
+                                </a>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                <?php }else{ ?>
+                    <tr>
+                        <td colspan="4">未上传审图意见</td>
+                    </tr>
+                <?php }?>
+                </tbody>
+            </table>
+        </div>
+    </div>
     <div class="depen" style="border:0">
         <form id="thr_form" class="uiy_gtr" method="POST" action="/task-hall/engineer-offer.html" novalidate="novalidate">
             <div class="tujab">
@@ -455,15 +492,15 @@ $this->registerMetaTag(array(
                 <?php if($offer['task_emp_confirm_add_time']+3*24*3600 > time()){?>
                 <input type="button" class="tujob" style="background: rgb(151, 151, 151) none repeat scroll 0% 0%;" value="80%无法申请">
                     <span class="tujaba">
-                                <span>
-                                    <?php if($offer['task_status'] == 111){?>
-                                        <b style="color: #00a0e9">雇主已确认最终文件</b>  距离申请款项时间还有：
-                                    <?php }else{?>
-                                        <b style="color: #00a0e9">雇主未确认最终文件</b>  距离申请款项时间还有：
-                                    <?php }?>
-                                    <span><span id="ta_d8">00 </span> 天<span id="ta_h8">00 </span> 小时<span id="ta_m8">00 </span> 分<span id="ta_s8">00 </span> 秒</span>
-                                </span>
-                            </span>
+                        <span>
+                            <?php if($offer['task_status'] == 111){?>
+                                <b style="color: #00a0e9">雇主已确认最终文件</b>  距离申请款项时间还有：
+                            <?php }else{?>
+                                <b style="color: #00a0e9">雇主未确认最终文件</b>  距离申请款项时间还有：
+                            <?php }?>
+                            <span><span id="ta_d8">00 </span> 天<span id="ta_h8">00 </span> 小时<span id="ta_m8">00 </span> 分<span id="ta_s8">00 </span> 秒</span>
+                        </span>
+                    </span>
                     <script type="text/javascript">
                         function getA80Time()
                         {
