@@ -574,6 +574,13 @@ class EngOrderManageController extends FrontendbaseController{
             ->one();
         $offer['evaluate'] = $evaluate;
         if($offer['task_type'] > 2){
+            //获取雇主上传接口上传文件信息
+            $OpinionExaminationFilemodel = new OpinionExaminationFile();
+            $OpinionExaminationFiles = $OpinionExaminationFilemodel->find()
+                ->where(['drf_order_number' => $offer['order_number']])
+                ->asArray()
+                ->all();
+            $results['OpinionExaminationFiles'] = $OpinionExaminationFiles;
             return $this->render('eng-order-successing-offer-detail-new',[
                 'offer' => $offer,
                 'finanfiles' => $finanfiles,
