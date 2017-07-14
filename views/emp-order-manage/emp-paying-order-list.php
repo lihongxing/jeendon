@@ -32,7 +32,9 @@ $this->registerMetaTag(array(
                 <option value ="">全部分类</option>
                 <?php if(!empty(ConstantHelper::$order_type)){?>
                     <?php foreach (ConstantHelper::$order_type['data'] as $key => $ordertype){?>
-                        <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$ordertype?></option>
+                        <?php if($key > 2){?>
+                            <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$ordertype?></option>
+                        <?php }?>
                     <?php }?>
                 <?php }?>
             </select>
@@ -45,7 +47,7 @@ $this->registerMetaTag(array(
             <th>发布日期</th>
             <th>项目代号</th>
             <th>订单号</th>
-<!--            <th>任务总数</th>-->
+            <th>需求类型</th>
 <!--            <th>已有工程师报价任务总数</th>-->
             <th>支付总额</th>
             <th>招标持续时间</th>
@@ -59,7 +61,7 @@ $this->registerMetaTag(array(
                 <td><?=date('Y/m/d',$item['order_add_time']) ?></td>
                 <td><?=$item['order_item_code']?></td>
                 <td><a href="<?=Url::toRoute(['/emp-order-manage/emp-paying-order-detail', 'order_id' => $item['order_id']])?>"><?=$item['order_number']?></a></td>
-<!--                <td>--><?//=$item['paytasknumber']?><!--</td>-->
+                <td><?=ConstantHelper::get_order_byname($item['order_type'], 'order_type', 2,1)?></td>
 <!--                <td>--><?//= $item['payengnumber']?><!--</td>-->
                 <td><?=$item['order_pay_total_money']?></td>
                 <td><?=ConstantHelper::get_order_byname($item['order_bidding_period'], 'order_bidding_period', 2,1)?>天</td>

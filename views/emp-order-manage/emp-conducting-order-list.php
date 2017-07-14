@@ -31,7 +31,9 @@ $this->registerMetaTag(array(
                 <option value ="">全部分类</option>
                 <?php if(!empty(ConstantHelper::$order_type)){?>
                     <?php foreach (ConstantHelper::$order_type['data'] as $key => $ordertype){?>
-                        <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$ordertype?></option>
+                        <?php if($key > 2){?>
+                            <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$ordertype?></option>
+                        <?php }?>
                     <?php }?>
                 <?php }?>
             </select>
@@ -44,7 +46,7 @@ $this->registerMetaTag(array(
             <th>发布日期</th>
             <th>项目代号</th>
             <th>订单号</th>
-<!--            <th>任务总数</th>-->
+            <th>需求类型</th>
 <!--            <th>待确认任务总数</th>-->
             <th>订单总金额</th>
             <th>费用托管日期</th>
@@ -56,7 +58,7 @@ $this->registerMetaTag(array(
                     <td><?=date('Y/m/d',$item['order_add_time']) ?></td>
                     <td><?=$item['order_item_code']?></td>
                     <td><?=$item['order_number']?></td>
-<!--                    <td>--><?//=$item['order_task_number']?><!--</td>-->
+                    <td><?=ConstantHelper::get_order_byname($item['order_type'], 'order_type', 2,1)?></td>
 <!--                    <td>-->
 <!--                        --><?//=$item['pendingconfirmnum']?>
 <!--                    </td>-->

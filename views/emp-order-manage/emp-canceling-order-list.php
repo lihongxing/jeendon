@@ -41,7 +41,9 @@ $this->registerMetaTag(array(
                 <option <?= $order_type == '' ? 'selected = selected' : ''?> value ="">全部分类</option>
                 <?php if(!empty(ConstantHelper::$order_type)){?>
                     <?php foreach (ConstantHelper::$order_type['data'] as $key => $ordertype){?>
-                        <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$ordertype?></option>
+                        <?php if($key > 2){?>
+                            <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$ordertype?></option>
+                        <?php }?>
                     <?php }?>
                 <?php }?>
             </select>

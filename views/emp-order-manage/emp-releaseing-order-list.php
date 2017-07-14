@@ -30,8 +30,10 @@ $this->registerMetaTag(array(
              <select id="Bxcs" name="order_type" class="Xkuf_1">
                  <option value ="">全部分类</option>
                  <?php if(!empty(ConstantHelper::$order_type)){?>
-                     <?php foreach (ConstantHelper::$order_type['data'] as $key => $order_type){?>
-                         <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$order_type?></option>
+                     <?php foreach (ConstantHelper::$order_type['data'] as $key => $ordertype){?>
+                         <?php if($key > 2){?>
+                            <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$ordertype?></option>
+                         <?php }?>
                      <?php }?>
                  <?php }?>
             </select>
@@ -44,7 +46,7 @@ $this->registerMetaTag(array(
             <th>发布日期</th>
             <th>项目代号</th>
             <th>订单号</th>
-<!--            <th>任务总数</th>-->
+            <th>需求类型</th>
             <th>招标持续时间</th>
             <th>操作</th>
         </tr>
@@ -56,7 +58,7 @@ $this->registerMetaTag(array(
                     <td><?=date('Y/m/d',$item['order_add_time']) ?></td>
                     <td><?=$item['order_item_code']?></td>
                     <td><a href="<?=Url::toRoute(['/emp-demand-release/demand-describe', 'order_id' => $item['order_id']])?>"><?=$item['order_number']?></a></td>
-<!--                    <td>--><?//=$item['order_task_number']?><!--</td>-->
+                    <td><?=ConstantHelper::get_order_byname($item['order_type'], 'order_type', 2,1)?></td>
                     <td><?=ConstantHelper::get_order_byname($item['order_bidding_period'], 'order_bidding_period', 2,1)?>天</td>
                     <td>
                         <a href="<?=Url::toRoute(['/emp-demand-release/demand-describe', 'order_id' => $item['order_id']])?>">继续发布</a>

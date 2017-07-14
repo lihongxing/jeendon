@@ -65,7 +65,14 @@ class EmpOrderManageController extends FrontendbaseController{
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $Ordermodel = $Ordermodel->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $Ordermodel = $Ordermodel->andWhere(['order_type' => $ordertype]);
         }
         //项目编号搜索
         $order_item_code = yii::$app->request->get('order_item_code') ? yii::$app->request->get('order_item_code') : '';
@@ -196,7 +203,14 @@ class EmpOrderManageController extends FrontendbaseController{
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $Ordermodel = $Ordermodel->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $Ordermodel = $Ordermodel->andWhere(['order_type' => $ordertype]);
         }
         //项目编号搜索
         $order_item_code = yii::$app->request->get('order_item_code') ? yii::$app->request->get('order_item_code') : '';
@@ -326,7 +340,14 @@ class EmpOrderManageController extends FrontendbaseController{
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $Ordermodel = $Ordermodel->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $Ordermodel = $Ordermodel->andWhere(['order_type' => $ordertype]);
         }
         //项目编号搜索
         $order_item_code = yii::$app->request->get('order_item_code') ? yii::$app->request->get('order_item_code') : '';
@@ -475,7 +496,14 @@ class EmpOrderManageController extends FrontendbaseController{
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $Ordermodel = $Ordermodel->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $Ordermodel = $Ordermodel->andWhere(['order_type' => $ordertype]);
         }
         //项目编号搜索
         $order_item_code = yii::$app->request->get('order_item_code') ? yii::$app->request->get('order_item_code') : '';
@@ -604,7 +632,14 @@ class EmpOrderManageController extends FrontendbaseController{
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $Ordermodel = $Ordermodel->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $Ordermodel = $Ordermodel->andWhere(['order_type' => $ordertype]);
         }
         //项目编号搜索
         $order_item_code = yii::$app->request->get('order_item_code') ? yii::$app->request->get('order_item_code') : '';
@@ -626,6 +661,7 @@ class EmpOrderManageController extends FrontendbaseController{
         return $this->render('emp-paying-order-list',[
             'payingorders' => $payingorders,
             'order_number' => $order_number,
+            'order_type' => $order_type,
             'order_item_code' => $order_item_code,
             'start' => $start,
             'end' => $end,
@@ -1056,7 +1092,14 @@ class EmpOrderManageController extends FrontendbaseController{
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $Ordermodel = $Ordermodel->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $Ordermodel = $Ordermodel->andWhere(['order_type' => $ordertype]);
         }
         //项目编号搜索
         $order_item_code = yii::$app->request->get('order_item_code') ? yii::$app->request->get('order_item_code') : '';
@@ -1091,6 +1134,7 @@ class EmpOrderManageController extends FrontendbaseController{
         return $this->render('emp-successing-order-list',[
             'successingorders' => $successingorders,
             'order_number' => $order_number,
+            'order_type' => $order_type,
             'order_item_code' => $order_item_code,
             'start' => $start,
             'end' => $end,
