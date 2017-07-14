@@ -85,7 +85,14 @@ class EngOrderManageController extends FrontendbaseController{
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $query = $query->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $query = $query->andWhere(['order_type' => $ordertype]);
         }
         $query = $query->andWhere(['in', 'offer_status', [102, 101]]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 10]);
@@ -141,7 +148,14 @@ class EngOrderManageController extends FrontendbaseController{
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $query = $query->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $query = $query->andWhere(['order_type' => $ordertype]);
         }
         $query = $query->andWhere(['offer_status' => 100]);
         $query = $query->andWhere(['in','task_status', [103,104,105,106,111]]);
@@ -208,7 +222,14 @@ class EngOrderManageController extends FrontendbaseController{
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $query = $query->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $query = $query->andWhere(['order_type' => $ordertype]);
         }
         //招标状态
         $offer_status = yii::$app->request->get('offer_status') ? yii::$app->request->get('offer_status') : '';
@@ -620,6 +641,11 @@ class EngOrderManageController extends FrontendbaseController{
             ->one();
         return $this->ajaxReturn(['status' => 100,'evaluate' => $evaluate]);
     }
+
+    /**
+     * 工程师费用申请
+     * @return string|void
+     */
     public function actionEngApplyfee(){
         if(yii::$app->request->isPost){
             $post = yii::$app->request->post();

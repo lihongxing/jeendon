@@ -30,8 +30,13 @@ $this->registerMetaTag(array(
             <span class="Mcer"style="margin-left: 30px;">需求类型：</span>
             <select id="Bxcs" name="order_type" class="Xkuf_1">
                 <option <?php if($order_type == ''){?> selected="selected" <?php }?> value ="">全部分类</option>
-                <option <?php if($order_type == 2){?> selected="selected" <?php }?> value="2">结构需求</option>
-                <option <?php if($order_type == 1){?> selected="selected" <?php }?> value="1">工艺需求</option>
+                <?php if(!empty(ConstantHelper::$order_type)){?>
+                    <?php foreach (ConstantHelper::$order_type['data'] as $key => $ordertype){?>
+                        <?php if($key > 2){?>
+                            <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$ordertype?></option>
+                        <?php }?>
+                    <?php }?>
+                <?php }?>
             </select>
             <input class="LefG1" id="Button" value="查询" type="submit">
         </form>
@@ -45,6 +50,7 @@ $this->registerMetaTag(array(
             <th>任务号</th>
             <th>我的报价</th>
             <th>报价周期</th>
+            <th>需求类型</th>
             <th>状态</th>
             <th>保证金</th>
             <th>操作</th>
@@ -60,6 +66,7 @@ $this->registerMetaTag(array(
                     <td><a href="<?=Url::toRoute(['/eng-order-manage/eng-order-bidding-offer-detail', 'offer_id' => $item['offer_id']])?>"><?=$item['task_parts_id']?></a></td>
                     <td><?=intval($item['offer_money_eng'])?>(元)</td>
                     <td><?=$item['offer_cycle']?>(天)</td>
+                    <td><?=ConstantHelper::get_order_byname($item['order_type'], 'order_type', 2,1)?></td>
                     <td>
                         <?php
                             switch($item['offer_status']){
@@ -101,7 +108,7 @@ $this->registerMetaTag(array(
                 </tr>
             <?php }?>
         <?php }else{?>
-            <td colspan="9">
+            <td colspan="10">
                 <div class="GThg" style="width: 345px;background-position:65px 63px;padding: 50px 0;"> &nbsp; &nbsp;对不起!没有搜索到相关数据！</div>
             </td>
         <?php }?>

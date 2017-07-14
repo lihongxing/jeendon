@@ -38,11 +38,13 @@ class TaskHallController extends FrontendbaseController
 
             if(!empty($type)){
                 if($type == 4){
-                    $type = [4,1];
+                    $order_type = [4,1];
                 }else if($type == 5){
-                    $type = [5,2];
+                    $order_type = [5,2];
+                }else{
+                    $order_type = $type;
                 }
-                $query = $query->andWhere(['order_type' => $type]);
+                $query = $query->andWhere(['order_type' => $order_type]);
             }
             if(!empty($keyword)){
                 $query = $query->andWhere(['or',
@@ -567,7 +569,14 @@ class TaskHallController extends FrontendbaseController
         //类型搜索
         $order_type = yii::$app->request->get('order_type') ? yii::$app->request->get('order_type') : '';
         if(!empty($order_type)){
-            $query = $query->andWhere(['order_type' => $order_type]);
+            if($order_type == 4){
+                $ordertype = [4,1];
+            }else if($order_type == 5){
+                $ordertype = [5,2];
+            }else{
+                $ordertype = $order_type;
+            }
+            $query = $query->andWhere(['order_type' => $ordertype]);
         }
         $query = $query->andWhere(['in', 'offerorder_status', [100]]);
         $pages = new Pagination(['totalCount' => $query->count(), 'pageSize' => 10]);

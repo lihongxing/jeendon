@@ -30,8 +30,13 @@ $this->registerMetaTag(array(
             <span class="Mcer"style="margin-left: 30px;">需求类型：</span>
             <select id="Bxcs" name="order_type" class="Xkuf_1">
                 <option <?php if($order_type == ''){?> selected="selected" <?php }?> value ="">全部分类</option>
-                <option <?php if($order_type == 2){?> selected="selected" <?php }?> value="2">结构需求</option>
-                <option <?php if($order_type == 1){?> selected="selected" <?php }?> value="1">工艺需求</option>
+                <?php if(!empty(ConstantHelper::$order_type)){?>
+                    <?php foreach (ConstantHelper::$order_type['data'] as $key => $ordertype){?>
+                        <?php if($key > 2){?>
+                            <option <?= $order_type == $key ? 'selected = selected' : ''?> value ="<?=$key?>"><?=$ordertype?></option>
+                        <?php }?>
+                    <?php }?>
+                <?php }?>
             </select>
             <input class="LefG1" id="Button" value="查询" type="submit">
         </form>
@@ -44,7 +49,7 @@ $this->registerMetaTag(array(
             <th>订单号</th>
             <th>任务号</th>
             <th>我的报价</th>
-<!--            <th>含平台管理费用金额</th>-->
+            <th>需求类型</th>
             <th>报价周期</th>
             <th>状态</th>
             <th>操作</th>
@@ -59,6 +64,7 @@ $this->registerMetaTag(array(
                     <td><?=$item['order_number']?></td>
                     <td><?=$item['task_parts_id']?></td>
                     <td><?=intval($item['offer_money'])?>(元)</td>
+                    <td><?=ConstantHelper::get_order_byname($item['order_type'], 'order_type', 2,1)?></td>
                     <td><?=$item['offerorder_cycle']?>(天)</td>
                     <td>
                         <?php
