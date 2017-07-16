@@ -165,16 +165,16 @@ $this->registerMetaTag(array(
                             </td>
                             <td class="setup" content="数量">
                                 <?php if(!empty($results['tasks'])){?>
-                                    <textarea  name="order_part_number" rows="3" style="border: none;text-align:center;padding-top: 40px;" id="order_part_number"><?=$results['order_part_number']?></textarea>
+                                    <textarea  name="order_part_number" rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" id="order_part_number"><?=$results['order_part_number']?></textarea>
                                 <?php }else{?>
-                                    <textarea name="order_part_number"  rows="3" style="border: none;text-align:center;padding-top: 40px;" id="order_part_number" placeholder="请填写：几个零件、或者几套模具、或者几套检具，比如：5个零件"></textarea>
+                                    <textarea name="order_part_number"  rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" id="order_part_number" placeholder="请填写：几个零件、或者几套模具、或者几套检具，比如：5个零件"></textarea>
                                 <?php }?>
                             </td>
                             <td class="setup"  content="车厂体系">
                                 <?php if(!empty($results['tasks'])){?>
-                                    <textarea id="order_parking_system" value="<?=$results['order_parking_system']?>" name="order_parking_system" rows="3" style="border: none;text-align:center;padding-top: 40px;" ><?=$results['order_parking_system']?></textarea>
+                                    <textarea id="order_parking_system" value="<?=$results['order_parking_system']?>" name="order_parking_system" rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" ><?=$results['order_parking_system']?></textarea>
                                 <?php }else{?>
-                                    <textarea  rows="3" style="border: none;text-align:center;padding-top: 40px;" id="order_parking_system" value="<?=$results['order_parking_system']?>" name="order_parking_system" placeholder="请输入车场体系"></textarea>
+                                    <textarea  rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" id="order_parking_system" value="<?=$results['order_parking_system']?>" name="order_parking_system" placeholder="请输入车场体系"></textarea>
                                 <?php }?>
                             </td>
                             <td class="fate eit" content="招标持续天数">
@@ -187,9 +187,9 @@ $this->registerMetaTag(array(
                             </td>
                             <td class=""  content="总工期要求">
                                 <?php if(!empty($results['tasks'])){?>
-                                    <textarea id="order_total_period" value="<?=$results['order_total_period']?>" name="order_total_period" rows="3" style="border: none;text-align:center;padding-top: 40px;" ><?=$results['order_total_period']?></textarea>
+                                    <textarea id="order_total_period" value="<?=$results['order_total_period']?>" name="order_total_period" rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" ><?=$results['order_total_period']?></textarea>
                                 <?php }else{?>
-                                    <textarea  rows="3" style="border: none;text-align:center;padding-top: 40px;" id="order_total_period" value="<?=$results['order_total_period']?>" name="order_total_period" placeholder="请填写（该总工期为全部所需成果完成的时间）"></textarea>
+                                    <textarea  rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" id="order_total_period" value="<?=$results['order_total_period']?>" name="order_total_period" placeholder="请填写（该总工期为全部所需成果完成的时间）"></textarea>
                                 <?php }?>
                             </td>
                             <td class="parameter eit" content="是否需要开发票">
