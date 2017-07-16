@@ -736,7 +736,7 @@ class ConstantHelper
                     'flag' => 'ZD'
                 ],
             ],
-            'des' => '冲压模具'
+            'des' => '注塑模具'
         ],
         '3' => [
             'types' => [
@@ -751,7 +751,7 @@ class ConstantHelper
                     'flag' => 'YD'
                 ],
             ],
-            'des' => '注塑模具'
+            'des' => '压铸模具'
         ],
         '4' => [
             'types'=> [
@@ -771,7 +771,7 @@ class ConstantHelper
                     'flag' => 'JC'
                 ],
             ],
-            'des' => '注塑模具'
+            'des' => '工装夹具'
         ],
         '5' => [
             'types' => [
