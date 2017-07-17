@@ -170,11 +170,11 @@ $this->registerMetaTag(array(
                                     <textarea name="order_part_number"  rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" id="order_part_number" placeholder="请填写：几个零件、或者几套模具、或者几套检具，比如：5个零件"></textarea>
                                 <?php }?>
                             </td>
-                            <td class="setup"  content="车厂体系">
+                            <td class="setup"  content="行业/车厂体系">
                                 <?php if(!empty($results['tasks'])){?>
                                     <textarea id="order_parking_system" value="<?=$results['order_parking_system']?>" name="order_parking_system" rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" ><?=$results['order_parking_system']?></textarea>
                                 <?php }else{?>
-                                    <textarea  rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" id="order_parking_system" value="<?=$results['order_parking_system']?>" name="order_parking_system" placeholder="请输入车场体系"></textarea>
+                                    <textarea  rows="3" style="overflow:hidden;border: none;text-align:center;padding-top: 40px;" id="order_parking_system" value="<?=$results['order_parking_system']?>" name="order_parking_system" placeholder="请输入行业/车厂体系"></textarea>
                                 <?php }?>
                             </td>
                             <td class="fate eit" content="招标持续天数">
