@@ -128,7 +128,7 @@ $this->registerMetaTag(array(
                 <div>项目代号</div>
             </div>
             <p id="itemo">
-                <b class='need'>*</b> 项目代号：<input id="itemc" name="order_item_code" value="<?=$results['order_item_code']?>" type="text" placeholder="请输入项目代号，方便您的后期管理">
+                项目代号：<input id="itemc" name="order_item_code" value="<?=$results['order_item_code']?>" type="text" placeholder="请输入项目代号，方便您的后期管理">
             </p>
             <div class="fengf">
                 <div>任务订单</div>
@@ -141,7 +141,7 @@ $this->registerMetaTag(array(
                             <td style="width: 180px"><b class='need'>*</b> 需提交的成果</td>
                             <td style="width: 120px"><b class='need'>*</b> 设计软件</td>
                             <td style="width: 140px"><b class='need'>*</b> 数量</td>
-                            <td style="width: 106px"><b class='need'></b>车厂体系</td>
+                            <td style="width: 106px"><b class='need'></b>行业/车厂体系</td>
                             <td style="width: 90px"><b class='need'>*</b> 招标持续天数</td>
                             <td style="width: 80px"><b class='need'>*</b> 总工期要求</td>
                             <td style="width: 140px"><b class='need'>*</b> 是否需要开发票</td>
