@@ -15,7 +15,7 @@ $this->registerMetaTag(array(
         height: auto;
         line-height: 28px;
         overflow-wrap: break-word;
-        width: 230px;
+        width: 250px;
         word-break: break-all;
     }
 </style>

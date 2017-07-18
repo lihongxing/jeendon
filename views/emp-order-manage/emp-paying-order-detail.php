@@ -15,7 +15,7 @@ $this->registerMetaTag(array(
         height: auto;
         line-height: 28px;
         overflow-wrap: break-word;
-        width: 260px;
+        width: 340px;
         word-break: break-all;
     }
     .taskstatus{

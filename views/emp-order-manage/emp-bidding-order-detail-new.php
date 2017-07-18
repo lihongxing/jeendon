@@ -21,7 +21,7 @@ header("Pragma: no-cache");
         height: auto;
         line-height: 28px;
         overflow-wrap: break-word;
-        width: 280px;
+        width: 380px;
         word-break: break-all;
     }
 </style>
@@ -142,13 +142,13 @@ header("Pragma: no-cache");
                                         </tr>
                                         <tr class='biaot'>
                                             <td>状态</td>
-                                            <td colspan='3'>工程师/报价/工期</td>
+                                            <td colspan='6'>工程师/报价/工期</td>
                                             <td colspan='2'>议价按钮</td>
                                         </tr>
                                         <tr>
                                             <input id="task_number<?=$key.$key1?>" value="<?=$item['task_number']?>" type="hidden">
                                             <?php if($l == 0){?>
-                                                <td rowspan="<?=$task['task_totalnum']?>">
+                                                <td>
                                                     <?php
                                                         switch($task['task_status']) {
                                                             case '101':
@@ -168,7 +168,7 @@ header("Pragma: no-cache");
                                                     ?>
                                                 </td>
 
-                                                <td colspan='3' rowspan="<?=$task['task_totalnum']?>">
+                                                <td colspan='6'>
                                                     <div class="gces">
                                                         <?php if(!empty($task['offers'])){?>
                                                             <?php foreach($task['offers'] as $k => $offer){?>
@@ -183,7 +183,7 @@ header("Pragma: no-cache");
                                                                                    value="<?=$offer['username']?>/<?=$offer['offer_money']?>/<?=$offer['offer_cycle']?>天" type="radio">
                                                                         <?php }?>
                                                                         <a href="<?=Url::toRoute(['/eng-home/eng-home-detail', 'eng_id' => $offer['offer_eng_id']])?>" title="<?=$offer['username']?>">
-                                                                            <?=\app\common\core\GlobalHelper::csubstr($offer['username'],-5,5,"utf-8",false)?>
+                                                                            <?=\app\common\core\GlobalHelper::csubstr($offer['username'],0,8,"utf-8",false)?>
                                                                         </a>
                                                                         /<?=$offer['offer_money']?>(元)
                                                                         /<?=$offer['offer_cycle']?>(天)
@@ -214,7 +214,7 @@ header("Pragma: no-cache");
                                                         <?php if(!empty($task['offers'])){?>
                                                             <?php foreach($task['offers'] as $k => $offer){?>
                                                                 <label class="Uikm">
-                                                                    <a href="<?=Url::toRoute(['/eng-home/eng-home-detail', 'eng_id' => $offer['offer_eng_id']])?>"><?=\app\common\core\GlobalHelper::csubstr($offer['username'],0,5,"utf-8",false)?></a>
+                                                                    <a href="<?=Url::toRoute(['/eng-home/eng-home-detail', 'eng_id' => $offer['offer_eng_id']])?>"><?=\app\common\core\GlobalHelper::csubstr($offer['username'],0,8,"utf-8",false)?></a>
                                                                     <input type="button" data-id="<?=$offer['offer_id']?>"
                                                                         <?php if($offer['offer_bargain'] == 101 && $offer['offer_bargain_status'] == 100){?>
                                                                             style="background-color: #4bb2e6;" disabled="disabled"
