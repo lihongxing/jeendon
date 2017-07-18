@@ -254,13 +254,13 @@ $this->params['breadcrumbs'][] = Yii::t('admin', $this->title);
                             <div class="form-group">
                                 <label class="col-sm-3 control-label" for="tcr_emp_money">退还金额</label>
                                 <div class="col-sm-9">
-                                    <input id="offer_order_money" class="form-control" placeholder="应退还雇主费用" name="Offer[offer_order_money]" value="" type="text">
+                                    <input id="offer_order_money" class="form-control" placeholder="请输入退还金额" name="Offer[offer_order_money]" value="" type="text">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label" for="tcr_eng_money">平台服务费用</label>
                                 <div class="col-sm-9">
-                                    <input id="offer_order_money_admin" class="form-control" placeholder="应付工程师费用" name="Offer[offer_order_money_admin]" value="" type="text">
+                                    <input id="offer_order_money_admin" class="form-control" placeholder="请输入平台服务费用" name="Offer[offer_order_money_admin]" value="" type="text">
                                 </div>
                             </div>
                             <div class="form-group">
