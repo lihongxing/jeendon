@@ -136,7 +136,9 @@ $this->registerMetaTag(array(
                                             </td>
                                         </tr>
                                         <tr class='biaot'>
-                                            <td colspan="9" style="text-align: left"><?=$task[0]['task_supplementary_notes']?></td>
+                                            <td colspan="9" style="text-align: left">
+                                                补充说明：<?= empty($task[0]['task_supplementary_notes']) ? '无' :$task[0]['task_supplementary_notes']?>
+                                            </td>
                                         </tr>
 
                                         <tr class='biaot'>

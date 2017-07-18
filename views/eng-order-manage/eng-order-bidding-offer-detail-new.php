@@ -261,7 +261,7 @@ $this->registerMetaTag(array(
                     </tr>
                     <tr>
                         <td colspan="9" style="text-align: left">
-                            <?=$offer['task_supplementary_notes']?>
+                            补充说明：<?= empty($offer['task_supplementary_notes']) ? '无' : $offer['task_supplementary_notes']?>
                         </td>
                     </tr>
                 </tbody>

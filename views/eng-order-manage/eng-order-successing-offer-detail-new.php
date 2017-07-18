@@ -2,19 +2,19 @@
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
 use app\common\core\ConstantHelper;
-$this->title = Yii::t('app', 'engconductingdetailtitle');
+$this->title = Yii::t('app', 'engsuccessingdetailtitle');
 $this->registerMetaTag(array(
-    "name" => "keywords", "content" => Yii::t('app', 'engconductingdetailkeywords')
+    "name" => "keywords", "content" => Yii::t('app', 'engsuccessingdetailkeywords')
 ));
 $this->registerMetaTag(array(
-    "name" => "description", "content" => Yii::t('app', 'engconductingdetaildescription')
+    "name" => "description", "content" => Yii::t('app', 'engsuccessingdetaildescription')
 ));
 ?>
 <link href="/frontend/css/relreq.css" rel="stylesheet">
 <link href="/frontend/css/designer.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/oss-h5-upload/style.css"/>
 <div id="shame">
-    <h3>进行中的任务-任务详情详情</h3>
+    <h3>已完成的任务-任务详情</h3>
     <div class="plan Hbvd" name="A1" style="border:0" id="A1">
         <div class="outi">
             <ul class="Send">
@@ -227,149 +227,141 @@ $this->registerMetaTag(array(
                 </tbody></table>
             <table class="outie">
                 <tbody>
-                    <tr>
-                        <th colspan="9" style="text-align: left">
-                            任务号 <?=$offer['task_parts_id']?>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td colspan="9" style="text-align: left">
-                            补充说明：<?= empty($offer['task_supplementary_notes']) ? '无' : $offer['task_supplementary_notes']?>
+                <tr>
+                    <th colspan="9" style="text-align: left">
+                        任务号 <?=$offer['task_parts_id']?>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="9" style="text-align: left">
+                        补充说明：<?= empty($offer['task_supplementary_notes']) ?  '无' : $offer['task_supplementary_notes']?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>报价工期</th>
+                    <th>状态</th>
+                    <th>费用托管日期</th>
+                    <?php if ($offer['offer_status'] == 100) { ?>
+                        <th colspan="2">进度报告</th>
+                    <?php } ?>
+                    <th colspan="2">评价</th>
+                </tr>
+                <tr>
+                    <?php if($offer['order_type'] == '结构图纸设计'){?>
+                        <td>
+                            <?=$proce['task_process_id']?>
                         </td>
-                    </tr>
-                    <tr>
-                        <th>报价工期</th>
-                        <th>状态</th>
-                        <th>费用托管日期</th>
-                        <?php if($offer['offer_status'] == 100){?>
-                            <th>进度报告1</th>
-                            <th>进度报告2</th>
-                            <th>进度报告3</th>
-                        <?php }?>
-                    </tr>
-                    <tr>
-                                <?php if($offer['order_type'] == '结构图纸设计'){?>
-                                    <td>
-                                        <?=$proce['task_process_id']?>
-                                    </td>
-                                    <td>
-                                        <?=$proce['task_process_name']?>
-                                    </td>
-                                    <td>
-                                        <?=ConstantHelper::get_order_byname($proce['task_source_pressure'], 'task_source_pressure', 2,1)?>
-                                    </td>
-                                <?php }?>
-                                <td>
-                                    <?=$offer['offer_cycle']?>天
-                                </td>
-                                <?php if($i == 0){?>
-                                    <td  rowspan="<?=count($offer['procedure'])?>">
-                                        <?php
-                                        switch($offer['task_status']) {
-                                            case 100:
-                                                echo '<label class="label label-default">发布中</label>';
-                                                break;
-                                            case 101:
-                                                echo '<label class="label label-info">招标中</label>';
-                                                break;
-                                            case 102:
-                                                echo '<label class="label label-primary">支付中</label>';
-                                                break;
-                                            case 103:
-                                                echo '<label class="label label-danger">进行中</label>';
-                                                break;
-                                            case 104:
-                                            case 105:
-                                                echo '<label class="label label-success">最终文件上传</label>';
-                                                break;
-                                            case 106:
-                                                echo '<label class="label label-warning">雇主下载</label>';
-                                                break;
-                                            case 107:
-                                                echo '<label class="label label-warning">已完成</label>';
-                                                break;
-                                            case 108:
-                                                echo '<label class="label label-warning">流拍</label>';
-                                                break;
-                                            case 109:
-                                                echo '<label class="label label-warning">招标中任务取消</label>';
-                                                break;
-                                            case 110:
-                                                echo '<label class="label label-warning">进行中任务取消</label>';
-                                                break;
-                                            case 111:
-                                                echo '<label class="label label-success">雇主确认</label>';
-                                                break;
-                                        }?>
-                                    </td>
-                                    <td rowspan="<?=count($offer['procedure'])?>"><?= date('Y/m/d', $offer['order_pay_time']) ?></td>
-                                    <?php if($offer['offer_status'] == 100){?>
-                                        <td  rowspan="<?=count($offer['procedure'])?>">
-                                            <?php if(empty($offer['task_process_file1_href'])){?>
-                                                <a class="btn btn-info btn-xs butoun" data-id="1"><i class="fa fa-fw fa-upload"></i>上传</a>
-                                            <?php }else{?>
-                                                <a class="btn btn-info btn-xs butoun" data-id="1"><i class="fa fa-fw fa-upload"></i>重传</a>
-                                                <a href="<?=$offer['task_process_file1_href']?>" class="btn btn-success btn-xs filedi"><i class="fa fa-fw fa-upload"></i>查看</a>
-                                            <?php }?>
-                                        </td>
-                                        <td  rowspan="<?=count($offer['procedure'])?>">
-                                            <?php if(empty($offer['task_process_file2_href'])){?>
-                                                <a class="btn btn-info btn-xs butoun" data-id="2"><i class="fa fa-fw fa-upload"></i>上传</a>
-                                            <?php }else{?>
-                                                <a class="btn btn-info btn-xs butoun" data-id="2"><i class="fa fa-fw fa-upload"></i>重传</a>
-                                                <a  href="<?=$offer['task_process_file2_href']?>" class="btn btn-success  btn-xs filedi"><i class="fa fa-fw fa-upload"></i>查看</a>
-                                            <?php }?>
-                                        </td>
-                                        <td  rowspan="<?=count($offer['procedure'])?>">
-                                            <?php if(empty($offer['task_process_file3_href'])){?>
-                                                <a class="btn btn-info btn-xs butoun" data-id="3"><i class="fa fa-fw fa-upload"></i>上传</a>
-                                            <?php }else{?>
-                                                <a class="btn btn-info btn-xs butoun" data-id="3"><i class="fa fa-fw fa-upload"></i>重传</a>
-                                                <a href="<?=$offer['task_process_file1_href']?>" class="btn btn-success btn-xs filedi"><i class="fa fa-fw fa-upload"></i>查看</a>
-                                            <?php }?>
-                                        </td>
-                                    <?php }?>
-                                <?php }?>
-                            </tr>
+                        <td>
+                            <?=$proce['task_process_name']?>
+                        </td>
+                        <td>
+                            <?=ConstantHelper::get_order_byname($proce['task_source_pressure'], 'task_source_pressure', 2,1)?>
+                        </td>
+                    <?php }?>
+                    <td>
+                        <?=$offer['offer_cycle']?>天
+                    </td>
+                    <?php if($i == 0){?>
+                        <td  rowspan="<?=count($offer['procedure'])?>">
+                            <?php
+                            switch($offer['task_status']) {
+                                case 100:
+                                    echo '<label class="label label-default">发布中</label>';
+                                    break;
+                                case 101:
+                                    echo '<label class="label label-info">招标中</label>';
+                                    break;
+                                case 102:
+                                    echo '<label class="label label-primary">支付中</label>';
+                                    break;
+                                case 103:
+                                    echo '<label class="label label-danger">进行中</label>';
+                                    break;
+                                case 104:
+                                case 105:
+                                    echo '<label class="label label-success">最终文件上传</label>';
+                                    break;
+                                case 106:
+                                    echo '<label class="label label-warning">雇主下载</label>';
+                                    break;
+                                case 107:
+                                    echo '<label class="label label-warning">已完成</label>';
+                                    break;
+                                case 108:
+                                    echo '<label class="label label-warning">流拍</label>';
+                                    break;
+                                case 109:
+                                    echo '<label class="label label-warning">招标中任务取消</label>';
+                                    break;
+                                case 110:
+                                    echo '<label class="label label-warning">进行中任务取消</label>';
+                                    break;
+                                case 111:
+                                    echo '<label class="label label-success">雇主确认</label>';
+                                    break;
+                            }?>
+                        </td>
+                        <td rowspan="<?=count($offer['procedure'])?>"><?= date('Y/m/d', $offer['order_pay_time']) ?></td>
+                        <?php if ($offer['offer_status'] == 100) { ?>
+                            <td colspan="2" rowspan="<?=count($offer['procedures'])?>">
+                                <?php if (empty($offer['task_process_file1_href'])) { ?>
+                                    无
+                                    <!--                                <a class="btn btn-info btn-xs butoun" data-id="1"><i class="fa fa-fw fa-upload"></i>上传</a>-->
+                                <?php } else { ?>
+                                    <!--                                <a class="btn btn-info btn-xs butoun" data-id="1"><i class="fa fa-fw fa-upload"></i>重传</a>-->
+                                    <a href="<?= $offer['task_process_file1_href'] ?>"
+                                       class="btn btn-success btn-xs filedi"><i class="fa fa-fw fa-upload"></i>查看</a>
+                                <?php } ?>
+                                <?php if (empty($offer['task_process_file2_href'])) { ?>
+                                    无
+                                    <!--                                <a class="btn btn-info btn-xs butoun" data-id="2"><i class="fa fa-fw fa-upload"></i>上传</a>-->
+                                <?php } else { ?>
+                                    <!--                                <a class="btn btn-info btn-xs butoun" data-id="2"><i class="fa fa-fw fa-upload"></i>重传</a>-->
+                                    <a href="<?= $offer['task_process_file2_href'] ?>"
+                                       class="btn btn-success  btn-xs filedi"><i class="fa fa-fw fa-upload"></i>查看</a>
+                                <?php } ?>
+                                <?php if (empty($offer['task_process_file3_href'])) { ?>
+                                    无
+                                    <!--                                <a class="btn btn-info btn-xs butoun" data-id="3"><i class="fa fa-fw fa-upload"></i>上传</a>-->
+                                <?php } else { ?>
+                                    <!--                                <a class="btn btn-info btn-xs butoun" data-id="3"><i class="fa fa-fw fa-upload"></i>重传</a>-->
+                                    <a href="<?= $offer['task_process_file1_href'] ?>"
+                                       class="btn btn-success btn-xs filedi"><i class="fa fa-fw fa-upload"></i>查看</a>
+                                <?php } ?>
+                            </td>
+                        <?php } ?>
+                        <td rowspan="<?=count($offer['procedures'])?>"  colspan="2">
+                            <?php if (!empty($offer['evaluate'])) { ?>
+                                <input type="button"
+                                       style="background-color: #4bb2e6;border: 0 none;border-radius: 3px;color: #fff;width: 40px;"
+                                       data-id="<?= $offer['evaluate']['eva_id'] ?>" value="查看" class="evalu">
+                                <!--                            <span>--><? //= $offer['evaluate']?><!--</span>-->
+                            <?php } else { ?>
+                                <span>无</span>
+                            <?php } ?>
+                        </td>
+                    <?php }?>
+                </tr>
                 </tbody>
             </table>
         </div>
-        <div id="filedi" class="Sutr_T">
-            <form id="uploadPicForm" method="POST" enctype="multipart/form-data" target="uploadpic" action="<?=Url::toRoute(['/upload/upload-frontend', 'type' => 'doc'])?>">
-                <input class="fl" name="pic3" value="文件" type="file" style="color: #fff;">
+        <div id="filedi" class="Sutr_T" style="height: 80px;line-height: 25px;">
+            <form id="uploadPicForm" method="POST" enctype="multipart/form-data" target="uploadpic"
+                  action="<?= Url::toRoute(['/upload/upload-frontend', 'type' => 'doc']) ?>">
+                <input class="fl" name="pic3" value="选择文件" type="file" style="color: #fff;">
                 <input class="sumti" value="上传" type="submit">
-                <input  id="process_file_number" name="process_file_number" type="hidden" value="">
-                <input  id="task_id" type="hidden" name="task_id" value="<?=$offer['task_id']?>">
+                <input id="process_file_number" name="process_file_number" type="hidden" value="">
+                <input id="task_id" type="hidden" name="task_id" value="<?= $offer['task_id'] ?>">
                 <input name="flag" value="process_file" type="hidden">
                 <input name="uploadPicDiv" value="filedi" type="hidden">
                 <label class="pardel">×</label>
             </form>
-            <span style="color: #fff;display: inline-block;">文件大小不超过 10 M</span><br />
+            <span style="color: #fff;">文件大小不超过 10 M</span><br/>
             <span style="color: #fff;">图片文件格式为 jpg、jpeg、png、gif</span>
         </div>
         <div class="desi"></div>
-        <?php if($offer['offer_status'] == 100){?>
+        <?php if ($offer['offer_status'] == 100) { ?>
             <div class="qsget">
-                <form name=theform>
-                    <input type="hidden" name="myradio" checked=true value="random_name" />
-                </form>
-                <div id="ossfile">你的浏览器不支持flash,Silverlight或者HTML5！</div>
-                <div id="container">
-                    <a id="selectfiles" href="javascript:void(0);" class='btn btn-info btn-xs'>选择文件</a>
-                    <a id="postfiles" href="javascript:void(0);" class='btn btn-info btn-xs'>开始上传</a>
-                    <span style="margin-left: 15px;font-weight: bold;font-size: 12px;position: relative;top: 3px">提交雇主需求的成果</span>
-                    <span style="margin-left: 15px;font-size: 12px;position: relative;top: 3px;color: #f00;">
-                        文件大小不超过1G，压缩文件格式为 rar 或 zip
-                    </span>
-                </div>
-                <pre id="console"></pre>
-                <div class="Sutr_T" id="fileou">
-                    <form id="uploadPicForm" method="POST" enctype="multipart/form-data" target="uploadpic" action="<?=Url::toRoute('/upload/upload-file-aliyun-oss')?>">
-                        <input name="pic4" class="fl" value="选择图片" type="file">
-                        <input class="sumti1" value="上传" type="submit">
-                        <label class="pardell">×</label>
-                    </form>
-                </div>
                 <table>
                     <tbody>
                     <tr class="biaot opt" id="fileinfos">
@@ -377,22 +369,23 @@ $this->registerMetaTag(array(
                         <td>上传时间</td>
                         <td>操作</td>
                     </tr>
-                    <?php if(!empty($finanfiles)){?>
-                        <?php foreach($finanfiles as $i => $finanfile){?>
+                    <?php if (!empty($finanfiles)) { ?>
+                        <?php foreach ($finanfiles as $i => $finanfile) { ?>
                             <tr>
-                                <td><?=$finanfile['fin_href']?></td>
-                                <td><?=$finanfile['fin_add_time']?></td>
+                                <td><?= $finanfile['fin_href'] ?></td>
+                                <td><?= $finanfile['fin_add_time'] ?></td>
                                 <td>
-                                    <a href="<?=$finanfile['fin_url']?>" class="btn btn-info btn-xs"><i class="fa fa-fw fa-eye"></i>查看</a>
+                                    <a href="<?= $finanfile['fin_url'] ?>" class="btn btn-info btn-xs"><i
+                                                class="fa fa-fw fa-eye"></i>查看</a>
                                 </td>
                             </tr>
-                        <?php }?>
-                    <?php }?>
+                        <?php } ?>
+                    <?php } ?>
                     </tbody>
                 </table>
             </div>
-        <?php }?>
-        <?php if(!empty($debitrefund)){?>
+        <?php } ?>
+        <?php if (!empty($debitrefund)) { ?>
             <div class="desi"></div>
             <div class="qsget">
                 <div id="container">
@@ -440,7 +433,7 @@ $this->registerMetaTag(array(
                     </tbody>
                 </table>
             </div>
-        <?php }?>
+        <?php } ?>
     </div>
     <div class="plan Hbvd" name="A1" style="border:0" id="A1">
         <div class="pion">
@@ -477,96 +470,14 @@ $this->registerMetaTag(array(
             </table>
         </div>
     </div>
+
     <div class="depen" style="border:0">
-        <form id="thr_form" class="uiy_gtr" method="POST" action="/task-hall/engineer-offer.html" novalidate="novalidate">
+        <form id="thr_form" class="uiy_gtr" method="POST" action="/task-hall/engineer-offer.html"
+              novalidate="novalidate">
             <div class="tujab">
                 <!-- 判断工程师是否上传最终文件 -->
-                <?php if(empty($finanfiles)){?>
-                <input type="button" class="tujob" style="background: rgb(151, 151, 151) none repeat scroll 0% 0%;" value="80%无法申请">
-                    <span>最终文件未上传</span>
-                <?php }elseif(empty($offer['task_emp_download_time'])){?>
-                <input type="button" class="tujob" style="background: rgb(151, 151, 151) none repeat scroll 0% 0%;" value="80%无法申请">
-                    <span>雇主未下载最终文件</span>
-                <?php }else{?>
-                <?php if($offer['task_status'] == 111){?>
-                <?php if($offer['task_emp_confirm_add_time']+3*24*3600 > time()){?>
-                <input type="button" class="tujob" style="background: rgb(151, 151, 151) none repeat scroll 0% 0%;" value="80%无法申请">
-                    <span class="tujaba">
-                        <span>
-                            <?php if($offer['task_status'] == 111){?>
-                                <b style="color: #00a0e9">雇主已确认最终文件</b>  距离申请款项时间还有：
-                            <?php }else{?>
-                                <b style="color: #00a0e9">雇主未确认最终文件</b>  距离申请款项时间还有：
-                            <?php }?>
-                            <span><span id="ta_d8">00 </span> 天<span id="ta_h8">00 </span> 小时<span id="ta_m8">00 </span> 分<span id="ta_s8">00 </span> 秒</span>
-                        </span>
-                    </span>
-                    <script type="text/javascript">
-                        function getA80Time()
-                        {
-                            <?php if($offer['task_status'] == 111){?>
-                            var str1 = '<?=date('Y-m-d H:i:s', $offer['task_emp_confirm_add_time']+3*24*3600)?>';
-                            <?php }else{?>
-                            var str1 = '<?=date('Y-m-d H:i:s', $offer['task_emp_download_time']+45*24*3600)?>';
-                            <?php }?>
-                            var EndTime=new Date(Date.parse(str1.replace(/-/g,"/"))); //截止时间
-                            var NowTime = new Date();
-                            var t =EndTime.getTime() - NowTime.getTime();
-                            var d=Math.floor(t/1000/60/60/24);
-                            var h=Math.floor(t/1000/60/60%24);
-                            var m=Math.floor(t/1000/60%60);
-                            var s=Math.floor(t/1000%60);
-                            document.getElementById("ta_d8").innerHTML = d;
-                            document.getElementById("ta_h8").innerHTML = h;
-                            document.getElementById("ta_m8").innerHTML = m;
-                            document.getElementById("ta_s8").innerHTML = s;
-                        }
-                        setInterval(getA80Time,1000);
-                    </script>
-                <?php }else{?>
-                <input type="button" class="tujob" data-id="1" id="applyfee" value="申请80%款费">
-                <?php }?>
-                <?php }else{?>
-                <?php if($offer['task_emp_download_time']+45*24*3600 > time()){?>
-                <input type="button" class="tujob" style="background: rgb(151, 151, 151) none repeat scroll 0% 0%;" value="80%无法申请">
-                    <span class="tujaba">
-                                <span>
-                                    <?php if($offer['task_status'] == 111){?>
-                                        <b style="color: #00a0e9">雇主已确认最终文件</b>  距离申请款项时间还有：
-                                    <?php }else{?>
-                                        <b style="color: #00a0e9">雇主未确认最终文件</b>  距离申请款项时间还有：
-                                    <?php }?>
-                                    <span><span id="ta_d8">00 </span> 天<span id="ta_h8">00 </span> 小时<span id="ta_m8">00 </span> 分<span id="ta_s8">00 </span> 秒</span>
-                                </span>
-                            </span>
-                    <script type="text/javascript">
-                        function getA80Time()
-                        {
-                            <?php if($offer['task_status'] == 111){?>
-                            var str1 = '<?=date('Y-m-d H:i:s', $offer['task_emp_confirm_add_time']+3*24*3600)?>';
-                            <?php }else{?>
-                            var str1 = '<?=date('Y-m-d H:i:s', $offer['task_emp_download_time']+45*24*3600)?>';
-                            <?php }?>
-                            var EndTime=new Date(Date.parse(str1.replace(/-/g,"/"))); //截止时间
-                            var NowTime = new Date();
-                            var t =EndTime.getTime() - NowTime.getTime();
-                            var d=Math.floor(t/1000/60/60/24);
-                            var h=Math.floor(t/1000/60/60%24);
-                            var m=Math.floor(t/1000/60%60);
-                            var s=Math.floor(t/1000%60);
-                            document.getElementById("ta_d8").innerHTML = d;
-                            document.getElementById("ta_h8").innerHTML = h;
-                            document.getElementById("ta_m8").innerHTML = m;
-                            document.getElementById("ta_s8").innerHTML = s;
-                        }
-                        setInterval(getA80Time,1000);
-                    </script>
-                <?php }else{?>
-                <input type="button" class="tujob" data-id="1" id="applyfee" value="申请80%款费">
-                <?php }?>
-                <?php }?>
-                <?php }?>
-                <?php if(!empty($appliypaymentmoney80)){?>
+                <p class="renwxx" style="margin-left:30px">80%款项申请记录</p>
+                <?php if (!empty($appliypaymentmoney80)) { ?>
                     <table style="width: 850px;margin: 10px 30px">
                         <tbody>
                         <tr class="biaot opt" id="fileinfos">
@@ -574,17 +485,17 @@ $this->registerMetaTag(array(
                             <td>申请时间</td>
                             <td>打款账户</td>
                             <td>状态</td>
-                            <?php if($appliypaymentmoney80['apply_money_status'] == 100){?>
+                            <?php if ($appliypaymentmoney80['apply_money_status'] == 100) { ?>
                                 <td>打款时间</td>
-                            <?php }?>
+                            <?php } ?>
                         </tr>
                         <tr class="biaot opt" id="fileinfos">
-                            <td><?=$appliypaymentmoney80['apply_money_apply_money']?>(元)</td>
-                            <td><?=date('Y-m-d H:i:s', $appliypaymentmoney80['apply_money_add_time'])?></td>
-                            <td><?=$appliypaymentmoney80['bind_alipay_account']?></td>
+                            <td><?= $appliypaymentmoney80['apply_money_apply_money'] ?>(元)</td>
+                            <td><?= date('Y-m-d H:i:s', $appliypaymentmoney80['apply_money_add_time']) ?></td>
+                            <td><?= $appliypaymentmoney80['bind_alipay_account'] ?></td>
                             <td>
                                 <?php
-                                switch($appliypaymentmoney80['apply_money_status']){
+                                switch ($appliypaymentmoney80['apply_money_status']) {
                                     case 100 :
                                         echo '已打款';
                                         break;
@@ -597,13 +508,13 @@ $this->registerMetaTag(array(
                                 }
                                 ?>
                             </td>
-                            <?php if($appliypaymentmoney80['apply_money_status'] == 100){?>
-                                <td><?=date('Y-m-d H:i:s', $appliypaymentmoney80['apply_money_pay_time'])?></td>
-                            <?php }?>
+                            <?php if ($appliypaymentmoney80['apply_money_status'] == 100) { ?>
+                                <td><?= date('Y-m-d H:i:s', $appliypaymentmoney80['apply_money_pay_time']) ?></td>
+                            <?php } ?>
                         </tr>
                         </tbody>
                     </table>
-                <?php }?>
+                <?php } ?>
             </div>
             <div class="plan Hbvd" name="A1" style="border:0" id="A1">
                 <div class="pion">
@@ -715,53 +626,8 @@ $this->registerMetaTag(array(
                 </div>
             </div>
             <div class="tujab" style="border-top:0px">
-                <?php if(empty($finanfiles)){?>
-                <input type="button" class="tujob" style="background: rgb(151, 151, 151) none repeat scroll 0% 0%;" value="20%无法申请">
-                    <span>最终文件未上传</span>
-                <?php }else{?>
-                <?php if(empty($appliypaymentmoney80)){?>
-                <input type="button" class="tujob" style="background: rgb(151, 151, 151) none repeat scroll 0% 0%;" value="20%无法申请">
-                    <span>80%的款费未申请</span>
-                <?php }else{?>
-                <?php if($appliypaymentmoney80['apply_money_status'] != 100){?>
-                <input type="button" class="tujob" style="background: rgb(151, 151, 151) none repeat scroll 0% 0%;" value="20%无法申请">
-                    <span>80%的款费未打款</span>
-                <?php }else{?>
-                <?php if($appliypaymentmoney80['apply_money_pay_time']+ 80*24*3600 > time()){?>
-                <input type="button" class="tujob" style="background: rgb(151, 151, 151) none repeat scroll 0% 0%;" value="20%无法申请">
-                    <span class="tujaba">
-                        <span>
-                            距离申请款项时间还有：
-                            <span><span id="ta_d2">00 </span> 天<span id="ta_h2">00 </span> 小时<span id="ta_m2">00 </span> 分<span id="ta_s2">00 </span> 秒</span>
-                        </span>
-                    </span>
-                    <script type="text/javascript">
-                        <?php if(!empty($appliypaymentmoney80) && $appliypaymentmoney80['apply_money_status'] == 100){?>
-                        function getA20Time()
-                        {
-                            var str1 = '<?=date('Y-m-d H:i:s', $appliypaymentmoney80['apply_money_pay_time']+80*24*3600)?>';
-                            var EndTime=new Date(Date.parse(str1.replace(/-/g,"/"))); //截止时间
-                            var NowTime = new Date();
-                            var t =EndTime.getTime() - NowTime.getTime();
-                            var d=Math.floor(t/1000/60/60/24);
-                            var h=Math.floor(t/1000/60/60%24);
-                            var m=Math.floor(t/1000/60%60);
-                            var s=Math.floor(t/1000%60);
-                            document.getElementById("ta_d2").innerHTML = d;
-                            document.getElementById("ta_h2").innerHTML = h;
-                            document.getElementById("ta_m2").innerHTML = m;
-                            document.getElementById("ta_s2").innerHTML = s;
-                        }
-                        setInterval(getA20Time,1000);
-                        <?php }?>
-                    </script>
-                <?php }else{?>
-                <input type="button" class="tujob" data-id="2" id="applyfee" value="申请20%款费">
-                <?php }?>
-                <?php }?>
-                <?php }?>
-                <?php }?>
-                <?php if(!empty($appliypaymentmoney20)){?>
+                <p class="renwxx" style="margin-left:30px">20%款项申请记录</p>
+                <?php if (!empty($appliypaymentmoney20)) { ?>
                     <table style="width: 850px;margin: 10px 30px">
                         <tbody>
                         <tr class="biaot opt" id="fileinfos">
@@ -769,17 +635,17 @@ $this->registerMetaTag(array(
                             <td>申请时间</td>
                             <td>打款账户</td>
                             <td>状态</td>
-                            <?php if($appliypaymentmoney20['apply_money_status'] == 100){?>
+                            <?php if ($appliypaymentmoney20['apply_money_status'] == 100) { ?>
                                 <td>打款时间</td>
-                            <?php }?>
+                            <?php } ?>
                         </tr>
                         <tr class="biaot opt" id="fileinfos">
-                            <td><?=$appliypaymentmoney20['apply_money_apply_money']?>(元)</td>
-                            <td><?=date('Y-m-d H:i:s', $appliypaymentmoney20['apply_money_add_time'])?></td>
-                            <td><?=$appliypaymentmoney20['bind_alipay_account']?></td>
+                            <td><?= $appliypaymentmoney20['apply_money_apply_money'] ?>(元)</td>
+                            <td><?= date('Y-m-d H:i:s', $appliypaymentmoney20['apply_money_add_time']) ?></td>
+                            <td><?= $appliypaymentmoney20['bind_alipay_account'] ?></td>
                             <td>
                                 <?php
-                                switch($appliypaymentmoney20['apply_money_status']){
+                                switch ($appliypaymentmoney20['apply_money_status']) {
                                     case 100 :
                                         echo '已打款';
                                         break;
@@ -792,14 +658,54 @@ $this->registerMetaTag(array(
                                 }
                                 ?>
                             </td>
-                            <?php if($appliypaymentmoney20['apply_money_status'] == 100){?>
-                                <td><?=date('Y-m-d H:i:s', $appliypaymentmoney20['apply_money_pay_time'])?></td>
-                            <?php }?>
+                            <?php if ($appliypaymentmoney20['apply_money_status'] == 100) { ?>
+                                <td><?= date('Y-m-d H:i:s', $appliypaymentmoney20['apply_money_pay_time']) ?></td>
+                            <?php } ?>
                         </tr>
                         </tbody>
                     </table>
-                <?php }?>
+                <?php } ?>
             </div>
+            <script type="text/javascript">
+                function getA80Time() {
+                    <?php if($offer['task_status'] == 106){?>
+                    var str1 = '<?=date('Y-m-d H:i:s', $offer['task_emp_confirm_add_time']+3*24*3600)?>';
+                    <?php }else{?>
+                    var str1 = '<?=date('Y-m-d H:i:s', $offer['task_emp_download_time']+45*24*3600)?>';
+                    <?php }?>
+                    var EndTime = new Date(Date.parse(str1.replace(/-/g, "/"))); //截止时间
+                    var NowTime = new Date();
+                    var t = EndTime.getTime() - NowTime.getTime();
+                    var d = Math.floor(t / 1000 / 60 / 60 / 24);
+                    var h = Math.floor(t / 1000 / 60 / 60 % 24);
+                    var m = Math.floor(t / 1000 / 60 % 60);
+                    var s = Math.floor(t / 1000 % 60);
+                    document.getElementById("ta_d8").innerHTML = d;
+                    document.getElementById("ta_h8").innerHTML = h;
+                    document.getElementById("ta_m8").innerHTML = m;
+                    document.getElementById("ta_s8").innerHTML = s;
+                }
+                setInterval(getA80Time, 1000);
+            </script>
+            <script type="text/javascript">
+                <?php if(!empty($appliypaymentmoney80) && $appliypaymentmoney80['apply_money_status'] == 100){?>
+                function getA20Time() {
+                    var str1 = '<?=date('Y-m-d H:i:s', $appliypaymentmoney80['apply_money_pay_time']+80*24*3600)?>';
+                    var EndTime = new Date(Date.parse(str1.replace(/-/g, "/"))); //截止时间
+                    var NowTime = new Date();
+                    var t = EndTime.getTime() - NowTime.getTime();
+                    var d = Math.floor(t / 1000 / 60 / 60 / 24);
+                    var h = Math.floor(t / 1000 / 60 / 60 % 24);
+                    var m = Math.floor(t / 1000 / 60 % 60);
+                    var s = Math.floor(t / 1000 % 60);
+                    document.getElementById("ta_d2").innerHTML = d;
+                    document.getElementById("ta_h2").innerHTML = h;
+                    document.getElementById("ta_m2").innerHTML = m;
+                    document.getElementById("ta_s2").innerHTML = s;
+                }
+                setInterval(getA20Time, 1000);
+                <?php }?>
+            </script>
         </form>
         <div class="Tuja transparent_class" style="display:none;">
             <div class="GyhX-lo">
@@ -819,33 +725,114 @@ $this->registerMetaTag(array(
 <script src="/frontend/js/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="/oss-h5-upload/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
 <script type="text/javascript" src="/oss-h5-upload/upload.js"></script>
+<!-- 评价的div框开始 -->
+<div id="evate2" class="layui-layer layui-layer-page layui-layer-prompt layer-anim" type="page" times="4" showtime="0"
+     contype="string" style="z-index: 19891014; top: 30%; left: 37%;display: none;">
+    <div class="layui-layer-title" style="cursor: move;">评价信息</div>
+    <form enctype="multipart/form-data" id="evaluate" method="post">
+        <div class="layui-layer-content" style="text-align: left;">
+            <div class="evteoui">
+                评价等级：
+                <label><input type="radio" value="1" name="eva_grade" checked="checked"> 好评</label>
+                <label><input type="radio" value="2" name="eva_grade"> 中评</label>
+                <label><input type="radio" value="3" name="eva_grade"> 差评</label>
+            </div>
+            评价：
+            <textarea name="eva_content" id="eva_content" class="layui-layer-input"></textarea>
+        </div>
+        <span class="layui-layer-setwin">
+            <a class="layui-layer-ico layui-layer-close layui-layer-close1 evatoou" href="javascript:;"></a>
+        </span>
+        <input type="hidden" value="" name="eva_task_id" id="eva_task_id">
+        <div class="layui-layer-btn layui-layer-btn-">
+            <!--            <a class="layui-layer-btn0 evatoou" id="evate3">确定</a>-->
+            <a class="layui-layer-btn1 evatoou">关闭</a>
+        </div>
+    </form>
+</div>
 <script type="text/javascript">
-    $(document).ready(function() {
+    //评价按钮
+    $("body").on('click', '.evalu', function () {
+        var task_id = $(this).next('input').attr('value');
+        $('#eva_task_id').val(task_id);
+        var eva_id = $(this).attr('data-id');
+        $.get("<?=Url::toRoute('/eng-order-manage/eng-order-manage-getevaluate')?>",
+            {
+                eva_id: eva_id,
+            },
+            function (data) {
+                if (data.status == 100) {
+                    $("#eva_content").val(data.evaluate['eva_content']);
+                    var eva_grade = data.evaluate['eva_grade']
+                    $("input[name='eva_grade'][value=" + eva_grade + "]").attr("checked", true);
+                }
+            }, "json");
+        var numdot = $('.evalu').index($(this));
+        if (numdot % 2) {
+            $('#evate1').css({'display': 'block'});
+            $('#evate7').css({'display': 'block'});
+        } else {
+            $('#evate1').css({'display': 'block'});
+            $('#evate2').css({'display': 'block'});
+        }
+    });
+    //评价弹出框叉号
+    $("body").on('click', '.evatoou', function () {
+        if ($(this).attr('id') == 'evate3') {
+            layer.confirm('您确定评价吗？', {
+                btn: ['确定', '取消']
+            }, function () {
+                $.post('<?=Url::toRoute('/emp-order-manage/emp-order-manage-evaluate')?>', $("#evaluate").serialize(),
+                    function (data) {
+                        if (data.status == 100) {
+                            $('#evate2').find('textarea').val();
+                            $('#evate1').css({'display': 'none'});
+                            $('#evate2').css({'display': 'none'});
+                            layer.msg('订单评价成功', {time: 2000, icon: 1});
+                        } else if (data.status == 104) {
+                            layer.msg('已经评价过了，无法再评价！', {time: 2000, icon: 2});
+                        } else {
+                            layer.msg('订单评价失败', {time: 2000, icon: 2});
+                        }
+                    }
+                );
+                return false;
+            });
+        } else {
+            $('#evate2').find('textarea').val('');
+            $('#evate1').css({'display': 'none'});
+            $('#evate2').css({'display': 'none'});
+        }
+    })
+</script>
+<!-- 评价的div框结束 -->
+<script type="text/javascript">
+    $(document).ready(function () {
         // 在键盘按下并释放及提交后验证提交表单
         $("#thr_form").validate({
             rules: {
                 offer_money: {
                     required: true,
                     isInteger: true,
-                    isIntGtZero:true
+                    isIntGtZero: true
                 },
                 offer_cycle: {
                     required: true,
-                    range: [1,100]
+                    range: [1, 100]
                 },
                 offer_explain: {
                     required: true,
                 },
                 yzm: {
                     required: true,
-                    remote:{
-                        url:"<?=Url::toRoute('/captcha/engineer-offer-captcha')?>",//后台处理程序
-                        data:{
-                            _csrf:function(){
+                    remote: {
+                        url: "<?=Url::toRoute('/captcha/engineer-offer-captcha')?>",//后台处理程序
+                        data: {
+                            _csrf: function () {
                                 return "<?= yii::$app->request->getCsrfToken()?>";
                             }
                         },
-                        type:"post",
+                        type: "post",
                     }
                 },
             },
@@ -869,28 +856,18 @@ $this->registerMetaTag(array(
             },
         });
     });
-    $("body").on('click','#applyfee',function(){
-        var debitrefund = "<?= $debitrefund['debitrefund_status']?>";
-        if(debitrefund != 101 && debitrefund != ''){
-            layer.confirm('对不起，雇主提出的退款/扣款申请尚未处理，暂时不能请款！', {
-                btn: ['确定']
-            }, function(index){
-                layer.close(index);
-            });
-            return false;
-        }
+    $("body").on('click', '#applyfee', function () {
         var whetherbindbankcard =  <?=$whetherbindbankcard?>;
-        if(whetherbindbankcard == 101){
-            layer.confirm('对不起您尚未绑定支付宝，是否立即绑定？', {
-                btn: ['确定','取消']
-            }, function(){
-                window.location.href="<?=Url::toRoute('/eng-my-wallet/eng-my-wallet-bind-card')?>";
+        if (whetherbindbankcard == 101) {
+            layer.confirm('对不起您尚未绑定银行卡，是否立即绑定？', {
+                btn: ['确定', '取消']
+            }, function () {
+                window.location.href = "<?=Url::toRoute('/eng-my-wallet/eng-my-wallet-bind-card')?>";
                 return false;
             });
-            return false;
         }
         var type = $(this).attr('data-id');
-        var url=  '<?=Url::toRoute(['/eng-order-manage/eng-applyfee','task_id' => $offer['offer_task_id']])?>&type='+type;
+        var url = '<?=Url::toRoute(['/eng-order-manage/eng-applyfee','task_id' => $offer['offer_task_id']])?>&type=' + type;
         layer.config({
             extend: 'Mvcg/style.css', //加载您的扩展样式
             skin: 'layer-ext-moon'
