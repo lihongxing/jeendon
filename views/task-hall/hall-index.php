@@ -38,6 +38,9 @@ $this->registerMetaTag(array(
     .select-no{color:#999}
     .select .select-result a{padding-right:20px;background:#F86D0D url(/frontend/images/close.gif) right 9px no-repeat}
     .select .select-result a:hover{background-position:right -15px}
+    #Dvte ul.bBtn_1 li.yedv_C a ul li.Xiaoq_3 div{
+        text-align: center;
+    }
 </style>
 <div id="cheng">
     <div id="tment_W" class="fr">
@@ -137,7 +140,16 @@ $this->registerMetaTag(array(
                                                 <div style="margin-top: 10px"><?=$item['task_part_type']?>,<?php if(!empty($item['task_process_name'])){?> <?=$item['task_process_name']?>, <?php }?><?=$item['order_type']?></div>
                                                 <div style="margin-bottom: 10px"><?=$item['task_mold_type']?>,<?=$item['task_mode_production']?><?php if($item['order_type'] == '结构图纸设计'){?>,<?=$item['task_totalnum']?>(套)<?php }?></div>
                                             <?php }else{?>
-                                                <div style="margin-top: 10px"><?=$item['order_part_number']?>,<?=$item['order_type']?></div>
+                                                <div style="margin-top: 10px">
+                                                    <?php if(ConstantHelper::$order_type_details){?>
+                                                        <?php foreach (ConstantHelper::$order_type_details as $i => $order_type_detail){?>
+                                                            <?php if($item['demand_type'] == $i){?>
+                                                                <?=$order_type_detail['des']?>
+                                                            <?php }?>
+                                                        <?php }?>
+                                                    <?php }?>
+                                                </div>
+                                                <div style="margin-bottom: 10px"><?=$item['order_part_number']?>,<?=$item['order_type']?></div>
                                             <?php }?>
                                         </li>
                                         <li class="Xiaoq_4"><?=date('Y/m/d',$item['order_add_time']) ?></li>
