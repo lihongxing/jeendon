@@ -52,6 +52,17 @@ $this->registerMetaTag(array(
         border:1px solid #fc893b;
         border-radius: 5px;
     }
+    .Edbn {
+        height: 30px;
+        width: 890px;
+        font-size: larger;
+        line-height: 30px;
+        color: #444343;
+    }
+    .Edbn a {
+        color: red;
+        margin-left: 10px;
+    }
 </style>
 <div id="shame">
     <h3>我要发布需求</h3>
@@ -68,15 +79,35 @@ $this->registerMetaTag(array(
             <li class="tjui">发布需求</li>
         </ul>
     </div>
-    <div class="Urqo"></div>
-
-    <!-- 文件接口上传开始 -->
     <form enctype="multipart/form-data" target="uploadpic" action="<?=Url::toRoute(['/upload/upload-frontend','type' => 'doc'])?>" method="post" class="DzhiM">
+
         <h4>订单号：
             <label id="ordnum"><?= $order_number ?></label>
             <span>请按提示信息填写，为了保证服务质量，平台专家有可能会与您联系，敬请理解，谢谢！</span>
         </h4>
-        <!-- 文件接口上传开始 -->
+        <div class="fengf1">
+            <div>需求类型</div>
+        </div>
+        <input name="order_type" value="<?= $order_type ?>" type="hidden">
+        <input name="demand_type" value="<?= $demand_type ?>" type="hidden">
+        <div class="Edbn">
+            <?php if(ConstantHelper::$order_type_details){?>
+                <?php foreach (ConstantHelper::$order_type_details as $i => $order_type_detail){?>
+                    <?php if($demand_type == $i){?>
+                        <?=$order_type_detail['des']?>
+                        &gt;&gt;
+                    <?php }?>
+                    <?php foreach ($order_type_detail['types'] as $j => $type){?>
+                        <?php if($order_type == $type['val']){?>
+                            <?=$type['des']?>
+                        <?php }?>
+                    <?php }?>
+                <?php }?>
+                <a href="<?=Url::toRoute('/emp-demand-release/demand-select-type')?>">[修改]</a>
+            <?php }?>
+        </div>
+        <div class="Urqo"></div>
+       <!-- 文件接口上传开始 -->
         <div class="fengf1">
             <div>招标文件</div>
         </div>
