@@ -26,7 +26,7 @@ use app\common\core\ConstantHelper;
                             <li class="Xiaoq_3">
                                 <?php if($item['task_type'] == 2 || $item['task_type'] == 1){?>
                                     <div style="margin-top: 10px"><?=$item['task_part_type']?>,<?php if(!empty($item['task_process_name'])){?> <?=$item['task_process_name']?>, <?php }?><?=$item['order_type']?></div>
-                                    <div style="margin-bottom: 10px"><?=$item['task_mold_type']?>,<?=$item['task_mode_production']?><?php if($item['order_type'] == '结构图纸设计'){?>,<?=$item['task_totalnum']?>(套)<?php }?></div>
+                                    <div style="margin-bottom: 10px"><?=$item['task_mold_type']?>,<?=$item['task_mode_production']?><?php if($item['task_type'] == '2'){?>,<?=$item['task_totalnum']?>(套)<?php }?></div>
                                 <?php }else{?>
                                     <div style="margin-top: 10px">
                                         <?php if(ConstantHelper::$order_type_details){?>
