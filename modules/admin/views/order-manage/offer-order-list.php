@@ -19,9 +19,30 @@ $this->params['breadcrumbs'][] = Yii::t('admin', $this->title);
                 <div class="panel-body">
                     <form id="form1" role="form" class="form-horizontal" method="get" action="<?=Url::toRoute('/admin/order-manage/offer-order-list')?>">
                         <div class="form-group">
+                            <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label">招标状态</label>
+                            <div class="col-sm-8 col-lg-9 col-xs-12">
+                                <div class="btn-group">
+                                    <a href="<?=Url::toRoute(['/admin/order-manage/offer-order-list','offer_status' =>100,'offer_order_money_status' => $GET['offer_order_money_status']])?>" class="btn btn-<?= $GET['offer_status'] == 100 ? 'primary' : 'default'?>">中标</a>
+                                    <a href="<?=Url::toRoute(['/admin/order-manage/offer-order-list','offer_status' =>101,'offer_order_money_status' => $GET['offer_order_money_status']])?>" class="btn btn-<?= $GET['offer_status'] == 101 ? 'primary' : 'default'?>">未中标</a>
+                                    <a href="<?=Url::toRoute(['/admin/order-manage/offer-order-list','offer_status' =>102,'offer_order_money_status' => $GET['offer_order_money_status']])?>" class="btn btn-<?= $GET['offer_status'] == 102 ? 'primary' : 'default'?>">未选标</a>
+                                    <a href="<?=Url::toRoute(['/admin/order-manage/offer-order-list','offer_status' => '','offer_order_money_status' => $GET['offer_order_money_status']])?>" class="btn btn-<?= $GET['offer_status'] == '' ? 'primary' : 'default'?>">全部</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label">订单信息</label>
                             <div class="col-sm-8 col-lg-9 col-xs-12">
                                 <input type="text" placeholder="可搜索订单名称" value="<?=$GET['keyword']?>" name="keyword" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label">已退回</label>
+                            <div class="col-sm-8 col-lg-9 col-xs-12">
+                                <div class="btn-group">
+                                    <a href="<?=Url::toRoute(['/admin/order-manage/offer-order-list','offer_order_money_status' =>100,'offer_status' => $GET['offer_status']])?>" class="btn btn-<?= $GET['offer_order_money_status'] == 100 ? 'primary' : 'default'?>">退回</a>
+                                    <a href="<?=Url::toRoute(['/admin/order-manage/offer-order-list','offer_order_money_status' =>101,'offer_status' => $GET['offer_status']])?>" class="btn btn-<?= $GET['offer_order_money_status'] == 101 ? 'primary' : 'default'?>">未退回</a>
+                                    <a href="<?=Url::toRoute(['/admin/order-manage/offer-order-list','offer_order_money_status' => '','offer_status' => $GET['offer_status']])?>" class="btn btn-<?= $GET['offer_order_money_status'] == '' ? 'primary' : 'default'?>">全部</a>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
@@ -86,50 +107,7 @@ $this->params['breadcrumbs'][] = Yii::t('admin', $this->title);
                                                 echo '<span class="statuserror">未中标</span>';
                                                 break;
                                             case 102:
-                                                switch($item['task_status']){
-                                                    case 100:
-                                                        echo '<label class="label label-default">发布中</label>';
-                                                        break;
-                                                    case 101:
-                                                        if (($item['order_expiration_time'] - time() < 0 && $item['task_status'] == 101)) {
-                                                            echo '<span class="statusinfo">未中标</span>';
-                                                            break;
-                                                        }else{
-                                                            echo '<span class="statusinfo">招标中</span>';
-                                                            break;
-                                                        }
-                                                    case 102:
-                                                        echo '<label class="label label-primary">支付中</label>';
-                                                        break;
-                                                    case 103:
-                                                        echo '<label class="label label-danger">运行中</label>';
-                                                        break;
-                                                    case 104:
-                                                        echo '<label class="label label-success">最终成功上传 </label>';
-                                                        break;
-                                                    case 105:
-                                                        echo '<label class="label label-warning">平台审核</label>';
-                                                        break;
-                                                    case 106:
-                                                        echo '<label class="label label-warning">雇主下载</label>';
-                                                        break;
-                                                    case 107:
-                                                        echo '<label class="label label-warning">已完成</label>';
-                                                        break;
-                                                    case 108:
-                                                        echo '<span class="statusinfo">未中标</span>';
-                                                        break;
-                                                    case 109:
-                                                        echo '<span class="statusinfo">未中标</span>';
-                                                        break;
-                                                    case 110:
-                                                        echo '<label class="label label-danger">进行中任务取消</label>';
-                                                        break;
-                                                    case 111:
-                                                        echo '<label class="label label-info">雇主确认</label>';
-                                                        break;
-                                                }
-
+                                                echo '<span class="statusdanger">未选标</span>';
                                                 break;
                                         }
                                         ?>

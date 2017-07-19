@@ -333,8 +333,18 @@ class OrderManageController extends AdminbaseController
             ->join('LEFT JOIN', '{{%engineer}}', '{{%offer}}.offer_eng_id = {{%engineer}}.id')
             ->join('LEFT JOIN', '{{%offer_order}}', '{{%engineer}}.id = {{%offer_order}}.offerorder_eng_id');
         $query2 = new\yii\db\Query();
-        $query2 = $query2->select(['(1)'])
-            ->from('{{%offer}}')->groupBy('{{%offer}}.offer_id')
+        $query2 = $query2->select([
+                '{{%offer}}.*',
+                '{{%spare_parts}}.task_parts_id',
+                '{{%engineer}}.username as eng_username',
+                '{{%engineer}}.eng_phone',
+                '{{%engineer}}.eng_email',
+                '{{%employer}}.username',
+                '{{%employer}}.emp_phone',
+                '{{%employer}}.emp_email'
+            ])
+            ->from('{{%offer}}')
+            ->groupBy('{{%offer}}.offer_id')
             ->join('LEFT JOIN', '{{%spare_parts}}', '{{%offer}}.offer_task_id = {{%spare_parts}}.task_id')
             ->join('LEFT JOIN', '{{%order}}', '{{%order}}.order_id = {{%spare_parts}}.task_order_id')
             ->join('LEFT JOIN', '{{%employer}}', '{{%order}}.order_employer_id = {{%employer}}.id')
@@ -353,9 +363,31 @@ class OrderManageController extends AdminbaseController
                     ['like', '{{%spare_parts}}.task_parts_id', $GET['keyword']],
                 ]
             );
+            $query2 = $query2->andWhere(
+                ['or',
+                    ['like', '{{%engineer}}.username', $GET['keyword']],
+                    ['like', '{{%engineer}}.eng_phone', $GET['keyword']],
+                    ['like', '{{%engineer}}.eng_email', $GET['keyword']],
+                    ['like', '{{%employer}}.username', $GET['keyword']],
+                    ['like', '{{%employer}}.emp_phone', $GET['keyword']],
+                    ['like', '{{%employer}}.emp_email', $GET['keyword']],
+                    ['like', '{{%spare_parts}}.task_parts_id', $GET['keyword']],
+                ]
+            );
+        }
+
+        if(!empty($GET['offer_order_money_status'])){
+            $query = $query->andWhere(['offer_order_money_status' => $GET['offer_order_money_status']]);
+            $query2 = $query2->andWhere(['offer_order_money_status' => $GET['offer_order_money_status']]);
+        }
+
+        if(!empty($GET['offer_status'])){
+            $query = $query->andWhere(['offer_status' => $GET['offer_status']]);
+            $query2 = $query2->andWhere(['offer_status' => $GET['offer_status']]);
         }
 
         $countQuery = clone $query2;
+
         $pages = new yii\data\Pagination(['defaultPageSize' => 10, 'totalCount' => $countQuery->count(1)]);
         $offerorderlist = $query->offset($pages->offset)
             ->groupBy('{{%offer}}.offer_id')
