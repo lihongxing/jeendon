@@ -375,19 +375,15 @@ class OrderManageController extends AdminbaseController
                 ]
             );
         }
-
         if(!empty($GET['offer_order_money_status'])){
             $query = $query->andWhere(['offer_order_money_status' => $GET['offer_order_money_status']]);
             $query2 = $query2->andWhere(['offer_order_money_status' => $GET['offer_order_money_status']]);
         }
-
         if(!empty($GET['offer_status'])){
             $query = $query->andWhere(['offer_status' => $GET['offer_status']]);
             $query2 = $query2->andWhere(['offer_status' => $GET['offer_status']]);
         }
-
         $countQuery = clone $query2;
-
         $pages = new yii\data\Pagination(['defaultPageSize' => 10, 'totalCount' => $countQuery->count(1)]);
         $offerorderlist = $query->offset($pages->offset)
             ->groupBy('{{%offer}}.offer_id')

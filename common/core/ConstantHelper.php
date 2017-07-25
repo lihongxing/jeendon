@@ -114,7 +114,7 @@ class ConstantHelper
             '105' => 'DYNAFORM',
             '106' => '其它',
         ],
-        'default' => '102',
+        'default' => '',
         'type' => '2'
     ];
 
@@ -678,8 +678,8 @@ class ConstantHelper
 
     public static $order_type = [
         'data'=>[
-            '1' => '工艺',
-            '2' => '结构',
+            '1' => '工艺图纸设计',
+            '2' => '结构图纸设计',
             '3' => '报价工艺分析（CAE分析)',
             '4' => '工艺图纸设计',
             '5' => '结构图纸设计',

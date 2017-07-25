@@ -314,6 +314,7 @@ $this->registerMetaTag(array(
                             </td>
                         </tr>
                     </table>
+                    <b style="color: red">※</b>总工期为全部所需成果完成的时间，详细的进度计划待成交后，由买卖双方再行商定。
                     <!-- 下面class存放具体订单 -->
                     <div id="nexta">
                         <?php if(!empty($results['tasks'])){?>
