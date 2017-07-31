@@ -17,8 +17,8 @@ use yii\helpers\Url;
     <div id="sid_1">
         <div id="Tloex_GL" style="width: 890px;">
             <h3 class="fl">
-                <span data-id="1" class="GTlu1">收支记录</span>
-                <span>账户管理</span>
+                <span data-id="1" <?php if($flag == 'financialflowlist'){?> class="GTlu1"  <?php }?>>收支记录</span>
+                <span <?php if($flag == 'bindalipay'){?>  class="GTlu1" <?php }?>>账户管理</span>
                 <span data-id="2">提现记录</span>
             </h3>
             <div class="Enbgd fr ongu">
@@ -28,7 +28,7 @@ use yii\helpers\Url;
             </div>
         </div>
         <div id="Cjue_GL" style="height: auto;width: 924px;">
-            <div class="muhyR" style="height: auto;width: 924px;">
+            <div class="muhyR" style="height: auto;<?php if($flag == 'bindalipay'){?> display: none; <?php }?>width: 924px;">
                 <div class="OPhya" id="engmyfinancialflowlist">
                     <script type="text/javascript">
                         $(function() {
@@ -37,7 +37,7 @@ use yii\helpers\Url;
                     </script>
                 </div>
             </div>
-            <div class="muhyR" style="height: auto;display: none;width: 924px;">
+            <div class="muhyR" style="height: auto; <?php if($flag == 'financialflowlist'){?> display: none; <?php }?>width: 924px;">
                 <table class="Efvj bordered">
                     <tr>
                         <th>
@@ -107,7 +107,7 @@ use yii\helpers\Url;
         $(this).addClass("GTlu1").siblings().removeClass(); //removeClass就是删除当前其他类；只有当前对象有addClass("selected")；siblings()意思就是当前对象的同级元素，removeClass就是删除；
         $("#Cjue_GL > .muhyR").hide().eq($('#Tloex_GL span').index(this)).show();
         if($(this).attr('data-id') == 1){
-            getempmyfinancialflowlist();
+            getengmyfinancialflowlist();
         }else if($(this).attr('data-id') == 2) {
             $.get("<?=Url::toRoute('/eng-my-wallet/eng-my-wallet-withdrawal-list')?>",function(data,status){
                 $("#engmywalletwithdrawallist").html(data);

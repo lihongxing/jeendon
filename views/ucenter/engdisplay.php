@@ -21,9 +21,11 @@ use yii\helpers\Url;
                 <a href="<?=Url::toRoute('/eng-account-manage/eng-account-security')?>" title="手机认证">
                     <img src="<?=yii::$app->engineer->identity->eng_identity_bind_phone == 101 ? '/frontend/images/shouji.png' : '/frontend/images/shouji_1.png'?>">
                 </a>
+                <!--
                 <a href="<?=Url::toRoute('/eng-account-manage/eng-account-security')?>" title="邮箱认证">
                     <img src="<?=yii::$app->engineer->identity->eng_identity_bind_email == 101 ? '/frontend/images/email.png' : '/frontend/images/email_2.png'?>">
                 </a>
+                -->
                 <a href="<?=Url::toRoute('/eng-account-manage/eng-account-security')?>" title="QQ绑定">
                     <img src="<?=!empty(yii::$app->engineer->identity->eng_qq) ? '/frontend/images/qq.png' : '/frontend/images/qq_3.png'?>">
                 </a>

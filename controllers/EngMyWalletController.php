@@ -47,6 +47,11 @@ class EngMyWalletController extends FrontendbaseController{
      */
     public function actionEngMyWalletIndex()
     {
+
+        $flag = yii::$app->request->get('flag');
+        if(!isset($flag)){
+            $flag = 'financialflowlist';
+        }
         $BindBankCardmodel =new BindBankCard();
         $bankcards = $BindBankCardmodel->find()
             ->where(
@@ -70,7 +75,8 @@ class EngMyWalletController extends FrontendbaseController{
             ->all();
         return $this->render('eng-my-wallet-index',[
             'bankcards' => $bankcards,
-            'alipays' => $alipays
+            'alipays' => $alipays,
+            'flag' => $flag
         ]);
     }
 
@@ -107,7 +113,6 @@ class EngMyWalletController extends FrontendbaseController{
         return $this->renderPartial('eng-my-financial-flow-list',[
             'pages' => $pages,
             'financialflowlist' => $financialflowlist,
-
         ]);
     }
 
@@ -139,7 +144,6 @@ class EngMyWalletController extends FrontendbaseController{
         return $this->renderPartial('eng-my-wallet-withdrawal-list',[
             'pages' => $pages,
             'withdrawallist' => $withdrawallist,
-
         ]);
     }
 
@@ -208,14 +212,14 @@ class EngMyWalletController extends FrontendbaseController{
             if(!empty($bind_alipay_id)){
                 $BindAlipay =new BindAlipay();
                 if($BindAlipay->updatebindalipay($post, 1)){
-                    return $this->success('修改成功');
+                    return $this->success('修改成功',Url::toRoute(['/eng-my-wallet/eng-my-wallet-index','flag' => 'bindalipay']));
                 }else{
                     return $this->error('修改失败');
                 }
             }else{
                 $BindAlipay = new BindAlipay();
                 if($BindAlipay->savebindalipay($post, 1)){
-                    return $this->success('绑定成功');
+                    return $this->success('绑定成功',Url::toRoute(['/eng-my-wallet/eng-my-wallet-index','flag' => 'bindalipay']));
                 }else{
                     return $this->error('绑定失败');
                 }

@@ -51,7 +51,7 @@
         <?php }?>
     <?php }else{?>
         <div class="Uiaqw" style="background-position:200px 11px;">
-            你还暂时没有财务记录
+            你还暂时没有提现记录
         </div>
     <?php }?>
     </tbody>
