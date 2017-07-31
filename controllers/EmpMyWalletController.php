@@ -47,6 +47,10 @@ class EmpMyWalletController extends FrontendbaseController{
      */
     public function actionEmpMyWalletIndex()
     {
+        $flag = yii::$app->request->get('flag');
+        if(!isset($flag)){
+            $flag = 'financialflowlist';
+        }
         $BindBankCardmodel =new BindBankCard();
         $bankcards = $BindBankCardmodel->find()
             ->where(
@@ -57,8 +61,10 @@ class EmpMyWalletController extends FrontendbaseController{
             )
             ->asArray()
             ->all();
+
         return $this->render('emp-my-wallet-index',[
             'bankcards' => $bankcards,
+            'flag' => $flag,
         ]);
     }
 
@@ -166,14 +172,14 @@ class EmpMyWalletController extends FrontendbaseController{
             if(!empty($bindbankcard_id)){
                 $BindBankCardmodel =new BindBankCard();
                 if($BindBankCardmodel->updatebindbankcard($post, 2)){
-                    return $this->success('修改成功');
+                    return $this->success('修改成功',Url::toRoute(['/emp-my-wallet/emp-my-wallet-index','flag' => 'bindbankcard']));
                 }else{
                     return $this->error('修改失败');
                 }
             }else{
                 $BindBankCardmodel =new BindBankCard();
                 if($BindBankCardmodel->savebindbankcard($post, 2)){
-                    return $this->success('绑定成功');
+                    return $this->success('绑定成功',Url::toRoute(['/emp-my-wallet/emp-my-wallet-index','flag' => 'bindbankcard']));
                 }else{
                     return $this->error('绑定失败');
                 }

@@ -68,7 +68,7 @@
                     ?>
                 </td>
                 <td>
-                    <?=$item['fininusername']?>
+                    <?=empty($item['fininusername']) ? '平台' : $item['fininusername']?>
                 </td>
                 <td>
                     <?=$item['fin_explain']?>

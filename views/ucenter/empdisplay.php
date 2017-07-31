@@ -37,9 +37,11 @@ use yii\helpers\Url;
                 <a href="<?=Url::toRoute('/emp-account-manage/emp-account-security')?>" title="手机认证">
                     <img src="<?=yii::$app->employer->identity->emp_identity_bind_phone == 101 ? '/frontend/images/shouji.png' : '/frontend/images/shouji_1.png'?>" >
                 </a>
+                <!--
                 <a href="<?=Url::toRoute('/emp-account-manage/emp-account-security')?>"  title="邮箱认证">
                     <img src="<?=yii::$app->employer->identity->emp_identity_bind_email == 101 ? '/frontend/images/email.png' : '/frontend/images/email_2.png'?>">
                 </a>
+                -->
                 <a href="<?=Url::toRoute('/emp-account-manage/emp-account-security')?>" title="QQ绑定">
                     <img src="<?=!empty(yii::$app->employer->identity->emp_qq) ? '/frontend/images/qq.png' : '/frontend/images/qq_3.png'?>">
                 </a>

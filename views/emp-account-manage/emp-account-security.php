@@ -89,6 +89,7 @@ use yii\helpers\Url;
                 </div>
             </li>
         </a>
+        <!--
         <a href="<?=Url::toRoute('/emp-account-manage/emp-info')?>">
             <li class="Fect_3">
                 <div class="Lpoiu">
@@ -104,6 +105,7 @@ use yii\helpers\Url;
                 </div>
             </li>
         </a>
+        -->
         <a href="<?=Url::toRoute('/emp-my-wallet/emp-my-wallet-index')?>">
             <li class="Fect_4">
                 <div class="Lpoiu">

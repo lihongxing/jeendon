@@ -21,8 +21,8 @@ $this->registerMetaTag(array(
     <div id="sid_1">
         <div id="Tloex_GL" style="width: 890px;">
             <h3 class="fl">
-                <span data-id="1" class="GTlu1">收支记录</span>
-                <span>账户管理</span>
+                <span data-id="1" <?php if($flag == 'financialflowlist'){?> class="GTlu1"  <?php }?>>收支记录</span>
+                <span <?php if($flag == 'bindbankcard'){?> class="GTlu1"  <?php }?>>账户管理</span>
                 <span data-id="2">提现记录</span>
             </h3>
             <div class="Enbgd fr ongu">
@@ -32,7 +32,7 @@ $this->registerMetaTag(array(
             </div>
         </div>
         <div id="Cjue_GL" style="height: auto;width: 924px;">
-            <div class="muhyR" style="height: auto;width: 924px;">
+            <div class="muhyR" style="<?php if($flag == 'bindbankcard'){?> display: none; <?php }?>height: auto;width: 924px;">
                 <div class="OPhya" id="empmyfinancialflowlist">
                     <script type="text/javascript">
                         $(function() {
@@ -41,7 +41,7 @@ $this->registerMetaTag(array(
                     </script>
                 </div>
             </div>
-            <div class="muhyR" style="height: auto;display: none;width: 924px;">
+            <div class="muhyR" style="height: auto;<?php if($flag == 'financialflowlist'){?> display: none; <?php }?>width: 924px;">
                 <table class="Efvj bordered">
                     <tr>
                         <th>
